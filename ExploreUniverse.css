@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     /* border: 0.01px red solid;     */
+    
 }
 /* cursor falcon space x  */
 [id^=root], [id^=docs], .cc_cursor, body, .ogdlpmhglpejoiomcodnpjnfgcpmgale_default, body, html, input[type="date"], input[type="time"], input[type="datetime-local"], input[type="month"], input::-webkit-contacts-auto-fill-button, input:read-only {
@@ -17,10 +18,24 @@ html {
 
 body {
     pointer-events: painted;
-    background-color: #796d6d;
+    background-color: #000000;
     overflow-x: hidden;
 }
-
+h1,h2,h3,h4,h5,h6{
+    text-shadow: 0 0 2px #555;
+}
+b{
+    position: relative;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    display: none;
+    font-size: 40px;
+    top: 45vh;
+    text-align: center;
+    font-family: "Din";
+    text-transform: uppercase;
+}
 @font-face {
     font-family: "Din";
     src: url("fonts/Din/fonts-D-DIN.woff") format("truetype");
@@ -132,9 +147,9 @@ body {
 }
 
 video.bg {
-    position: absolute;
-    /* position: fixed; */
-    min-width: 100%;
+    /* position: absolute; */
+    position: fixed;
+    width: 100%;
     background-repeat: no-repeat;
     background-position: center;
     text-align: center;
@@ -253,6 +268,7 @@ nav ul li a img.nasa {
     position: absolute;
     left: 1000px;
     margin: -45px 0px;
+  
 }
 
 nav ul li a img.spacex {
@@ -262,6 +278,7 @@ nav ul li a img.spacex {
     padding: 5px 10px;
     position: absolute;
     margin: -30px 0px;
+
 }
 
 /* tulisan awal welcome  */
@@ -281,7 +298,6 @@ nav ul li a img.spacex {
     font-family:"RoadTest" ;
     font-size: 60px;
     background: none;
-    text-shadow:0 0 5px#060329;
 }
 
 
@@ -292,7 +308,7 @@ nav ul li a img.spacex {
     border-style: solid;
     background-color: #070b1e;
     border-radius: 10px;
-    padding: 15.5px 10px;
+    padding: 16.5px 12px;
     font-size: 16.5px;
     font-family: "Nasa";
     position: absolute;
@@ -300,7 +316,6 @@ nav ul li a img.spacex {
     outline: none;
     border-width: 0px;
     cursor: pointer;
-    width: 260px;
     transition: ease all 1s;
     box-shadow: 0 4px 8px 0 rgba(15, 17, 51, 0.89), 0 6px 20px 0 rgba(12, 3, 42, 0.89);
 }
@@ -320,10 +335,10 @@ nav ul li a img.spacex {
 }
 
 .content button:hover img {
-    display: inline-block;
-    transition: ease all 0.3s;
+    display: inline-flex;
+    margin-left: 20px;
+    transition: ease all 1s;
     position: relative;
-    left: 20px;
 }
 
 .content button:hover{
@@ -331,8 +346,8 @@ nav ul li a img.spacex {
     align-items: center;
     /* background-color: rgb(0, 0, 0); */
     background: linear-gradient(250deg, rgb(3, 3, 17) 0%, rgb(5, 8, 34) 19%, rgb(9, 9, 41) 38%);
-    transition: ease all 0.3s;
-    width: 320px;
+    transition: ease all 0.6s;
+    width: 360px;
 }
 
 section.strip {
@@ -375,11 +390,23 @@ section.strip h3 {
     color: #fff;
     font-size: 26px;
     position: absolute;
-    top: 230px;
-    left: 750px;
+    top: 300px;
+    left: 950px;
     text-transform: uppercase;
-}
+    margin-right: 165px;
 
+}
+.containertwo .fullsuite p {
+    position: absolute;
+    left: 950px;
+    margin-right: 80px;
+    top: 370px;
+    text-align: left;
+    font-family: Din;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    line-height: 1.5;
+}
 .containertwo h3 {
     font-weight: 700;
     font-family: "DinBold";
@@ -399,13 +426,53 @@ section.strip h3 {
     left: 0px;
     position: absolute;
     z-index: -1;
+    top: 100px;
+}
+/* UNTUK 360 DEG NYA */
+.card{
+    position: relative;
+    width: 300px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    top: 250px;
+    left: 50px;
+    z-index: 9;
+    transition: all 1s ease-in-out;
+
+}
+.card span{
+    position: absolute;
+    top: 0;
+    left: calc(100% / 16* var(--i));
+    /* right: calc(100% / 11* var(--i)); */
+    width: calc(100% / 16);
+    height: 100%;
+}
+.card img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    pointer-events: none;
+}
+.card img:nth-child(2),
+.card span:focus + img,
+.card span:active + img,
+.card span:hover + img{
+    opacity: 1;
 }
 
 .containertwo .fullsuite img.suite {
     position: absolute;
-    top: 140px;
-    right: 950px;
-    width: 180px;
+    top: 370px;
+    right: 1050px;
+    width: 120px;
+    z-index: 99;
+
 
 }
 
@@ -416,25 +483,19 @@ section.strip h3 {
     right: 650px;
     width: 200px;
 }
-
-.containertwo .fullsuite p {
+/* rocket  */
+.containertwo .fullsuite img.rocket-containertwo {
     position: absolute;
-    left: 750px;
-    margin-right: 180px;
-    top: 300px;
-    text-align: left;
-    font-family: "Din";
-    color: #fff;
-    font-size: 16px;
-    line-height: 1.5;
+    top: 350px;
+    right: 850px;
+    width:180px;
 }
-
 /* Photo  */
 .explore h2 {
     font-weight: 700;
     font-family: "DinBold";
     color: #fff;
-    font-size: 45px;
+    font-size: 40px;
     position: absolute;
     top: 850px;
     left: 70px;
@@ -448,10 +509,9 @@ section.strip h3 {
     top: 1000px;
     z-index: -1;
     border-style: none;
-
     transform-origin: 0 0;
     transition: transform .25s, visibility .25s ease-in-out;
-    width: auto;
+    width: 54%;
     height: auto;
 }
 
@@ -471,23 +531,30 @@ section.strip h3 {
     font-family: "DinBold";
     color: #fff;
     font-size: 25px;
-    top: 1050px;
-    left: 950px;
-    position: absolute;
+    /* top: 1130px; */
+    left: 840px;
+    position: relative;
     text-transform: uppercase;
-    margin-right: 100px;
+    margin-right: 1000px;
 }
 
 .explore p.isi1 {
-    position: absolute;
-    margin-right: 100px;
-    left: 950px;
-    top: 1150px;
+    position: relative;
+    margin-right: 900px;
+    left: 840px;
+    /* top: 1150px; */
+    top: 10px;
     text-align: left;
     font-family: "Din";
     color: #fff;
     font-size: 17px;
     line-height: 1.6;
+}
+
+/* PENGGERAK SEMUA CONTENT BUMI */
+.explore .text-bumi{
+    position: relative;
+    top: 670px;
 }
 
 /* mars land  */
@@ -499,7 +566,7 @@ section.strip h3 {
     left: 500px;
     transform-origin: 0 0 0 0;
     transition: transform .25s, visibility .25s ease-in-out;
-    width: auto;
+    width: 54%;
     height: auto;
 }
 
@@ -516,23 +583,32 @@ section.strip h3 {
     font-family: "DinBold";
     color: #fff;
     font-size: 25px;
-    top: 1750px;
+    /* top: 1600px; */
     margin-right: 1000px;
-    left: 60px;
-    position: absolute;
+    /* left: 60px; */
+    position: relative;
     text-transform: uppercase;
 }
 
 .explore p.isi2 {
-    position: absolute;
-    margin-right: 1000px;
-    left: 60px;
-    top: 1850px;
+    position: relative;
+    margin-right: 950px;
+    /* left: 60px; */
+    /* top: 1620px; */
+    top: 10px;
     text-align: left;
     font-family: "Din";
     color: #ffffff;
     font-size: 17px;
     line-height: 1.6;
+}
+/* PENGGERAK SEMUA CONTENT BUMI */
+.explore .text-mars{
+    position: relative;
+    top: 1180px;
+}
+.explore .flex-explore{
+    display: flex;
 }
 
 /* Space x */
@@ -560,7 +636,7 @@ h2.crew-dragon {
 .fa-duotone {
     position: relative;
     text-align: center;
-    /* left: 50%; */
+    left: 50%;
     top: -200px;
     color: white;
     font-size: 45px;
@@ -572,19 +648,20 @@ h2.crew-dragon {
 .fa-thin {
     position: relative;
     text-align: center;
-    /* left: 50%; */
+    
     /* top: 450px; */
     color: white;
     font-size: 45px;
+    margin: 0 auto;
     z-index: 999;
     top: 70px;
-    transition: width 1s;
 }
 
 /* pengatur page 5 sampai footer  */
 .black {
     position: relative;
     top: -100px;
+    background-color: #000;
     /* overflow-x:hidden; */
 }
 
@@ -941,7 +1018,7 @@ section.footer-slide{
     left: 60px;
     font-family: "Din";
     line-height: 1.6;
-    margin-right: 1000px;
+    margin-right: 950px;
 }
 .parallaxbg span,.parallaxbg2 span,.parallaxbg3 span {
     color: #868686;
@@ -1030,7 +1107,7 @@ h2.astonaut-crew-dragon {
 }
 
 .astronaut-portrait img {
-    width: 105%;
+    width: 120%;
     height: auto;
     position: relative;
     top: 150px;
@@ -1092,7 +1169,9 @@ a:visited {
     /* background: #000; */
     /* top: -150px; */
 }
-
+/* .landing .textlanding{
+    letter-spacing: 210px;
+} */
 .landing h2 {
     color: #fff;
     font-size: 45px;
@@ -1111,7 +1190,7 @@ a:visited {
     font-family: "Din";
     /* top: 120px;  */
     line-height: 1.6;
-    max-width: 60%;
+    max-width: 40%;
     margin: 20px auto 15px;
 }
 
@@ -1145,10 +1224,12 @@ img.image1 ,img.image2 {
     width: 100%;
     height: auto;
     display: block;
+    /* max-width: 100%; */
 }
 img#image1,img#image2{
-    width: 100%;
+    width: 80%;
     height: auto;
+    max-width: 100%;
 }
 
 /* reponsive  */
@@ -1196,7 +1277,7 @@ img.image1reponsive,img.image2reponsive {
 footer {
     /* height: 85vh; */
     position: relative;
-    bottom: 125px;
+    /* bottom: 125px; */
     left: 0px;
     background-color: #000000;
     background-position: center;
@@ -1366,7 +1447,10 @@ img.spacex-footer {
 ::-webkit-scrollbar-thumb:hover {
     background: #1b1b1b;
 }
-
+.center{
+    display: block;
+    text-align: -webkit-center;
+}
 
 
 
@@ -1509,17 +1593,17 @@ img.spacex-footer {
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.5s;
-    transition: all 1s ease-in;
+    transition: all 0.7s ease-in;
 }
 
 @keyframes fade {
     from {
-        opacity: 0.6;
-        transform: scale(0.92.5);
+        opacity: 0;
+        transform: scale(0.90);
     }
 
     to {
-        opacity: 1
+        opacity: 1;
     }
 
 }
@@ -1531,7 +1615,6 @@ img.spacex-footer {
     position: relative;
     left: 185px;
     top: -240px;
-
     transform: rotate(90deg);
 }
 .container-allastronaut{
@@ -1559,3 +1642,7 @@ img.spacex-footer {
 .active-slide-2{
     color: #ff0000;
 }
+section.crew-3{
+    background-color: #000;
+}
+

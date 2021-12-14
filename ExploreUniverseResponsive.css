@@ -23,6 +23,12 @@ only screen and(max-height: 768px) {
 /* nice  */
 /* lanjutan untuk laptop kebawah  */
 @media(max-width:1300px) {
+    
+
+    video.bg {
+        position: absolute;
+
+    }
     /* image bagian 3  */
 
     .explore img.outearth {
@@ -35,11 +41,11 @@ only screen and(max-height: 768px) {
 
     /* bagian 3 tempat ke-1 */
     .explore p.p1 {
-        left: 900px;
+       left: 880px;
     }
 
     .explore p.isi1 {
-        left: 900px;
+        left: 880px;
     }
     /* isi untuk slide  */
     .isislide3, .isislide2 {    
@@ -459,6 +465,7 @@ only screen and(max-height: 768px) {
 }
 
 @media(max-width:800px) {
+      
     .containerdot {
         display: block;
         bottom: 210px;
@@ -824,6 +831,13 @@ only screen and(max-height: 768px) {
         left: 20px;
         top: 5px;
         font-size: 12px;
+    }
+    /* peringatan  */
+    div,p,a,section,img,video,h1,h2,h3,h4,h5,h6,ul,li,span,table,tr,td,footer{
+        display: none;
+    }
+    b{
+        display: block;
     }
 
 }
@@ -1426,6 +1440,7 @@ only screen and(max-height: 768px) {
         margin-left: 220px;
         font-size: 30px;
     }
+    
 
 }
 

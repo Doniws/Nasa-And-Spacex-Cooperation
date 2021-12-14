@@ -89,11 +89,11 @@ gsap.from('.down', {
     opacity: -1,
     ease: 'power',
     y: 100
-}
+});
 
-);
 
-// GSAP SCROLL 
+
+// GSAP SCROLL
 
 let tl = gsap.timeline({
     scrollTrigger: {
@@ -102,7 +102,6 @@ let tl = gsap.timeline({
     }
     ,
 }
-
 );
 
 tl.from(".marine", {
