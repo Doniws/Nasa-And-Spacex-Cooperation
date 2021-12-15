@@ -18,7 +18,7 @@ html {
 
 body {
     pointer-events: painted;
-    background-color: #ff0000;
+    background-color: #000000;
     overflow-x: hidden;
 }
 h1,h2,h3,h4,h5,h6{
