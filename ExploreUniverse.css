@@ -9,7 +9,7 @@
 [id^=root], [id^=docs], .cc_cursor, body, .ogdlpmhglpejoiomcodnpjnfgcpmgale_default, body, html, input[type="date"], input[type="time"], input[type="datetime-local"], input[type="month"], input::-webkit-contacts-auto-fill-button, input:read-only {
     cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAA5tJREFUWEft1l1IW2cYB/B/PvyoNrZobJUlu5EtSrtOmOyibUJgdmXmPW7CMFiMRlB2EgLFrrDCILa1m9Di2s2S0JXVrmMYb+Y85wUd/UAKo164Qtc1bO4i07jGrqaORJ2pxrecoDBYt5zExKudqwN53+f55Tn/8yYKQsjRqqqqC4FAAMvLy82U0q+xhZeC53nWYmuBXq8HA4PT6ZyllJZvlUHhdDoZ/54DAENxcQnKynejoaFhQRRFzVYgFISQlc8+7VMvLi5CU6RBfl4eduzcgcbGxquiKLZlGyEBrNeufeV7/MdjLCwsQKfXQaVUYvLXSfT09OwVRfFBNhEKqbjdbmdnz56DhAiH52AwGLCtYBu63F04f+F8Yk22rkTxurq6MrvdHtq//wDmn8wj9jQGMIZhYRjd3d3ZB0gIjuM+vPLFlTPRaBShUAjFJSXQ6V5AU1PTKqU0J6sT2ChOCAmaTCady+VCMDgDtUqFvPw88DyfNcQ/xms2m9VGo3HlxAcnMDExgc5jncjNzYVWq62llN7M9CSe+3wtFsthq9U66na7E/0qKioQj8el25yxsbHVTCL+NWCEkOuRSKR2amoKKpUKOeocGCoNq4IgZDQP/5lwjuNWpqen1T7fYAKwXVOIjo6OUVEU38rUFJK+Yvte2cfujN/B7dHrUH5yGUvH29Hf339QEITvM4FICiCEvOFyuW4U/TCJQmMNyitfwskuNzxeb9K9coCyinAcN/T5pUvvxONriESiifOh2dackTzIAkjfhBDy16BvMN91+Tu8f3gvynYVo62tbdN5kA2QEA6Hg/X29uKbsbsw7nkRfv8DeL3eTeUhJQDHcXva29t/MhpNOO27De71lzH8pQc/3r+f9vmQEmD9N6Pf4/HY703P49GTP/Gu6VXYbLa085AyYB0RHRgY2D47+whr8TWU7tJKiBuU0kNykv/3NWkBzGbzztjy0/lbt24iEPgNBYUF+PijM3gYCp2klJ5KBZEWQGpQX19vsFqtP1vqLJiZ+R28g0dRkQaMMf3IyMiMXETagPVHcS4YDB7v7DyGmtdqcOjNWlRXV2NpaUl2KDcF2Dgf/H5/fmtLK4a+HUI4HE4gRFGUVVvWomTjJISw8fFxxGKxxH+HI01H0HexT1ZtWYuSASwWS+vcXPgqoEBpqRZKpaJSEIRfku2TPs8IYD0PbzPGLlJK9XIab6zJGCCVpps+B9Jt9rx9/0/gGXO0VjCFXIBIAAAAAElFTkSuQmCC) 1 1 , auto !important;
 }
-[role^=button], button, .cc_pointer, [type="search"]::-webkit-search-cancel-button, a, select, [type="search"]::-webkit-search-decoration, .paper-button, .ytp-progress-bar-container, input[type=submit], :link, :visited, a > *, img, button, ::-webkit-scrollbar-button, .ogdlpmhglpejoiomcodnpjnfgcpmgale_pointer, ::-webkit-file-upload-button, button, .ytp-volume-panel, #myogdlpmhglpejoiomcodnpjnfgcpmgale .icon {
+[role^=button], button, .cc_pointer, [type="search"]::-webkit-search-cancel-button, a, select, [type="search"]::-webkit-search-decoration, .paper-button, .ytp-progress-bar-container, input[type=submit], :link, :visited, a > *, button, ::-webkit-scrollbar-button, .ogdlpmhglpejoiomcodnpjnfgcpmgale_pointer, ::-webkit-file-upload-button, button, .ytp-volume-panel, #myogdlpmhglpejoiomcodnpjnfgcpmgale .icon {
     cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAA15JREFUWEe9lm9IE2Ecx78DxUU2LF020wVlK6EXNfHdIqn1R7qTymnkeuELzVcV9UK2XGyi5IIi2oISWdIgL4gsfZ7ai3oh1MugMI+CjMhzaritDPP8g7u44V5I6vZidwf35u6e7/P9fT/3+91pAKC2tlbS6/UQBKGREBKQr6l1aFiWfdt5w2vRarWIRCPo6Gg/Tyl9rKYBqfOGFwsL8zAUFeFhIIBWV6tGNQM2m03ydnoRi/1CcUkxCgryUVNT844QclANEzIC6f79B4hFY8jPz4d2gxZtbR74fD5VUki8A8FHQUs4PI65ORFF27cjHl9CU1NTSSgUGlM6BU1VVVVxIBAQZv/OYnLyJ0p3l2Lz5jzYbDZVMCRibmlpkS5dupzAkJeXB0mK48rVK+jr61McQ2IDGYPf57eEw2Hk5OTAtMcEu90+QgjZrTiC5AYsy37mOG6vMDoGnU6H9vY2POjqUieB5RQKPG731NathRDFOSwszsPhcNyjlF5UMoUVFTY3N0sTExMYGhpCRUUFRFGcpJQaVDPAMMzr8fFxazQahfxtyM3NxeDgoKIYVoizLFuwtBSf4vlhZGdnJzrCYDCUEUK+KJXCf9WdPMlI5WYz6urOwrijBPX19R8ppQdUM8AwzOITjst69qwPFlMZvD3d6O7uVgzDf8IyBqfDMbVx+Dsmnz5H4S0XnM5rio3lVStraGiQ/D4/fvwYTWCw2+2KjeVVDcjd8ITjrIIQhk63CZ42j2IYVjWQxPDlTxb2bctFVnwOrS6XIhjWfLkSGPx+PH7zHvVHyhXDsKYBGQPHcdZzt1+gq/EwXNdd6OnpyXg3rCmYxCDMazEyEUNV2Ra43R49ISSSyZmwbkUyhjt3fQiPCsmh9IZSelQ1A/L/Ym9vL8aWu8F5zYlgMJhRDOuKJTGUGHdAnBXxe/oX3G53aSgU+papFFJWI2O4cKEZuk06HD9xDGazOUII0atmgGGYDzzP73/1MoTTZ07BZDJhYGAgpfF0DaYUqq6uLo1MRb7u3LULkiRhePgTjEajgxByM91N1nsupQF5sdVqlXieh0ajSZxmsxmEkLTWpjKZlgjDMCLP89rp6WkctBwCNHH09/entTYjBiorK7MMBsPizMyMjKGDUno9lXC69/8Be2JmMFjGiBwAAAAASUVORK5CYII=) 2 1, auto !important;
 }
 html {
@@ -18,7 +18,7 @@ html {
 
 body {
     pointer-events: painted;
-    background-color: #000000;
+    background-color: #ff0000;
     overflow-x: hidden;
 }
 h1,h2,h3,h4,h5,h6{
@@ -63,7 +63,7 @@ b{
 .cursor {
     width: 20px;
     height: 20px;
-    border: 1px solid rgb(255, 0, 0);
+    border: 1px solid rgb(255, 255, 255);
     border-radius: 50%;
     position: absolute;
     transition-duration: 0ms;
@@ -78,7 +78,7 @@ b{
     width: 20px;
     height: 20px;
     position: absolute;
-    border: 10px solid rgb(25, 0, 255);
+    border: 10px solid rgb(255, 255, 255);
     border-radius: 50%;
     opacity: .5;
     top: -11px;
@@ -123,7 +123,7 @@ b{
 
 .expand {
     animation: cursorAnim3 .5s forwards;
-    border: 1px solid rgb(255, 0, 0);
+    border: 1px solid rgb(255, 255, 255);
 }
 
 /* container1  */
@@ -249,17 +249,18 @@ nav ul li a {
 
 nav ul li a p {
     position: relative;
-    left: -20px;
-    top: -15px;
-    transition: ease 1s all;
+    /* left: -20px; */
+    text-align: center;
+    top: 0px;
+    transition: cubic-bezier(0.22, 2.74, 0.32, 1.88) 0.3s all;
 }
 
 nav ul li a p:hover {
-    color: #868686;
-    border-bottom: solid 1px white;
-    border-radius: 5px;
-    background: #0f0f0fb4;
-    padding: 8px;
+    color: #ffffff;
+    border-bottom: solid 2.5px white;
+    border-radius: 1.5px;
+    /* background: #0f0f0fb4; */
+    padding:5.5px 3px;
 }
 
 nav ul li a img.nasa {
@@ -331,24 +332,26 @@ nav ul li a img.spacex {
 }
 
 .content button img {
-    width: 35px;
+    width: 5px;
     display: none;
-}
+   
 
+}
 .content button:hover img {
-    display: inline-flex;
-    margin-left: 20px;
-    transition: ease all 1s;
-    position: relative;
+    display: inline-block;
+    margin-left: 70px;
+    transition: ease all 2s;
+    position: relative; 
+    transform: rotate(0deg);
 }
 
 .content button:hover{
     /* font-size: 17px; */
     align-items: center;
     /* background-color: rgb(0, 0, 0); */
-    background: linear-gradient(250deg, rgb(3, 3, 17) 0%, rgb(5, 8, 34) 19%, rgb(9, 9, 41) 38%);
+    background: linear-gradient(250deg, rgb(12, 12, 37) 0%, rgb(17, 21, 56) 19%, rgb(9, 9, 41) 38%);
     transition: ease all 0.6s;
-    width: 360px;
+    width: 450px;
 }
 
 section.strip {
@@ -459,8 +462,10 @@ section.strip h3 {
     object-fit: cover;
     opacity: 0;
     pointer-events: none;
+    cursor: crosshair;
 }
-.card img:nth-child(2),
+
+.card img.show-card,
 .card span:focus + img,
 .card span:active + img,
 .card span:hover + img{
@@ -487,9 +492,10 @@ section.strip h3 {
 /* rocket  */
 .containertwo .fullsuite img.rocket-containertwo {
     position: absolute;
-    top: 350px;
-    right: 850px;
-    width:180px;
+    top: 390px;
+    right: 790px;
+    width:190px;
+    cursor: crosshair;
 }
 /* Photo  */
 .explore h2 {
@@ -627,17 +633,16 @@ h2.crew-dragon {
     font-size: 35px;
     position: relative;
     bottom: 90px;
-    left: 0px;
     text-align: center;
     text-transform: uppercase;
     background-color: black;
-    padding: 25px;
+    /* padding: 25px; */
 }
 
 .fa-duotone {
     position: relative;
     text-align: center;
-    left: 50%;
+    /* left: 50%; */
     top: -200px;
     color: white;
     font-size: 45px;
@@ -1088,15 +1093,18 @@ h2.astonaut-crew-dragon {
 
 /* iamge astronaut */
 .astronauts-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
+
     display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
     margin-bottom: 2rem;
     height: 90vh;
-    width: 100%;
+    /* width: 100%; */
+    min-width: 100%;
     color: #fff;
     background-color: #000000;
     position: relative;
@@ -1108,10 +1116,10 @@ h2.astonaut-crew-dragon {
 }
 
 .astronaut-portrait img {
-    width: 120%;
+    width: 80%;
     height: auto;
     position: relative;
-    top: 150px;
+    top: 20px;
     /* dibagian sini untuk mengatur besarnya gambar  */
 }
 
@@ -1131,7 +1139,7 @@ h2.astonaut-crew-dragon {
     font-weight: 700;
     font-style: normal;
     position: relative;
-    top: 150px;
+    top: 20px;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
 }
@@ -1246,10 +1254,12 @@ img.image1reponsive,img.image2reponsive {
     height: auto;
     position: relative;
     /* top: 100vh; */
-    width: 100%;
+    width: 80%;
     background-color: #000000;
     background-position: center;
     background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .crew-3 h2 {
@@ -1257,7 +1267,7 @@ img.image1reponsive,img.image2reponsive {
     font-size: 35px;
     position: relative;
     font-family: "DinBold";
-    top: 300px;
+    top: 400px;
     /* left: -200px; */
     line-height: 1.2;
     text-align: center;
@@ -1268,7 +1278,7 @@ img.image1reponsive,img.image2reponsive {
     font-size: 20px;
     position: relative;
     font-family: "Din";
-    top: 300px;
+    top: 400px;
     /* left: -200px; */
     min-height: 10px;
     line-height: 1.6;
@@ -1334,7 +1344,6 @@ footer a {
     text-transform: uppercase;
     left: 20%;
     display: flex;
-    cursor: crosshair;
 }
 
 footer h4 {
@@ -1450,7 +1459,19 @@ img.spacex-footer {
 }
 .center{
     display: block;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    background-position: center;
     text-align: -webkit-center;
+    margin-right: auto;
+    margin-left: auto;
+    float: center;
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+    text-justify: center;
 }
 
 

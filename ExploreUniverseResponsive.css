@@ -24,12 +24,17 @@ only screen and(max-height: 768px) {
 /* lanjutan untuk laptop kebawah  */
 @media(max-width:1300px) {
     
+    /* first container */
 
     video.bg {
         position: absolute;
 
     }
-    /* image bagian 3  */
+    /* explore  */
+    .explore .text-mars {
+        position: relative;
+        top: 1075px;
+    }
 
     .explore img.outearth {
         width: 750px;
@@ -38,27 +43,33 @@ only screen and(max-height: 768px) {
     .explore img.marsland {
         width: 710px;
     }
+    .explore p.p1,.explore p.isi1,
+    .explore p.p2,.explore p.isi2 {
+        margin-right: 920px;
+    }
 
     /* bagian 3 tempat ke-1 */
-    .explore p.p1 {
+    /* .explore p.p1 {
        left: 880px;
     }
 
     .explore p.isi1 {
         left: 880px;
-    }
+    } */
     /* isi untuk slide  */
     .isislide3, .isislide2 {    
         margin-right: 870px;
     }
     /* disini untuk part 2  */
     .bgfullsuite img.stargif{
-        top: 45px;
+        top: 90px;
     }
-    /* footer */
-    /* .bottom-footer{
-        top: -155px;
-    } */
+    .containertwo .h21 {
+        top: 265px;
+        left: 950px;
+        margin-right: 95px;
+    }
+    
 }
 /* nice  */
 @media(max-width:1265px) {
@@ -245,10 +256,6 @@ only screen and(max-height: 768px) {
         margin-left: 115px;
         position: relative;
 
-    }
-
-    footer {
-        /* overflow: hidden; */
     }
 
     .containertwo .fullsuite img.suite {
@@ -539,10 +546,6 @@ only screen and(max-height: 768px) {
 
     .containertwo h3 {
         top: 40px;
-    }
-
-    .bgfullsuite img.stargif {
-        /* height: 80vh; */
     }
 
     .containertwo h3 {
@@ -861,10 +864,6 @@ only screen and(max-height: 768px) {
         z-index: 99;
     }
 
-    .bgfullsuite img.stargif {
-        /* height: 70vh; */
-    }
-
     .containertwo h3 {
         font-size: 30px;
     }
@@ -1117,11 +1116,6 @@ only screen and(max-height: 768px) {
     nav ul li a img.spacex {
         margin-top: -125px;
 
-    }
-
-    .bgfullsuite img.stargif {
-        /* height: 60vh; */
-        /* tunggu  */
     }
 
     .containertwo .fullsuite img.suite {
@@ -1506,11 +1500,6 @@ only screen and(max-height: 768px) {
         font-size: 11.5px;
     }
 
-    .bgfullsuite img.stargif {
-        /* height: 52vh; */
-        /* tunggu  */
-    }
-
     h2.astonaut-crew-dragon {
         font-size: 30px;
     }
@@ -1812,21 +1801,11 @@ only screen and(max-height: 768px) {
         margin-right: 45px;
     }
 
-    .bgfullsuite img.stargif {
-        /* height: 38vh; */
-        /* tunggu  */
-    }
-
 }
 
 @media(max-width:355px) {
     .astronaut img {
         left: -43%;
-    }
-
-    .bgfullsuite img.stargif {
-        /* height: 42vh; */
-        /* tunggu */
     }
 
     .containertwo .fullsuite img.suite {
@@ -1893,11 +1872,6 @@ only screen and(max-height: 768px) {
 
     .landing {
         height: 245vh;
-    }
-
-    .bgfullsuite img.stargif {
-        /* height: 41vh; */
-        /* tunggu  */
     }
 
     .containertwo {
