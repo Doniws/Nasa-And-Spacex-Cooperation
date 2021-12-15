@@ -31,10 +31,11 @@ b{
     text-align: center;
     display: none;
     font-size: 40px;
-    top: 45vh;
+    top: 30vh;
     text-align: center;
     font-family: "Din";
     text-transform: uppercase;
+    z-index: 999;
 }
 @font-face {
     font-family: "Din";
