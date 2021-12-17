@@ -80,7 +80,8 @@
       this.current = 0;
       this.cycle(true);
       this.interval(75);
-      this.start(0);
+      // untuk pengatur arah pertama kamera
+      this.start(2);   
       this.onTouchStart = this.onTouchStart.bind(this);
       this.onTouchMove = this.onTouchMove.bind(this);
       this.onTouchEnd = this.onTouchEnd.bind(this);
