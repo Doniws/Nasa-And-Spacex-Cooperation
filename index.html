@@ -47,7 +47,10 @@
                                     <li><a href="https://nasa.gov"><img src="images/nasa.png" class="nasa" alt="nasaicon"></a></li>
                                     <li><a href="https://spacex.com"><img src="images/logospacex.png " class="spacex" alt="spacexicon"></a></li>
                                 </ul>
-                            </nav><a class="menu-icon"><i class="fa-regular fa-bars-sort fa-flip-horizontal fa-fade" onclick="togglemenu()"></i></a>
+                            </nav>
+                            <span class="menu-icon">
+                                <i class="fa-regular fa-bars-sort fa-flip-horizontal fa-fade" onclick="togglemenu()"></i>
+                            </span>
                             <!-- <div class="menu-toggle" onclick="togglemenu()"><input type="checkbox" /><span></span><span></span><span></span>
                         </div>-->
                     </div>
@@ -139,7 +142,11 @@
                                     </div>
                                 </div>
                         </div>
-                        <a class="center"><i class="fa-duotone fa-angles-down down "></i></a>
+                        <div class="center">
+                            <a class="center">
+                                <i class="fa-duotone fa-angles-down down "></i>
+                            </a>
+                        </div>
         </section>
         <!-- Space X - page-4 -->
             <h2 id="crew-rocket" class="crew-dragon">Crew Dragon the modern design</h2>
@@ -216,8 +223,8 @@
                     </div>
                     <div class="block engines" data-aos="fade-up-left" data-aos-offset="10" data-aos-duration="3000"><img src="./images/engines.webp" alt="rocketeigine"></div>
                     <div class="block marine">
-                        <h2>NINE MARLINE ENGINES</h2>
-                        <p>With its nine first-stage Merlin engines clustered together,
+                        <h2 data-aos="fade-upt" data-aos-offset="10" data-aos-duration="3000">NINE MARLINE ENGINES</h2>
+                        <p data-aos="fade-up" data-aos-offset="10" data-aos-duration="3000">With its nine first-stage Merlin engines clustered together,
                             Falcon 9 can sustain up to two engine shutdowns during flight and still successfully complete its mission. Falcon 9 is the only launch vehicle in its class with this key reliability feature.</p>
                     </div>
                 </div>
@@ -364,10 +371,14 @@
                             </div>
                         </section>
                     
-                        <div class="center"><a><i class="fa-thin fa-angle-down down"></i></a></div>
+                        <div class="center">
+                            <a>
+                                <i class="fa-thin fa-angle-down down"></i>
+                            </a>
+                        </div>
                     
                     <div class="atention">
-                        <section class="crew-3"><img class="center"  src="images/SPACE-CAPSULE-CREW-DRAGON.jpg">
+                        <section class="crew-3 center"><img class="center"  src="images/SPACE-CAPSULE-CREW-DRAGON.jpg">
                             <div class="text">
                                 <h3 data-aos="fade-up" data-aos-offset="10" data-aos-duration="2500" data-aos-anchor-placement="top-center">NOVEMBER 11,2021 </h3>
                                 <h2 data-aos="fade-up" data-aos-offset="20" data-aos-duration="3000" data-aos-anchor-placement="top-center">CREW-3 MISSION</h2>
@@ -379,11 +390,10 @@
                             <div class="bottom-footer" style="text-align: center;">
                                 <h3>see you again with the next project</h3>
                                 <div class="wrapper-footer-text">
-                                    <a onclick="javascript:alert('Dibuat Tanggal 24 Oktober 2021 dan Selesai Pada Tanggal Tahun')" href="index.html">Copyright&copy and Created By Doni WS <img class="copyimage" src="images/logoutama.webp"></a>
-                                    <div class="responsive-nasa-spacex">
-                                        <h4>INSPIRATION : </h4>
-                                        <link><img class="nasa-footer" src="images/nasa.png"><img class="spacex-footer" src="images/logospacex.png">
-                                    </div>
+                                    <span class="center">
+                                        <a onclick="javascript:alert('Dibuat Tanggal 24 Oktober 2021 dan Selesai Pada Tanggal Tahun')" href="index.html">Copyright&copy and Created By Doni WS  </a>
+                                            <img class="copyimage" src="images/logoutama.webp">
+                                    </span>
                                 </div>
                             </div>
                         </footer>
@@ -406,8 +416,8 @@
                                 AOS.init();
                             </script>
                             <!-- gsap ------------------------- -->
-                            <script src="./gsap-public/minified/gsap.min.js"></script>
-                            <script src="./gsap-public/minified/ScrollTrigger.min.js"></script>
+                            <script src="gsap/dist/ScrollTrigger.min.js"></script>
+                            <script src="gsap/dist/gsap.min.js"></script>
                             <!-- pernguhubung js  -->
                             <script src="./ExploreUniverse.js"></script>
                             <script>

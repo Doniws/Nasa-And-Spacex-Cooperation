@@ -1,6 +1,5 @@
 /* -----------------------------------area responsive------------------------------------------ */
-/* nice  */
-/* tidak ada masalah  */
+/* /\ */
 /* untuk laptop fullscreen  */
 @media only screen and (max-width:1366px),
 only screen and(max-height: 768px) {
@@ -20,12 +19,15 @@ only screen and(max-height: 768px) {
 
 
 }
+/* /\ */
 /* nice  */
 /* lanjutan untuk laptop kebawah  */
 @media(max-width:1300px) {
+    .astronaut img {
+        width: 685px;
+    }
     
     /* first container */
-
     video.bg {
         position: absolute;
 
@@ -43,19 +45,14 @@ only screen and(max-height: 768px) {
     .explore img.marsland {
         width: 710px;
     }
-    .explore p.p1,.explore p.isi1,
-    .explore p.p2,.explore p.isi2 {
+    .explore p.p1,
+    .explore p.p2{
         margin-right: 920px;
     }
+    .explore p.isi1,.explore p.isi2{
+        margin-right: 840px;
+    } 
 
-    /* bagian 3 tempat ke-1 */
-    /* .explore p.p1 {
-       left: 880px;
-    }
-
-    .explore p.isi1 {
-        left: 880px;
-    } */
     /* isi untuk slide  */
     .isislide3, .isislide2 {    
         margin-right: 870px;
@@ -69,8 +66,16 @@ only screen and(max-height: 768px) {
         left: 950px;
         margin-right: 95px;
     }
-    
+    .containertwo .fullsuite p {
+        margin-right: 20px;
+        top: 330px;
+    }
+    .crew-3 .text {
+        top: -750px;
+        position: relative;
+    }
 }
+/* /\ */
 /* nice  */
 @media(max-width:1265px) {
     /* isi slide  */
@@ -94,26 +99,36 @@ only screen and(max-height: 768px) {
         top: -110px;
     }
 
-    .explore p.isi1 {
-        margin-right: 50px;
+    .explore p.p1, .explore p.p2 {
+        margin-right: 915px;
     }
-
-    .explore p.isi2 {
-        margin-right: 850px;
+    .containertwo .fullsuite p,.containertwo .h21 {
+        margin-right: 25px;
+        left: 905px;
     }
-
-    .containertwo .fullsuite p {
-        margin-right: 50px;
-    }
-    .prevnext {
+    .prev-next {
         display: flex;
         position: relative;
         top: 5px;
         right: 65px;
     }
-}
+    .bgfullsuite img.stargif {
+        top: 115px;
+    }
+    footer h2{
+        margin-right: 900px;
+    }
+    .bottom-footer{
 
+        top: -165px;
+    }
+    
+}
+/* /\ */
 @media(max-width:1215px) {
+    nav{
+        margin-left: 125px;
+    }
 
     nav ul li a img.spacex {
         left: 1000px;
@@ -123,26 +138,21 @@ only screen and(max-height: 768px) {
         left: 920px;
     }
 
-    .containertwo h2.h21 {
-        left: 720px;
-    }
-
-    .containertwo .fullsuite p {
-        left: 720px;
-    }
 
     .explore img.outearth {
         width: 700px;
     }
 
-    .explore p.p1 {
-        left: 815px;
+    .explore p.p1, .explore p.p2 {
+        margin-right: 825px;
+    }
+    .explore p.isi1 {
+        margin-right: 800px;
+    }
+    .explore p.p1,.explore p.isi1{
+        left: 780px;
     }
 
-    .explore p.isi1 {
-        left: 815px;
-        margin-right: 90px;
-    }
 
     .explore img.marsland {
         width: 650px;
@@ -161,7 +171,26 @@ only screen and(max-height: 768px) {
         margin-right: 850px;
     }
 
+    .bgfullsuite img.stargif {
+        top: 135px;
+    }
+    .containertwo .fullsuite p,.containertwo h2.h21 {
+        left: 840px;
+    }
+    .containertwo h2.h21{
+        margin-right: 55px;
+    }
+    .prev, .next {
+        left: 1145px;
+    }
+    .responsive-nasa-spacex{
+        position: relative;
+        margin-left: 70px;
+
+    }
+
 }
+/* /\ */
 /* nice   */
 @media(max-width:1175px) {
     .table,.table2,.table3 {
@@ -172,15 +201,8 @@ only screen and(max-height: 768px) {
         font-size: 36px;
     }
 
-    .containertwo h3 {
-        font-size: 30px;
-    }
-
-    /* .containertwo h2.h21 {
-        font-size: 25px;
-    } */
-    .explore h2 {
-        font-size: 30px;
+    .explore h2,h2.crew-dragon,.containertwo h3 {
+        font-size: 38px;
     }
 
     .explore p.isi1 {
@@ -191,9 +213,6 @@ only screen and(max-height: 768px) {
         font-size: 16px;
     }
 
-    h2.crew-dragon {
-        font-size: 30px;
-    }
 
     h2.astonaut-crew-dragon {
         font-size: 35px;
@@ -204,28 +223,47 @@ only screen and(max-height: 768px) {
     }
 
     nav ul li a {
-        font-size: 15px;
+        font-size: 15.5px;
+    }
+    
+    nav ul li a img.nasa {
+        left: 875px;
+    }
+    nav ul li a img.spacex {
+        left: 965px;
+    }
+    .bgfullsuite img.stargif {
+        top: 150px;
+    }
+    .bottom-footer{
+
+        top: -185px;
+    }
+    .prev,.next {
+        left: 1085px;
+    }
+    .crew-3 .text {
+        top: -725px;
+        position: relative;
     }
 
 }
 /* nice  */
 @media(max-width:1150px) {
+    .bottom-footer {
+        top: -195px;
+    }
     .astronaut img {
         width: 650px;
     }
 
     nav ul li a img.nasa {
-        left: 840px;
+        left: 820px;
     }
 
     nav ul li a img.spacex {
         margin-left: -60px;
     }
-
-    nav {
-        margin-left: 85px;
-    }
-
     nav ul li a {
         font-size: 14px;
     }
@@ -238,18 +276,19 @@ only screen and(max-height: 768px) {
         width: 640px;
     }
 
-    .explore p.isi1 {
+    .explore p.isi1,.explore p.p1 {
         left: 760px;
+        margin-right: 760px;
     }
 
-    .explore p.p1 {
-        left: 760px;
+    .explore p.isi1, .explore p.isi2 {
+        margin-right: 770px;
     }
 }
 
 @media(max-width:1100px) {
-    nav {
-        margin-left: 70px;
+    .fa-thin {
+        top: 50px;
     }
 
     .responsive-nasa-spacex {
@@ -424,9 +463,10 @@ only screen and(max-height: 768px) {
         top: 60px;
     }
 
-    .parallaxreview {
+    /* .parallaxreview {
         top: 5205px;
-    }
+         sedang di revisi  
+    } */
 
     .table,.table2,.table3 {
         margin-right: 525px;
@@ -442,13 +482,6 @@ only screen and(max-height: 768px) {
         margin-right: 600px;
     }
 
-    /* footer h3 {
-        left: 18%;
-    } */
-
-    footer a {
-        left: 16.5%;
-    }
 
     .responsive-nasa-spacex {
         margin-left: 15px;
@@ -468,6 +501,7 @@ only screen and(max-height: 768px) {
     .explore p.p2 {
         margin-right: 675px;
     }
+    
 
 }
 
@@ -748,18 +782,6 @@ only screen and(max-height: 768px) {
         position: relative;
     }
 
-    footer {
-        top: 30vh;
-    }
-
-    footer a {
-        left: 3.5%;
-    }
-
-    /* footer h3 {
-        left: 7%;
-    } */
-
     .responsive-nasa-spacex {
         margin-left: -450px;
         position: relative;
@@ -778,10 +800,6 @@ only screen and(max-height: 768px) {
     }
 
     footer a {
-        font-size: 14px;
-    }
-
-    footer h4 {
         font-size: 14px;
     }
 
@@ -809,20 +827,6 @@ only screen and(max-height: 768px) {
     img.copyimage {
         left: 250px;
         top: -10px;
-    }
-
-    img.nasa-footer {
-        left: 58%;
-        width: 70px;
-        height: auto;
-        top: 680px;
-    }
-
-    img.spacex-footer {
-        width: 150px;
-        left: 65%;
-        width: 110px;
-        top: 700px;
     }
 
     .astronaut img {
@@ -1024,17 +1028,6 @@ only screen and(max-height: 768px) {
         width: 40px;
     }
 
-    img.nasa-footer {
-        left: 58.5%;
-        width: 55px;
-        top: 685px;
-    }
-
-    img.spacex-footer {
-        left: 64%;
-        width: 100px;
-        top: 700px;
-    }
 
     .menu-toggle {
         display: flex;
@@ -1176,13 +1169,6 @@ only screen and(max-height: 768px) {
     .containertwo .fullsuite img.helmet {
         right: 264px;
         width: 70px;
-    }
-
-    footer a {
-        left: 19%;
-        top: 650px;
-        margin-right: -200px;
-
     }
 
     .responsive-nasa-spacex {
@@ -1517,13 +1503,10 @@ only screen and(max-height: 768px) {
         margin-right: 150px;
     }
 
-    .isislide2 {
+    .isislide2 ,.isislide3{
         margin-right: 0px;
     }
 
-    .isislide3 {
-        margin-right: 0px;
-    }
 
     .containertwo .fullsuite p {
         margin: 0px -150px 0px 80px;
@@ -1851,11 +1834,6 @@ only screen and(max-height: 768px) {
         right: 173px;
         top: 88px;
     }
-/* tunggu */
-    /* .parallaxjudul {
-        font-size: 26px;
-        margin-right: -87px;
-    } */
 
     .containertwo .fullsuite img.suite {
         width: 55px;

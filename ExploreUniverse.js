@@ -1,5 +1,5 @@
 // GSAP AREA 
-gsap.from('.astronaut img', {
+gsap.from('.show-card img', {
     opacity: -1,
     ease: 'slow',
     duration: 12,
@@ -8,7 +8,7 @@ gsap.from('.astronaut img', {
 
 );
 
-gsap.to('.astronaut img', {
+gsap.to('.show-card img', {
     opacity: 1,
     ease: 'slow',
     duration: 10
@@ -90,6 +90,17 @@ gsap.from('.down', {
     ease: 'power',
     y: 100
 });
+
+gsap.from('img.copyimage', {
+    repeat: -1,
+    yoyo: true,
+    delay: 0,
+    repeatDelay: 1 ,
+    ease: 'bounce',
+    y: -10,
+    x: 10
+});
+
 
 
 

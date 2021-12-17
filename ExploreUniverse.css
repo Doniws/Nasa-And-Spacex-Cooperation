@@ -20,6 +20,7 @@ body {
     pointer-events: painted;
     background-color: #000000;
     overflow-x: hidden;
+    
 }
 h1,h2,h3,h4,h5,h6{
     text-shadow: 0 0 2px #555;
@@ -57,7 +58,8 @@ b{
 
 @font-face {
     font-family: "DinBold";
-    src: url("fonts//Din/fonts-D-DIN-Bold.woff2") format("truetype");
+    src: url("fonts//Din/fonts-D-DIN-Bold.woff") format("truetype");
+    font-weight:lighter;
 }
 
 .cursor {
@@ -71,6 +73,7 @@ b{
     animation: cursorAnim .5s infinite alternate;
     pointer-events: none;
     z-index: 199;
+    opacity: 0.5;
 }
 
 .cursor::after {
@@ -82,7 +85,7 @@ b{
     border-radius: 50%;
     opacity: .5;
     top: -11px;
-    left: -12px;
+    left: -11px;
     animation: cursorAnim2 .5s infinite alternate;
 }
 
@@ -155,7 +158,7 @@ video.bg {
     background-position: center;
     text-align: center;
     align-items: center;
-    height: 99vh;
+    height: 100vh;
 
 
 }
@@ -169,6 +172,7 @@ video.bg {
     left: 41%;
     height: auto;
     bottom: 0px;
+
 }
 
 /*Taq untuk nav atau link */
@@ -443,6 +447,7 @@ section.strip h3 {
     left: 50px;
     z-index: 9;
     transition: all 1s ease-in-out;
+    overflow-x: hidden;
 
 }
 .card span{
@@ -496,6 +501,7 @@ section.strip h3 {
     right: 790px;
     width:190px;
     cursor: crosshair;
+    overflow-x: hidden;
 }
 /* Photo  */
 .explore h2 {
@@ -1173,14 +1179,10 @@ a:visited {
     background-size: cover;
 }
 
-.textlanding {
+.text-landing {
     position: relative;
-    /* background: #000; */
-    /* top: -150px; */
+    background-color: #000;
 }
-/* .landing .textlanding{
-    letter-spacing: 210px;
-} */
 .landing h2 {
     color: #fff;
     font-size: 45px;
@@ -1322,7 +1324,6 @@ footer h3 {
     position: relative;
     font-family: "DinBold";
     top: 580px;
-    /* left: 25%; */
     text-align: center;
     line-height: 1.2;
     text-transform: uppercase;
@@ -1330,55 +1331,33 @@ footer h3 {
 }
 .wrapper-footer-text {
     position: relative;
-    bottom: 80px;
+    bottom: 100px;
+    display: flex;
+}
+.wrapper-footer-text span{
+    display: flex;
 }
 footer a {
     color: rgb(255, 255, 255);
-    font-size: 16.5px;
+    font-size: 24px;
     font-family: "DinBold";
     top: 700px;
-    position: absolute;
+    position: relative;
     text-align: center;
-    margin-right: -200px;
     text-decoration: none;
-    text-transform: uppercase;
-    left: 20%;
+    text-transform: uppercase; 
     display: flex;
+    display: block;
+    text-align: center;
 }
-
-footer h4 {
-    font-size: 16.5px;
-    top: 700px;
-    left: 50%;
-    font-family: "DinBold";
-    top: 700px;
-    position: absolute;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
 img.copyimage {
-    width: 50px;
+    width: 70px;
     display: flex;
-    position: absolute;
-    left: 310px;
-    top: -10px;
-}
+    top: 700px;
+    position: relative;
+    margin-left: 10px;
+    
 
-img.nasa-footer {
-    width: 80px;
-    height: auto;
-    top: 675px;
-    position: absolute;
-    left: 60%;
-}
-
-img.spacex-footer {
-    width: 150px;
-    height: auto;
-    top: 695px;
-    position: absolute;
-    left: 68%;
 }
 
 /* pick text  */
@@ -1449,7 +1428,7 @@ img.spacex-footer {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: rgb(223, 223, 223);
+    background: rgb(255, 255, 255);
     border-radius: 10px;
 }
 
@@ -1458,7 +1437,6 @@ img.spacex-footer {
     background: #1b1b1b;
 }
 .center{
-    display: block;
     text-align: center;
     align-items: center;
     align-self: center;
@@ -1574,9 +1552,9 @@ img.spacex-footer {
     transition: ease all 2s;
     box-shadow: 0 4px 8px 0 rgb(49 49 49 / 89%), 0 6px 20px 0 rgb(51 51 51 / 89%);
 }
-  .prevnext{
-      display: flex;
-  }
+.prevnext{
+    display: flex;
+}
   /* .prev i:hover, .next i:hover{
     color: #c0bdbd93;    
     transition: all 0.6s ease-out;
