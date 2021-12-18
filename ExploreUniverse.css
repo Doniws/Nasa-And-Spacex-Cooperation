@@ -446,7 +446,7 @@ section.strip h3 {
     height: 450px;
     display: flex;
     flex-direction: column;
-    top: 270px;
+    top: 350px;
     left: 50px;
     z-index: 9;
     transition: all 1s ease-in-out;
@@ -455,7 +455,7 @@ section.strip h3 {
 
 }
 .rotation img{
-    width: 350px;
+    width: 300px;
     height: auto;
     transition: all 0.7s ease-out;
 }
