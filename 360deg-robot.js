@@ -7,8 +7,8 @@
     
     var _circlr2 = _interopRequireDefault(_circlr);
     
-    var el = document.querySelector('.rotation');
-    // var el = document.querySelector('.rotation-robot');
+    // var el = document.querySelector('.rotation');
+    var el = document.querySelector('.rotation-robot');
     var btnScroll = document.querySelector('.btn-scroll');
     var btnCycle = document.querySelector('.btn-cycle');
     var btnReverse = document.querySelector('.btn-reverse');
@@ -82,7 +82,7 @@
       this.cycle(true);
       this.interval(75);
       // untuk pengatur arah pertama kamera
-      this.start(3);   
+      this.start(9);   
       this.onTouchStart = this.onTouchStart.bind(this);
       this.onTouchMove = this.onTouchMove.bind(this);
       this.onTouchEnd = this.onTouchEnd.bind(this);

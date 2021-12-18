@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="Doni Personal">
+    <meta name="author" content="Doni Wahyu Saputra">
+    <title>Explore Universe With Nasa & space</title>
+    <link rel="stylesheet" href="./aos-master/dist/aos.css" />
+    <link rel="stylesheet" href=" ExploreUniverse.css" />
+    <link rel="stylesheet" href=" ExploreUniverseResponsive.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./fontawesome6/pro/css/all.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <section class="container-allastronaut">
+        <div class="section-animate">
+            <div class="textastronaut">
+                <h2 class="astonaut-crew-dragon">Astronaut Crew-Dragon 3 Mission</h2>
+                <div class="wrapper">
+                <p>
+                    On Thursday, November 11 at 6:32 p.m. EST, 23:32 UTC, SpaceX’s Dragon autonomously docked with the International Space Station. Falcon 9 launched the spacecraft to orbit from histsoric Launch Complex 39A (LC-39A) at NASA’s Kennedy Space Center in Florida on Wednesday, November 10 at 9:03 p.m. EST.
+                </p>
+                <p>                  
+                    After an approximate six-month stay, Dragon and the Crew-3 astronauts will depart the orbiting laboratory no earlier than late April 2022 for return to Earth and splashdown off the coast of Florida.
+                    You can rewatch the entire Crew-3 flight to the International Space Station above.
+                </p>
+                </div>
+                
+            </div>
+        </div>
+            <div class="section-inner padded">
+                <div class="astronauts-container">
+                    <div class="astronaut-portrait Raja center" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1000"><a href="https://www.nasa.gov/content/astronaut-raja-chari" target="_">
+                            <img title="NASA Astronaut Raja Chari" src="images/portraits-SPACEX_Crew-3_RajaChari.jpg" alt="NASA Astronaut Raja Chari"><span>NASA Astronaut Raja Chari</span>
+                        </a></div>
+                    <div class="astronaut-portrait Tom center" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1500"><a href="https://www.nasa.gov/astronauts/biographies/thomas-h-marshburn/biography" target="_">
+                            <img title="NASA Astronaut Tom Marshburn" src="images/portraits-SPACEX_Crew-3_TomMarshburn.jpg" alt="NASA Astronaut Tom Marshburn"><span>NASA Astronaut Tom Marshburn</span>
+                        </a></div>
+                    <div class="astronaut-portrait Kayla center" data-aos="fade-up" data-aos-offset="100" data-aos-duration="2000"><a href="https://www.nasa.gov/content/astronaut-kayla-barron/" target="_">
+                            <img title="NASA Astronaut Kayla Barron" src="images/portraits-SPACEX_Crew-3_KaylaBarron.jpg" alt="NASA Astronaut Kayla Barron"><span>NASA Astronaut Kayla Barron</span>
+                        </a></div>
+                    <div class="astronaut-portrait Matt center" data-aos="fade-up" data-aos-offset="100" data-aos-duration="2500"><a href="https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Astronauts/Matthias_Maurer" target="_">
+                            <img title="ESA Astronaut Matthias Maurer" src="images/portraits-SPACEX_Crew-3_MathiasMaurer.jpg" alt="ESA Astronaut Matthias Maurer"><span>ESA Astronaut Matthias Maurer</span>
+                        </a></div>
+                </div>
+            </div>
+        </div>
+            <!-- wait  -->
+    </section>
+    
+    <div class="center">
+        <a>
+            <i class="fa-thin fa-angle-down down"></i>
+        </a>
+    </div>
+    <section class="crew-3 center"><img class="center"  src="images/SPACE-CAPSULE-CREW-DRAGON.jpg">
+        <div class="text">
+            <h3 data-aos="fade-up" data-aos-offset="10" data-aos-duration="2500" data-aos-anchor-placement="top-center">NOVEMBER 11,2021 </h3>
+            <h2 data-aos="fade-up" data-aos-offset="20" data-aos-duration="3000" data-aos-anchor-placement="top-center">CREW-3 MISSION</h2>
+            <h2 data-aos="fade-up" data-aos-offset="30" data-aos-duration="3000" data-aos-anchor-placement="top-center">- LIVE NOW -</h2>
+        </div>
+    </section>
+      <!-- aos -->
+      <script src="./aos-master/dist/aos.js"></script>
+      <script>
+          AOS.init();
+      </script>
+      <!-- gsap ------------------------- -->
+      <script src="gsap/dist/ScrollTrigger.min.js"></script>
+      <script src="gsap/dist/gsap.min.js"></script>
+      <script>
+        // CURSOR CUSTOM 
+    const cursor = document.querySelector('.cursor');
+    
+    document.addEventListener('mousemove', e => {
+            cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;")
+        }
+    
+    )
+    document.addEventListener('click', () => {
+            cursor.classList.add("expand");
+    
+            setTimeout(() => {
+                    cursor.classList.remove("expand");
+                }
+    
+                , 200)
+        }
+    
+    )
+    </script>
+    <script>
+        
+gsap.from('.down', {
+    repeat: -1,
+    yoyo: true,
+    opacity: -1,
+    ease: 'power',
+    y: 100
+});
+
+    </script>
+</body>
+</html>

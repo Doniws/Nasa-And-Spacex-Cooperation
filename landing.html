@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="Doni Personal">
+    <meta name="author" content="Doni Wahyu Saputra">
+    <title>Explore Universe With Nasa & space</title>
+    <link rel="stylesheet" href="./aos-master/dist/aos.css" />
+    <link rel="stylesheet" href=" ExploreUniverse.css" />
+    <link rel="stylesheet" href=" ExploreUniverseResponsive.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./fontawesome6/pro/css/all.css">
+</head>
+<body>
+    <section class="landing">
+        <div class="textlanding" id="landing">
+            <h2>LANDING</h2>
+            <p data-aos="fade-up" data-aos-offset="200" data-aos-duration="2000">SpaceX’s family of Falcon launch vehicles are the first and only orbital class rockets capable of reflight. Depending on the performance required for the mission,
+                Falcon lands on one of our autonomous spaceport droneships out on the ocean or one of our landing zones near our launch pads.</p>
+            <div class="flex" data-aos="fade-up" data-aos-offset="200" data-aos-duration="3000">
+                <span>
+                    <a class="fot" onclick="currentslide(1)">DRONESHIP   </a>
+                    <a>|</a> 
+                    <a class="fot" onclick="currentslide(2)">LANDING ZONE</a>
+                    
+                    
+                </span>
+            </div>
+        </div>
+        <div class="images">
+            <div class="myslides center" >
+                    <img class="fade image1"  id="image1"  src="images/F9_AUTONOMOUS_DRONESHIP_DESKTOP.jpg">
+                    <img id="image1" class="image1reponsive" src="images/F9_AUTONOMOUS_DRONESHIP_MOBILE.jpg">
+            </div>
+            <div class="myslides center">
+                    <img class="fade image2"  id="image2"  src="images/F9_LANDING_ZONE_DESKTOP.jpg">
+                    <img id="image2" class="image2reponsive" src="images/F9_LANDING_ZONE_MOBILE.jpg">
+            </div>
+        </div>
+    </section>
+    <script>
+        // SLIDE LANDING 
+//  disini untuk landing pendaratan
+var slideIndex = 1;
+showslides(slideIndex);
+
+
+function nextSlides(n) {
+    showslides(slideIndex += n);
+}
+
+function currentslide(n) {
+    showslides(slideIndex = n);
+}
+
+function showslides(n) {
+    var i;
+    var slides = document.getElementsByClassName("myslides");
+    var dots = document.getElementsByClassName("fot");
+
+
+    if (n > slides.length) {
+        slideIndex = 1
+    }
+
+    if (n < 1) {
+        slideIndex = slides.length
+    }
+
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active-slide-2", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active-slide-2";
+}
+
+    </script>
+       <!-- aos -->
+       <script src="./aos-master/dist/aos.js"></script>
+       <script>
+           AOS.init();
+       </script>
+       <!-- gsap ------------------------- -->
+       <script src="gsap/dist/ScrollTrigger.min.js"></script>
+       <script src="gsap/dist/gsap.min.js"></script>
+       <!-- pernguhubung js  -->
+       <script src="./ExploreUniverse.js"></script>
+</body>

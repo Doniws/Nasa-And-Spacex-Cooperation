@@ -1,3 +1,41 @@
+// sudah di pindahkan ke rocket html 
+      // SLIDE FEATURE 
+//  disini untuk feature rocket payload
+var slideIndex = 1;
+showSlides(slideIndex);
+
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+
+    if (n > slides.length) {
+        slideIndex = 1
+    }
+
+    if (n < 1) {
+        slideIndex = slides.length
+    }
+
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active-slide", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active-slide";
+}
 // GSAP AREA 
 gsap.from('.show-card img', {
     opacity: -1,
@@ -48,40 +86,7 @@ gsap.from('img.spacex', {
 
 );
 
-gsap.from('.engines img', {
-    repeat: -1,
-    yoyo: true,
-    opacity: 0,
-    ease: 'elastic',
-    delay: 1
-}
 
-);
-
-// gsap.from('.rocket-body .rocket1',{duration:40, y:1000,ease:'expo'});
-// gsap.from('.rocket-body .rocket2',{duration:42, y:1000,ease:'power4'});
-// gsap.from('.rocket-body .rocket3',{duration:44, y:1000,ease:'rough'});
-gsap.from('.floating-graphics img', {
-    repeat: -1,
-    yoyo: true,
-    opacity: 0,
-    ease: 'elastic',
-    delay: 1,
-    y: 50
-}
-
-);
-
-gsap.from('.floating-graphics2 img', {
-    repeat: -1,
-    yoyo: true,
-    opacity: -1,
-    ease: "back.inOut(1.7)",
-    y: -200,
-    y: 100
-}
-
-);
 
 gsap.from('.down', {
     repeat: -1,
@@ -106,14 +111,7 @@ gsap.from('img.copyimage', {
 
 // GSAP SCROLL
 
-let tl = gsap.timeline({
-    scrollTrigger: {
-        trigger: '.btn-primary',
-        start: "center center",
-    }
-    ,
-}
-);
+
 
 tl.from(".marine", {
     y: 100,
@@ -156,25 +154,7 @@ fsEnter.addEventListener('click', function(e) {
 );
 
 
-// CURSOR CUSTOM 
-const cursor = document.querySelector('.cursor');
 
-document.addEventListener('mousemove', e => {
-        cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;")
-    }
-
-)
-document.addEventListener('click', () => {
-        cursor.classList.add("expand");
-
-        setTimeout(() => {
-                cursor.classList.remove("expand");
-            }
-
-            , 200)
-    }
-
-)
 
 // SLIDE LANDING 
 //  disini untuk landing pendaratan
@@ -215,7 +195,7 @@ function showslides(n) {
     dots[slideIndex - 1].className += " active-slide-2";
 }
 
-
+// sudah dpindah ken rocket html 
 // SCROLL ROCKET 
 (function() {
     let rocketPieces = document.querySelectorAll('.rocket-body span')
@@ -245,41 +225,37 @@ function showslides(n) {
 
 ())
 
-
-// SLIDE FEATURE 
-//  disini untuk feature rocket payload
-var slideIndex = 1;
-showSlides(slideIndex);
-
-
-function plusSlides(n) {
-    showSlides(slideIndex += n);
+// Ini sudah di pindahkan ke rocket html 
+// gsap.from('.rocket-body .rocket1',{duration:40, y:1000,ease:'expo'});
+// gsap.from('.rocket-body .rocket2',{duration:42, y:1000,ease:'power4'});
+// gsap.from('.rocket-body .rocket3',{duration:44, y:1000,ease:'rough'});
+gsap.from('.floating-graphics img', {
+    repeat: -1,
+    yoyo: true,
+    opacity: 0,
+    ease: 'elastic',
+    delay: 1,
+    y: 50
 }
 
-function currentSlide(n) {
-    showSlides(slideIndex = n);
+);
+
+gsap.from('.floating-graphics2 img', {
+    repeat: -1,
+    yoyo: true,
+    opacity: -1,
+    ease: "back.inOut(1.7)",
+    y: -200,
+    y: 100
 }
 
-function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-
-    if (n > slides.length) {
-        slideIndex = 1
-    }
-
-    if (n < 1) {
-        slideIndex = slides.length
-    }
-
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active-slide", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active-slide";
+);
+gsap.from('.engines img', {
+    repeat: -1,
+    yoyo: true,
+    opacity: 0,
+    ease: 'elastic',
+    delay: 1
 }
+
+);
