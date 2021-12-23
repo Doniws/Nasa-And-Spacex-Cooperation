@@ -37,22 +37,22 @@ function showSlides(n) {
     dots[slideIndex - 1].className += " active-slide";
 }
 // GSAP AREA 
-gsap.from('.show-card img', {
-    opacity: -1,
-    ease: 'slow',
-    duration: 12,
-    x: -600
-}
+// gsap.from('.rotation-robot img', {
+//     opacity: -1,
+//     ease: 'slow',
+//     duration: 12,
+//     x: -600
+// }
 
-);
+// );
 
-gsap.to('.show-card img', {
-    opacity: 1,
-    ease: 'slow',
-    duration: 10
-}
+// gsap.to('.rotaion img', {
+//     opacity: 1,
+//     ease: 'slow',
+//     duration: 10
+// }
 
-);
+// );
 
 gsap.from('.logo img', {
     opacity: -1,
@@ -63,29 +63,6 @@ gsap.from('.logo img', {
 }
 
 );
-
-gsap.from('img.nasa ', {
-    repeat: 4,
-    yoyo: true,
-    opacity: 0.5,
-    ease: 'power4',
-    duration: 5,
-    x: 100
-}
-
-);
-
-gsap.from('img.spacex', {
-    repeat: 4,
-    yoyo: true,
-    opacity: 0,
-    ease: 'expo',
-    delay: 2,
-    duration: 5
-}
-
-);
-
 
 
 gsap.from('.down', {
@@ -134,24 +111,7 @@ function togglemenu() {
     }
 }
 
-// FULLSCREEN BTN 
-let fullscreen;
-let fsEnter = document.getElementById('fullscr');
 
-fsEnter.addEventListener('click', function(e) {
-        e.preventDefault();
-
-        if (!fullscreen) {
-            fullscreen = true;
-            document.documentElement.requestFullscreen();
-        } else {
-            fullscreen = false;
-            document.exitFullscreen();
-
-        }
-    }
-
-);
 
 
 

@@ -8,7 +8,7 @@
     <title>Explore Universe With Nasa & space</title>
     <link rel="stylesheet" href="./aos-master/dist/aos.css" />
     <link rel="stylesheet" href=" ExploreUniverse.css" />
-    <link rel="stylesheet" href=" ExploreUniverseResponsive.css" />
+    <!-- <link rel="stylesheet" href=" ExploreUniverseResponsive.css" /> -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./fontawesome6/pro/css/all.css">
@@ -107,14 +107,14 @@
             </div>
         </div>
     </section>
-    <section class="black">
         <!-- page-5 -->    
-    <div class="allparallax">                              
+    <div class="allparallax" id="feature">                              
         <section class="containerslide">
-            <section class="parallaxbg  fade">
-                <div class="slide1 mySlides fade"><video data-aos="zoom-in" data-aos-duration="2500" data-aos-offset="100" class="parallax" src="images/DragonTrunk_Animation_Render_Desktop.webm" autoplay muted loop></video><img data-aos="zoom-in" data-aos-duration="2500" data-aos-offset="100" class="parallaxreponsive" src="images/DragonTrunk_Render_Mobile.jpg">
+            <!-- PARALLAX 1  -->
+            <section class="parallaxbg  fade mySlides">
+                <div class="slide1  fade"><video data-aos="zoom-in" data-aos-duration="2500" data-aos-offset="100" class="parallax" src="images/DragonTrunk_Animation_Render_Desktop.webm" autoplay muted loop></video><img data-aos="zoom-in" data-aos-duration="2500" data-aos-offset="100" class="parallaxreponsive" src="images/DragonTrunk_Render_Mobile.jpg">
                     <div class="contentslide">
-                        <h3 data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000" class="parallaxjudul" id="slidepage">THE SUPER POWER<br>DRAGON ROCKET PAYLOAD</h3>
+                        <h3 data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000" class="parallaxjudul" id="slidepage">DRAGON ROCKET PAYLOAD</h3>
                         <h4 data-aos="fade-up" data-aos-offset="200" data-aos-duration="1200" class="parallaxreview">Dragon Overview</h4>
                         <table class="table" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1300">
                             <tr data-aos="fade-up" data-aos-offset="200" data-aos-duration="1400">
@@ -145,8 +145,9 @@
                     </div>
                 </div>
             </section>
-            <section class="parallaxbg2">
-                <div class="slide2 mySlides fade"><img data-aos="zoom-in" data-aos-duration="2500" data-aos-offset="100" class="parallax" src="images/Trunk_Render_Desktop.jpg "></img><img data-aos="zoom-in" data-aos-duration="2500" data-aos-offset="100" class="parallaxreponsive" src="images/Trunk_Render_Mobile.jpg "></img>
+            <!-- PARALLAX 2  -->
+            <section class="parallaxbg2 mySlides">
+                <div class="slide2  fade"><img data-aos="zoom-in" data-aos-duration="2500" data-aos-offset="100" class="parallax" src="images/Trunk_Render_Desktop.jpg "></img><img data-aos="zoom-in" data-aos-duration="2500" data-aos-offset="100" class="parallaxreponsive" src="images/Trunk_Render_Mobile.jpg "></img>
                     <div class="contentslide2">
                         <h3 class="parallaxjudul2" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000">TRUNK</h3>
                         <h4 class="parallaxreview2" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1200">Dragon Overview</h4>
@@ -160,13 +161,23 @@
                     </div>
                 </div>
             </section>
-            <section class="parallaxbg3">
-                <div class="slide3 mySlides fade">
+            <!-- PARALLAX 3  -->
+            <section class="parallaxbg3 mySlides">
+                <div class="slide3  fade MySlides">
                     <img data-aos="zoom-in" data-aos-duration="2500" data-aos-offset="100" class="parallax" src="images/Dragon_Render_Desktop.jpg "></img>
                     <img data-aos="zoom-in" data-aos-duration="2500" data-aos-offset="100" class="parallaxreponsive" src="images/Dragon_Render_Mobile.jpg"></img>
                     <div class="contentslide3">
                         <h3 class="parallaxjudul3" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000">CAPSULE</h3>
                         <h4 class="parallaxreview3" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1200">Dragon Overview</h4>
+                        <div class="parallax3-flex"  data-aos="fade-up" data-aos-offset="200" data-aos-duration="1400">
+                            <span>
+                                <a class="tot " onclick="rentslide(1)">OVERVIEW</a>
+                                <a class="|">|</a> 
+                                <a class="tot off" onclick="rentslide(2)">LAUNCH ABORT</a>
+                                <a class="|">|</a> 
+                                <a class="tot off" onclick="rentslide(3)">ATTITUDE CONTROL</a>
+                            </span>
+                        </div>
                         <p class="isislide3" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1400">The Dragon capsule,
                             also known as the pressurized section,
                             allows for the transport of people as well as environmentally sensitive cargo. Dragon is equipped with Draco thrusters that allow Dragon to maneuver while on orbit and 8 SuperDracos that power the spacecraft’s launch escape system.</p>
@@ -178,9 +189,90 @@
                         </table>
                     </div>
                 </div>
+                <!-- slide ke 2-3 -->
+                <div class="slide3 MySlides fade">
+                    <img data-aos="zoom-in" data-aos-duration="2500" data-aos-offset="100" class="parallax" src="images/DragonEscape_Desktop.jpg "></img>
+                    <img data-aos="zoom-in" data-aos-duration="2500" data-aos-offset="100" class="parallaxreponsive" src="images/DragonEscape_Mobile.jpg"></img>
+                    <div class="contentslide3">
+                        <h3 class="parallaxjudul3" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000">CAPSULE</h3>
+                        <h4 class="parallaxreview3" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1200">Dragon Overview</h4>
+                        <div class="parallax3-flex"  data-aos="fade-up" data-aos-offset="200" data-aos-duration="1400">
+                            <span>
+                                <a class="tot off" onclick="rentslide(1)">OVERVIEW</a>
+                                <a class="|">|</a> 
+                                <a class="tot " onclick="rentslide(2)">LAUNCH ABORT</a>
+                                <a class="|">|</a> 
+                                <a class="tot off" onclick="rentslide(3)">ATTITUDE CONTROL</a>
+                            </span>
+                        </div>
+                        <p class="isislide3" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1400">The Dragon capsule,
+                            The launch abort system is a crew safety system built into the Dragon spacecraft, used to quickly separate Dragon from Falcon 9 in the unlikely event of an emergency. 
+                            In the unlikely event of an emergency, Dragon’s launch abort system can quickly separate the spacecraft from Falcon 9. 
+                            Using its SuperDraco engines, Dragon will propel itself away from the launch vehicle.</p>
+                        <table class="table3" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1300">
+                            <tr data-aos="fade-up" data-aos-offset="200" data-aos-duration="1600">
+                                <td class="table-column3">NUMBER OF ENGINES	</td>
+                                <td class="table-column3">8</td>
+                            </tr>
+                            <tr data-aos="fade-up" data-aos-offset="200" data-aos-duration="1600">
+                                <td class="table-column3">ESCAPE THRUST</td>
+                                <td class="table-column3">71 kN<span> / 16,000 lbf</span></td>
+                            </tr>
+                            
+                        </table>
+                    </div>
+                </div>
+                <!-- slide 3-3  -->
+                <div class="slide3 MySlides fade">
+                    <img data-aos="zoom-in" data-aos-duration="2500" data-aos-offset="100" class="parallax" src="images/DragonDraco_Desktop.jpg "></img>
+                    <img data-aos="zoom-in" data-aos-duration="2500" data-aos-offset="100" class="parallaxreponsive" src="images/DragonDraco_Mobile.jpg"></img>
+                    <div class="contentslide3">
+                        <h3 class="parallaxjudul3" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000">CAPSULE</h3>
+                        <h4 class="parallaxreview3" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1200">Dragon Overview</h4>
+                        <div class="parallax3-flex"  data-aos="fade-up" data-aos-offset="200" data-aos-duration="1400">
+                            <span>
+                                <a class="tot off" onclick="rentslide(1)">OVERVIEW</a>
+                                <a class="|">|</a> 
+                                <a class="tot off" onclick="rentslide(2)">LAUNCH ABORT</a>
+                                <a class="|">|</a> 
+                                <a class="tot " onclick="rentslide(3)">ATTITUDE CONTROL</a>
+                            </span>
+                        </div>
+                        <p class="isislide3" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1400">The Dragon capsule,
+                            The Dragon spacecraft is equipped with 16 Draco thrusters used to orient the spacecraft during the mission, 
+                            including apogee/perigee maneuvers, orbit adjustment and attitude control. 
+                            Each Draco thruster is capable of generating 90 pounds of force in the vacuum of space.</p>
+                        <table class="table3" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1300">
+                            <tr data-aos="fade-up" data-aos-offset="200" data-aos-duration="1600">
+                                <td class="table-column3">NUMBER OF ENGINES	</td>
+                                <td class="table-column3">16</td>
+                            </tr>
+                            <tr data-aos="fade-up" data-aos-offset="200" data-aos-duration="1600">
+                                <td class="table-column3">THRUST IN VACUUM	</td>
+                                <td class="table-column3">400N /<span> 90 lbf</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
             </section>
         </section>
-       
+        
+        <section class="footer-slide">
+            <div class="prevnext center">
+                <a class="prev" onclick="plusSlides(-1)">
+                    &#10092;
+                </a>
+                <a class="next" onclick="plusSlides(1)">
+                    &#10093;
+                </a>
+            </div>
+            <div class="containerdot"><span class="dot" onclick="currentSlide(1)"></span><span class="dot" onclick="currentSlide(2)"></span><span class="dot" onclick="currentSlide(3)"></span></div>
+            <!-- <div class="heavyrocket">
+                <img src="images/spacexheavy.png">
+            </div>-->
+          </section>
+
+        <!-- disini untuk eigine  -->
     <div class="container-egine">
         <section class="parallaxbg-eigine">
             <div class="slide-eigine myslides fade">
@@ -192,18 +284,18 @@
                     <div class="flex-eigine" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1300">
                         <span>
                             <a class="fot " onclick="currentslide(1)">DRONESHIP   </a>
-                            <a>|</a> 
+                            <a class="|">|</a> 
                             <a class="fot off" onclick="currentslide(2)">LANDING ZONE</a>
 
                         </span>
                     </div>
                     <p data-aos="fade-up" data-aos-offset="200" data-aos-duration="1400" class="isislide-eigine">The Dragon spacecraft is equipped with 16 Draco thrusters used to orient the spacecraft during the mission, including apogee/perigee maneuvers, orbit adjustment and attitude control. Each Draco thruster is capable of generating 90 pounds of force in the vacuum of space.</p>
-                    <table class="table-eigine">
-                        <tr >
+                    <table class="table-eigine" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1400">
+                        <tr data-aos="fade-up" data-aos-offset="200" data-aos-duration="1600">
                             <td class="table-column-eigine">NUMBER OF ENGINE</td>
                             <td class="table-column-eigine">16</td>
                         </tr>
-                        <tr>
+                        <tr data-aos="fade-up" data-aos-offset="200" data-aos-duration="1600">
                             <td class="table-column-eigine">THRUST IN VACUUM</td>
                             <td class="table-column-eigine">400 N <span>/ 90 lbf</span></td>
                         </tr>
@@ -219,18 +311,18 @@
                     <div class="flex-eigine" data-aos="fade-up" data-aos-offset="200" data-aos-duration="3000">
                         <span>
                             <a class="fot off" onclick="currentslide(1)">DRONESHIP   </a>
-                            <a>|</a> 
+                            <a class="|">|</a> 
                             <a class="fot " onclick="currentslide(2)">LANDING ZONE</a>
 
                         </span>
                     </div>
                     <p class="isislide-eigine">An array of eight SuperDraco engines provide fault-tolerant propulsion for Dragon’s launch escape system. In the unlikely event of an emergency, the eight SuperDraco engines can power Dragon half a mile away from the launch vehicle in less than eight seconds.</p>
                     <table class="table-eigine">
-                        <tr>
+                        <tr data-aos="fade-up" data-aos-offset="200" data-aos-duration="1600">
                             <td class="table-column-eigine">NUMBER OF ENGINE</td>
                             <td class="table-column-eigine">8</td>
                         </tr>
-                        <tr>
+                        <tr data-aos="fade-up" data-aos-offset="200" data-aos-duration="1600">
                             <td class="table-column-eigine">THRUST IN VACUUM</td>
                             <td class="table-column-eigine">73 kN <span>/ 16,400 lbf</span></td>
                         </tr>
@@ -241,20 +333,7 @@
     </div>
     
 </div>
-<section class="footer-slide">
-        <div class="prevnext">
-            <a class="prev" onclick="plusSlides(-1)">
-                <i class="fa-regular fa-angle-left"></i>
-            </a>
-            <a class="next" onclick="plusSlides(1)">
-                <i class="fa-regular fa-angle-right"></i>
-            </a>
-        </div>
-        <div class="containerdot"><span class="dot" onclick="currentSlide(1)"></span><span class="dot" onclick="currentSlide(2)"></span><span class="dot" onclick="currentSlide(3)"></span></div>
-        <!-- <div class="heavyrocket">
-            <img src="images/spacexheavy.png">
-        </div>-->
-      </section>
+
  <!-- pernguhubung js  -->
 
    <!-- aos -->
@@ -403,6 +482,8 @@ function showSlides(n) {
     dots[slideIndex - 1].className += " active-slide";
 }
     </script>
+
+
     <script>
         var slideIndex = 1;
 showslides(slideIndex);
@@ -441,5 +522,201 @@ function showslides(n) {
     dots[slideIndex - 1].className += " active-slide-2";
 }
     </script>
+
+
+
+
+
+
+
+<!-- dsini masih proses  -->
+    <script>
+        var slideIndex = 1;
+Showslides(slideIndex);
+
+
+function nextSlides(n) {
+    Showslides(slideIndex += n);
+}
+
+function rentslide(n) {
+    Showslides(slideIndex = n);
+}
+
+function Showslides(n) {
+    var i;
+    var slides = document.getElementsByClassName("MySlides");
+    var dots = document.getElementsByClassName("tot");
+
+
+    
+    if (n > slides.length) {
+        slideIndex = 1
+    }
+
+    if (n < 1) {
+        slideIndex = slides.length
+    }
+
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active-slide-", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active-slide-";
+}
+    </script>
+
+
+
+<footer>
+    <div class="footer-content">
+        <h3>Doniws Design</h3>
+        <p>Theme Space By Doni Wahyu Saputra and There Four Page Space Theme On This Domain and There different page On Footer Logo , See You Again With Next Project Website.</p>
+        <ul class="socials">
+            
+            <li><a href="#"><i class="fa-duotone fa-user-bounty-hunter fa-fade"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-wolf-pack-battalion fa-fade"></i></a></li>
+            <li><a href="#"><i class="fa-duotone fa-newspaper fa-fade"></i></a></li>
+            <li><a href="#"><i class="fa-duotone fa-galaxy fa-fade"></i></a></li>
+
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <p>copyright © <a href="#">Doniws 2021</a>  </p>
+                <div class="footer-menu">
+                  <ul class="f-menu">
+                    <li><a href="index.html">Main</a></li>
+                    <li><a href="astronaut.html">Astronaut</a></li>
+                    <li><a href="landing.html">Landing</a></li>
+
+                  </ul>
+                </div>
+    </div>
+
+</footer>
+
+
+
+<style>
+
+    
+footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0px;
+    background: rgb(0, 0, 0);
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    font-family: "Din";
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #cacdd2;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+    border: 1.5px solid rgb(0, 0, 0);
+    padding: 12px;
+    background-color: #171718;
+
+    border-radius: 50%;
+
+}
+.socials a i{
+    font-size: 1.1rem;
+    width: 20px;
+
+
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: rgb(109, 109, 109);
+}
+
+.footer-bottom{
+    background: rgb(15, 15, 15);
+    width: 100vw;
+    padding: 20px;
+padding-bottom: 40px;
+    text-align: center;
+}
+.footer-bottom p{
+float: left;
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom p a{
+  font-size: 16px;
+  text-decoration: none;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+.footer-menu{
+  float: right;
+
+}
+.footer-menu ul{
+  display: flex;
+}
+.footer-menu ul li{
+padding-right: 10px;
+display: block;
+}
+.footer-menu ul li a{
+  color: #cfd2d6;
+  text-decoration: none;
+}
+.footer-menu ul li a:hover{
+  color: #686d6e;
+}
+
+@media (max-width:500px) {
+.footer-menu ul{
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+}
+</style>
 </body>
 </html>

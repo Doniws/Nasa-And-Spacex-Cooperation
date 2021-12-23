@@ -1,110 +1,37 @@
 /* -----------------------------------area responsive------------------------------------------ */
-/* /\ */
+/* Proc  */
 /* untuk laptop fullscreen  */
 @media only screen and (max-width:1366px),
 only screen and(max-height: 768px) {
-    .contentslide,.contentslide2,.contentslide3 {
-        position: relative;
-        top: -5050px;
-    }
-    /* .containerdot {
-        display: block;
-        text-align: center;
-        position: relative;
-        bottom: 165px;
-    } */
-    /* .containertwo{
-        height: 345vh;
-    } */
+     /* index  */
+     /* none  */
+
+     /* ---- */
 
 
 }
-/* /\ */
-/* nice  */
 /* lanjutan untuk laptop kebawah  */
 @media(max-width:1300px) {
-    .astronaut img {
-        width: 685px;
-    }
-    
-    /* first container */
-    video.bg {
-        position: absolute;
-
-    }
-    /* explore  */
-    .explore .text-mars {
-        position: relative;
-        top: 1075px;
-    }
-
-    .explore img.outearth {
-        width: 750px;
-    }
-
-    .explore img.marsland {
-        width: 710px;
-    }
-    .explore p.p1,
-    .explore p.p2{
-        margin-right: 920px;
-    }
-    .explore p.isi1,.explore p.isi2{
-        margin-right: 840px;
-    } 
-
+    /* Rocket  */
     /* isi untuk slide  */
     .isislide3, .isislide2 {    
         margin-right: 870px;
     }
-    /* disini untuk part 2  */
-    .bgfullsuite img.stargif{
-        top: 90px;
-    }
-    .containertwo .h21 {
-        top: 265px;
-        left: 950px;
-        margin-right: 95px;
-    }
-    .containertwo .fullsuite p {
-        margin-right: 20px;
-        top: 330px;
-    }
+    /* Astronaut  */
     .crew-3 .text {
         top: -750px;
         position: relative;
+    }
+    .astronaut img {
+        width: 685px;
     }
 }
 /* /\ */
 /* nice  */
 @media(max-width:1265px) {
-    /* isi slide  */
+    /* Rocket  */
     .isislide2,.isislide3 {
         margin-right: 854px;
-    }
-    nav ul li a img.spacex {
-        left: 1025px;
-    }
-
-    nav ul li a img.nasa {
-        left: 950px;
-    }
-
-    nav {
-        margin-left: 145px;
-    }
-
-    .black {
-        position: relative;
-        top: -110px;
-    }
-
-    .explore p.p1, .explore p.p2 {
-        margin-right: 915px;
-    }
-    .containertwo .fullsuite p,.containertwo .h21 {
-        margin-right: 25px;
-        left: 905px;
     }
     .prev-next {
         display: flex;
@@ -112,52 +39,10 @@ only screen and(max-height: 768px) {
         top: 5px;
         right: 65px;
     }
-    .bgfullsuite img.stargif {
-        top: 115px;
-    }
-    footer h2{
-        margin-right: 900px;
-    }
-    .bottom-footer{
-
-        top: -165px;
-    }
-    
 }
 /* /\ */
 @media(max-width:1215px) {
-    nav{
-        margin-left: 125px;
-    }
-
-    nav ul li a img.spacex {
-        left: 1000px;
-    }
-
-    nav ul li a img.nasa {
-        left: 920px;
-    }
-
-
-    .explore img.outearth {
-        width: 700px;
-    }
-
-    .explore p.p1, .explore p.p2 {
-        margin-right: 825px;
-    }
-    .explore p.isi1 {
-        margin-right: 800px;
-    }
-    .explore p.p1,.explore p.isi1{
-        left: 780px;
-    }
-
-
-    .explore img.marsland {
-        width: 650px;
-    }
-
+    /* rocket  */
     .isislide2,.isislide3 {
         margin-right: 715px;
         top: 5325px;
@@ -166,28 +51,10 @@ only screen and(max-height: 768px) {
         position: relative;
         top: -5120px;
     }
-
-    footer h2 {
-        margin-right: 850px;
-    }
-
-    .bgfullsuite img.stargif {
-        top: 135px;
-    }
-    .containertwo .fullsuite p,.containertwo h2.h21 {
-        left: 840px;
-    }
-    .containertwo h2.h21{
-        margin-right: 55px;
-    }
     .prev, .next {
         left: 1145px;
     }
-    .responsive-nasa-spacex{
-        position: relative;
-        margin-left: 70px;
 
-    }
 
 }
 /* /\ */
@@ -201,43 +68,12 @@ only screen and(max-height: 768px) {
         font-size: 36px;
     }
 
-    .explore h2,h2.crew-dragon,.containertwo h3 {
-        font-size: 38px;
-    }
-
-    .explore p.isi1 {
-        font-size: 16px;
-    }
-
-    .explore p.isi2 {
-        font-size: 16px;
-    }
-
-
     h2.astonaut-crew-dragon {
         font-size: 35px;
     }
 
     .landing h2 {
         font-size: 40px;
-    }
-
-    nav ul li a {
-        font-size: 15.5px;
-    }
-    
-    nav ul li a img.nasa {
-        left: 875px;
-    }
-    nav ul li a img.spacex {
-        left: 965px;
-    }
-    .bgfullsuite img.stargif {
-        top: 150px;
-    }
-    .bottom-footer{
-
-        top: -185px;
     }
     .prev,.next {
         left: 1085px;
@@ -840,9 +676,9 @@ only screen and(max-height: 768px) {
         font-size: 12px;
     }
     /* peringatan  */
-    div,p,a,section,img,video,h1,h2,h3,h4,h5,h6,ul,li,span,table,tr,td,footer{
+    /* div,p,a,section,img,video,h1,h2,h3,h4,h5,h6,ul,li,span,table,tr,td,footer{
         display: none;
-    }
+    } */
     b{
         display: block;
     }
