@@ -6,3 +6,7 @@ created on October 24, 2021 and completed on ....
 
 KAMU BISA BERKONTRIBUSI DALAM PEMBUATAN PROJECT WEBSITE INI
 UNTUK PEMBUATAN RESPONSIVE.
+
+
+Don't forget star ,if you like my project,
+Biar saya tambah semangat
