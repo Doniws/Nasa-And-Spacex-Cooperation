@@ -9,4 +9,4 @@ UNTUK PEMBUATAN RESPONSIVE.
 
 
 Don't forget star ,if you like my project,
-Biar saya tambah semangat
+Let me be more enthusiastic to work on other projects
