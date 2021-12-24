@@ -686,10 +686,9 @@ display: inline-block;
 /* .isi-mars,.isi-bumi{
 	transform: translate(0%, 150px);
 } */
-footer {
+/* footer {
   height: 100vh;
   position: relative;
-  /* bottom: 125px; */
   left: 0px;
   background-color: #000000;
   background-position: center;
@@ -714,7 +713,6 @@ footer h2 {
   font-family: "DinBold";
   top: 100px;
   left: 60px;
-  /* margin-right: 1000px; */
   line-height: 1.2;
 
 }
@@ -724,12 +722,11 @@ footer h3 {
   font-size: 40px;
   position: relative;
   font-family: "DinBold";
-  /* top: 450px; */
   text-align: center;
   line-height: 1.2;
   text-transform: uppercase;
 
-}
+} */
 
 /* .wrapper-footer-text {
   position: relative;
@@ -737,15 +734,14 @@ footer h3 {
   display: flex;
 } */
 
-.wrapper-footer-text span {
+/* .wrapper-footer-text span {
   display: flex;
 }
 
 footer a {
-  color: rgb(255, 255, 255);
+color: rgb(255, 255, 255);
   font-size: 20px;
   font-family: "DinBold";
-  /* top: 700px; */
   position: relative;
   top: 0;
   text-align: center;
@@ -757,8 +753,6 @@ footer a {
 }
 .bottom-footer {
   text-align: center;
-  /* top: -105px; */
-  /* top: 20px; */
   display: flex;
   position: relative;
   flex-direction: column;
@@ -768,7 +762,7 @@ footer a {
   top: 550px;
   justify-content: center;
   align-items: center;
-}
+} */
 /* -----------------------------------area responsive------------------------------------------ */
 /* Proc  */
 /* untuk laptop fullscreen  */
@@ -801,18 +795,18 @@ only screen and(max-height: 768px) {
     .bgfullsuite img.stargif {
         top: 18%;
     }
-    .bottom-footer {
+    /* .bottom-footer {
 
       top: 480px;
   
-    }
+    } */
 }
 @media(max-width:1024px){
-  .bottom-footer {
+  /* .bottom-footer {
 
     top: 440px;
 
-  }
+  } */
   
     .isi-mars,.isi-bumi {
         width: 70%;
@@ -841,9 +835,9 @@ only screen and(max-height: 768px) {
     }
 }
 @media(max-width:768px){
-  footer{
+  /* footer{
     height: 105vh;
-  }
+  } */
   .content{
     top: 40%;
   }
@@ -915,19 +909,19 @@ only screen and(max-height: 768px) {
             background: #000000;
             display: block !important;
 }
-.bottom-footer {
+/* .bottom-footer {
 
   top: 500px;
 
-}
-footer img.iss-img {
+} */
+/* footer img.iss-img {
 
   display: none;
-}
-footer h2 {
+} */
+/* footer h2 {
   top: 10%;
 text-align: right;
-  /* left: 65%; */
+ 
   right: 40px;
   font-size: 2em;
 }
@@ -938,7 +932,7 @@ footer h3 {
 
   font-size: 2.1em;
  
-}
+} */
 /* .bottom-footer{
   top: 3%;
 } */
@@ -1008,11 +1002,11 @@ img.copyimage{
   .explore-1 p.isi1,.explore-2 p.isi2{
     max-width: 80%;
   }
-  .bottom-footer {
+  /* .bottom-footer {
 
     top: 455px;
   
-  }
+  } */
   .explore-1 h3.p1,.explore-2 h3.p2,.containertwo h2{
     font-size: 1.4em;
   }
@@ -1025,18 +1019,18 @@ img.copyimage{
     width: 325px;
 }
 
-  footer a{
+  /* footer a{
     font-size: 0.875em;
   }
   footer h2{
     top: 5%;
     right: 25px;
-    /* left: 63%; */
+ 
     font-size: 1.8em;
   }
   footer h3{
     font-size: 1.7em;
-  }
+  } */
   /* .bottom-footer {
     top: -70px;
 } */
@@ -1169,9 +1163,9 @@ nav{
 
   top: 17%;
 }
-footer{
+/* footer{
   height: 100vh;
-}
+} */
 
 }
 @media(max-width:480px){
@@ -1186,7 +1180,7 @@ footer{
 
     top: 20%;
   }
-  footer a {
+  /* footer a {
     font-size: 0.65em;
 }
 footer h3 {
@@ -1201,7 +1195,7 @@ footer{
 footer h2 {
 
   font-size: 1.5em;
-}
+} */
 .content {
 
   left: 5%;
@@ -1230,7 +1224,7 @@ footer h2 {
     width: 47%;
 }
 .content h1 {
-  font-size: 2.2em;
+  font-size: 2.1em;
 }
 .flex-explore-2, .flex-explore-1 {
   padding: 0px 10px;
@@ -1268,6 +1262,13 @@ footer h2 {
   .content button{
     top: 75px;
   }
+  .logo {
+    width: 49%;
+}
+.astronaut img {
+  right: 12%;
+  width: 80%;
+}
 }
 
 
