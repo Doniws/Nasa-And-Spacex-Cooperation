@@ -5,19 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./fontawesome6/pro/css/all.css">
+
     <link rel="stylesheet" href="learn.css">
 </head>
 <body>
-    <div class="box">
-        <div class="imgbg">
-            <img src="images/thefamilypilotrocketwebp.png" alt="">
-        </div>
-        <div class="content">
-            <h2>doni</h2>
-            <p>
-                Ada banyak variasi tulisan Lorem Ipsum yang tersedia, tapi kebanyakan sudah mengalami perubahan bentuk, entah karena unsur humor atau kalimat yang diacak hingga nampak sangat tidak masuk akal. Jika anda ingin menggunakan tulisan Lorem Ipsum, anda harus yakin tidak ada bagian yang memalukan yang tersembunyi di tengah naskah tersebut. Semua generator Lorem Ipsum di internet cenderung untuk mengulang bagian-bagian tertentu. Karena itu inilah generator pertama yang sebenarnya di internet. Ia menggunakan kamus perbendaharaan yang terdiri dari 200 kata Latin, yang digabung dengan banyak contoh
-            </p>
-        </div>
+    <div class="menu">
+        <div class="toggle"><img class="menu-toggle" src="images/logoutama.webp" alt=""></div>
+        <li style="--i:0;">
+            <a href=""><i class="fa-thin fa-user-astronaut"></i></a>
+        </li>
+        <li style="--i:1;">
+            <a href=""><i class="fa-thin fa-shuttle-space"></i></a>
+        </li>
+        <li style="--i:2;">
+            <a href=""><i class="fa-thin fa-plane-arrival"></i></a>
+        </li>
     </div>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script>
+    let toggle = document.querySelector('.toggle');
+    let menu = document.querySelector('.menu');
+    toggle.onclick = function(){
+        menu.classList.toggle('active')
+    }
+
+</script>
 </body>
 </html>

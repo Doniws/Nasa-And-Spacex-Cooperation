@@ -38,9 +38,9 @@ video.bg {
 .astronaut img {
 	background:none;
 	position:absolute;
-	width:55%;
+	width:35%;
 	/* left:41%; */
-right: 5%;
+right: 6.5%;
 	height:auto;
 	bottom: 0px;
 }
@@ -54,10 +54,6 @@ right: 5%;
 }
 
 
-
-.menu-icon {
-	display: none;
-}
 .logo{
     width: 18%;
 
@@ -67,8 +63,8 @@ header{
     justify-content:space-between;
     align-items: center;
     padding: 0px 5%;
-    top: -20px;
-    position: absolute;
+    /* top: -20px;
+    position: absolute; */
 }
 .nav-link{
    /* margin: 0 auto; */
@@ -84,6 +80,8 @@ header{
    font-family: "DinBold";
    text-transform: uppercase;
    font-size: 1.125em;
+   color: #fff;
+   text-decoration: none;
  
 }
 .nav-link li a:hover,.nav-link li a:focus,.nav-link li a:active{
@@ -151,8 +149,6 @@ header{
 
 
 .btn__secondary{
-    /* width:20%;
-    height: 60px;  */
     padding: 30px 110px;
     border: 0;
     outline: none;
@@ -370,7 +366,7 @@ header{
 	border-style:solid;
 	background-color:#070b1e;
 	border-radius:10px;
-	padding:16.5px 12px;
+	padding:15.5px 12px;
 	font-size:1em;
 	font-family:"Nasa";
 	position:absolute;
@@ -478,7 +474,6 @@ section.strip h3 {
 	position:absolute;
 	top:13%;
 	left: 5%;
-	text-align: center;
 	text-transform: uppercase;
 }
 /* full suite */
@@ -578,18 +573,21 @@ img{
     flex-direction: row-reverse;
 }
 .h22 {
-	font-weight: 700;
-    font-family: "DinBold";
-    color: #fff;
-    font-size:  2.5em;
-    padding: 25px 0px;
-    height: 25vh;
-    background: #000;
-    position: relative;
-    /* top: 4px; */
-    /* left: 60px; */
-    text-align: center;
-    text-transform: uppercase;
+  font-weight: 700;
+  font-family: "DinBold";
+  color: #fff;
+  padding-top: 80px;
+  left: 5%;
+  padding-bottom: 100px;
+  font-size: 2.5em;
+  /* padding: 25px 0px; */
+  /* height: 25vh; */
+  background: #000;
+  position: relative;
+  /* top: 4px; */
+  /* left: 60px; */
+  text-align: left;
+  text-transform: uppercase;
  
 }
 /* outearth */
@@ -685,78 +683,87 @@ display: inline-block;
 	transform: translate(0%, 150px);
 } */
 footer {
-    /* height: 80vh; */
-    position: relative;
-    /* bottom: 125px; */
-    left: 0px;
-    background-color: #000000;
-    background-position: center;
-    background-size: cover;
-    color: rgb(255, 255, 255);
+  height: 100vh;
+  position: relative;
+  /* bottom: 125px; */
+  left: 0px;
+  background-color: #000000;
+  background-position: center;
+  background-size: cover;
+  color: rgb(255, 255, 255);
 }
 
 footer img.iss-img {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    background: #000000;
-    display: block;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: #000000;
+  display: block;
 }
 
 footer h2 {
-    color: #fff;
-    font-size: 35px;
-    position: absolute;
-    font-family: "DinBold";
-    top: 100px;
-    left: 60px;
-    /* margin-right: 1000px; */
-    line-height: 1.2;
-  
+  color: #fff;
+  font-size: 2.5em;
+  position: absolute;
+  font-family: "DinBold";
+  top: 100px;
+  left: 60px;
+  /* margin-right: 1000px; */
+  line-height: 1.2;
+
 }
 
 footer h3 {
-    color: #fff;
-    font-size: 40px;
-    position: relative;
-    font-family: "DinBold";
-    top: 450px;
-    text-align: center;
-    line-height: 1.2;
-    text-transform: uppercase;
+  color: #fff;
+  font-size: 40px;
+  position: relative;
+  font-family: "DinBold";
+  /* top: 450px; */
+  text-align: center;
+  line-height: 1.2;
+  text-transform: uppercase;
 
 }
 
-.wrapper-footer-text {
-    position: relative;
-    bottom: 250px;
-    display: flex;
-}
+/* .wrapper-footer-text {
+  position: relative;
+  bottom: 250px;
+  display: flex;
+} */
 
 .wrapper-footer-text span {
-    display: flex;
+  display: flex;
 }
 
 footer a {
-    color: rgb(255, 255, 255);
-    font-size: 20px;
-    font-family: "DinBold";
-    top: 700px;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    display: flex;
-    display: block;
-    text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-family: "DinBold";
+  /* top: 700px; */
+  position: relative;
+  top: 0;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: flex;
+  display: block;
+  text-align: center;
 }
 .bottom-footer {
-	text-align:center;
-	/* top:-105px; */
-    top: 20px;
-	position:relative;
+  text-align: center;
+  /* top: -105px; */
+  /* top: 20px; */
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  z-index: 99;
+  top: 550px;
+  justify-content: center;
+  align-items: center;
 }
 /* -----------------------------------area responsive------------------------------------------ */
 /* Proc  */
@@ -787,17 +794,22 @@ only screen and(max-height: 768px) {
     .content p {
         font-size: 2em;
     }
-    .bottom-footer {
-        text-align: center;
-        /* top: -105px; */
-        top: -44px;
-        position: relative;
-    }
     .bgfullsuite img.stargif {
         top: 18%;
     }
+    .bottom-footer {
+
+      top: 480px;
+  
+    }
 }
 @media(max-width:1024px){
+  .bottom-footer {
+
+    top: 440px;
+
+  }
+  
     .isi-mars,.isi-bumi {
         width: 70%;
 
@@ -816,10 +828,6 @@ only screen and(max-height: 768px) {
         padding: 25px 85px;
 
     }
-    .bottom-footer {
-
-        top: -100px;
-    }
     .content h1 {
         font-size: 3.25em;
     }
@@ -829,6 +837,9 @@ only screen and(max-height: 768px) {
     }
 }
 @media(max-width:768px){
+  footer{
+    height: 105vh;
+  }
   .content{
     top: 40%;
   }
@@ -846,7 +857,7 @@ only screen and(max-height: 768px) {
         padding: 0px 60px;
     }
     .explore-2 img.marsland,.explore-1 img.outearth {
-      width: 80%;
+      width: 90%;
       margin: 0 auto;
       display: flex;
   }
@@ -854,11 +865,11 @@ only screen and(max-height: 768px) {
     padding-left: 0;
     padding-right: 0;
     padding-top: 15px;
-    width: 80%;
+    width: 90%;
 
 }
 .explore-1, .explore-2 {
-  height: 110vh;
+  height: 120vh;
 }
 
     .bgfullsuite img.stargif{
@@ -900,14 +911,20 @@ only screen and(max-height: 768px) {
             background: #000000;
             display: block !important;
 }
+.bottom-footer {
+
+  top: 500px;
+
+}
 footer img.iss-img {
 
   display: none;
 }
 footer h2 {
-  top: 70px;
+  top: 10%;
 text-align: right;
-  left: 70%;
+  /* left: 65%; */
+  right: 40px;
   font-size: 2em;
 }
 footer a{
@@ -918,25 +935,25 @@ footer h3 {
   font-size: 2.1em;
  
 }
-.bottom-footer{
-  top: 30px;
-}
+/* .bottom-footer{
+  top: 3%;
+} */
 .containertwo h2 {
 
 	top:300px;
 
 
-    left:5%;
+
 
 }
 .containertwo .fullsuite p {
 	top:370px;
-  left:5%;
+  left:12%;
 	width: 50%;
 }
 .isi-fullsuite {
 
-  bottom:20px;
+  bottom:2%;
 }
 .containertwo {
   height: 115vh;
@@ -946,22 +963,272 @@ footer h3 {
   font-size: 2.0em;
 
   top: 5%;
-  left: 5%;
-  text-align: center;
+
   text-transform: uppercase;
 }
 .rotation-robot, .rotation {
   top: 220px;
 }
 .logo {
-  width: 25%;
+  width: 27%;
+}
+.h22,.containertwo h2,.containertwo h3,.content,.containertwo .fullsuite p{
+  left: 12%;
 }
 .h22{
-  font-size: 2.1em;
+  font-size: 1.9em;
+ 
+
+  
+    padding-bottom: 28px;
+  
+
+}
+.cursor{
+  display: none;
+}
+.btn-rckt-hover{
+  display: none !important;
+}
+img.copyimage{
+  display: none !important;
+}
+.nav-link li a{
+  font-size: 0.875em;
+}
+.explore-1 p.isi1,.explore-2 p.isi2{
+  max-width: 75%;
 }
 }
+@media(max-width:600px){
+  .explore-1 p.isi1,.explore-2 p.isi2{
+    max-width: 80%;
+  }
+  .bottom-footer {
+
+    top: 455px;
+  
+  }
+  .explore-1 h3.p1,.explore-2 h3.p2,.containertwo h2{
+    font-size: 1.4em;
+  }
+  .flex-explore-2, .flex-explore-1 {
+  
+    padding: 0px 25px;
+}
+  .content button:hover {
+ 
+    width: 325px;
+}
+
+  footer a{
+    font-size: 0.875em;
+  }
+  footer h2{
+    top: 5%;
+    right: 25px;
+    /* left: 63%; */
+    font-size: 1.8em;
+  }
+  footer h3{
+    font-size: 1.7em;
+  }
+  /* .bottom-footer {
+    top: -70px;
+} */
+  .content {
+    top: 33%;
+}
+.h22 {
+  font-size: 1.8em;
+}
+.astronaut img {
+  right: 27%;
+  width: 45%;
+}
+  section.strip h3 {
+
+    padding-bottom: 2.5%;
+
+}
+section.strip {
+  flex-direction: column;
+}
+.explore-2 img.marsland,.explore-1 img.outearth {
+  width: 97%;
+  margin: 0 auto;
+  display: flex;
+}
+.isi-mars, .isi-bumi {
+padding-left: 0;
+padding-right: 0;
+padding-top: 15px;
+width: 97%;
+
+}
+
+.h22, .containertwo h2, .containertwo h3, .content,.containertwo .fullsuite p {
+  left: 5%;
+}
+.menu{
+  position: fixed;
+  width: 200px;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  display: flex !important;
+  right: -50px;
+  bottom: -50px;
+  z-index: 999;
+
+}
+.menu li{
+  position:absolute;
+  list-style: none;
+  transform-origin: 100px;
+  left: 0;
+  transition: 0.5s ;
+  transition-delay: calc(0.1s * var(--i));
+  transform: rotate(0deg) translateX(80px);
+}
+.menu.active li{
+  transform: rotate(calc( 360deg / 8* var(--i)));
+
+}
+
+img.menu-toggle{
+  width: 30px;
+  height: auto;
+}
+.menu li a{
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  border-radius: 50%;
+  transform: rotate(calc( 360deg / -8* var(--i)));
+  
+box-shadow: inset -1px 3px 8px 5px #d7d9db, 2px 5px 16px 0px #777a7e, 5px 5px 15px 5px rgba(0,0,0,0);
+
+}
+.toggle{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: rgb(17,11,30); /* ini untuk pengatur warna menu */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  border-radius: 50%;
+  box-shadow: none;
+  cursor: pointer;
+  transition: all ease-out 0.9s;
+  box-shadow:  2px 5px 16px 0px #242629, 5px 5px 15px 5px rgba(0,0,0,0);
+
+
+}
+.menu.active .toggle{
+  transform: rotate(360deg);
+}
+
+nav{
+  display: none;
+}
+.logo {
+  width: 33%;
+}
+.containertwo h3 {
+  font-size: 1.8em;
+
+  text-align: left;
+  font-size: 1.8em;
+}
+.content button{
+  padding: 15px 10px
+}
+.content p {
+  font-size: 1.65em;
+  top: -30px;
+}
+.container h2{
+  font-size: 1.4em;
+}
+.containertwo .fullsuite p{
+
+  width: 70%;
+}
+.bgfullsuite img.stargif-reponsive {
+
+  top: 17%;
+}
+footer{
+  height: 100vh;
+}
+
+}
+@media(max-width:480px){
+  .h22,.containertwo h3{
+    font-size: 1.7em;
+  }
+  .containertwo .fullsuite p{
+    top: 360px;
+    width: 80%;
+  }
+  .bgfullsuite img.stargif-reponsive {
+
+    top: 20%;
+  }
+  footer a {
+    font-size: 0.65em;
+}
+footer h3 {
+  font-size: 1.39em;
+}
+footer{
+  height: 70vh;
+}
+.bottom-footer {
+  top: 335px;
+}
+footer h2 {
+
+  font-size: 1.5em;
+}
+.content {
+
+  left: 5%;
+
+}
+.content h1{
+  font-size: 2.4em; 
+}
+.content button {
+ top: 90px;
+}
+.logo {
+  width: 40%;
+}
+.astronaut img {
+  right: 19%;
+  width: 62%;
+}
+}
+
+
+
+
+
+
 .bgfullsuite img.stargif-reponsive,
 img.iss-img-reponsive,
 video.bg-responsive {
 	display:none;
 }
+.menu{
+  display: none;
+}
+
+

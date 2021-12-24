@@ -1,35 +1,75 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    background-color: #d0dfdf;
     font-family: "Doni";
+    box-sizing: border-box;
 }
 @font-face {
     font-family: "Doni";
     src: url(fonts/Din/fonts-D-DIN.woff);
 }
-img{
-    width: 500px;
-    padding-right: 20px;
-}
 body{
-    background-color: #1d1c1d;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;}
-
-.box{
-    position: absolute;
-    /* top: 50%; */
-    /* left: 50%; */
-    padding: 20px;
-    box-sizing: border-box;
-    /* transform: translate(-50%,-50%); */
-    display: flex;
-    align-content: center;
+  
+    background: linear-gradient(60deg,#70439b,#4577b9);
+}
+.menu{
+    position: fixed !important;
+    width: 200px;
+    height: 200px;
+    justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: nowrap;
-    flex-direction: row-reverse;
+    display: flex;
+    right: 5%;
+    
+
+}
+.menu li{
+    position:absolute;
+    list-style: none;
+    transform-origin: 100px;
+    left: 0;
+    transition: 0.5s ;
+    transition-delay: calc(0.1s * var(--i));
+    transform: rotate(0deg) translateX(80px);
+}
+.menu.active li{
+    transform: rotate(calc( 360deg / 8* var(--i)));
+
+}
+img.menu-toggle{
+    width: 30px;
+    height: auto;
+}
+.menu li a{
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    border-radius: 50%;
+    transform: rotate(calc( 360deg / -8* var(--i)));
+    
+box-shadow: inset -1px 3px 8px 5px #d7d9db, 2px 5px 16px 0px #777a7e, 5px 5px 15px 5px rgba(0,0,0,0);
+
+}
+.toggle{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: rgb(41, 37, 37); /* ini untuk pengatur warna menu */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    border-radius: 50%;
+    box-shadow: none;
+    cursor: pointer;
+    transition: all ease-out 0.9s;
+    box-shadow:  2px 5px 16px 0px #242629, 5px 5px 15px 5px rgba(0,0,0,0);
+
+
+}
+.menu.active .toggle{
+    transform: rotate(360deg);
 }

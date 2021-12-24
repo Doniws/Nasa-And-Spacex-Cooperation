@@ -2,6 +2,8 @@
 	margin:0;
 	padding:0;
 	box-sizing:border-box;
+	/* border: 1px red solid; */
+
 
 }
 /* cursor falcon space x */
@@ -13,11 +15,15 @@
 }
 html {
 	scroll-behavior:smooth;
+	margin: 0 auto;
+	overflow-x: hidden;
 }
 body {
 	pointer-events:painted;
 	background-color:#000000;
 	/* overflow-x:hidden; */
+	/* margin: 0 auto; */
+	overflow-x: hidden;
 }
 h1,h2,h3,h4,h5,h6 {
 	text-shadow:0 0 2px #555;
@@ -132,7 +138,7 @@ h2.crew-dragon {
 	--fa-primary-color:rgb(255,0,0);
 	--fa-secondary-color:rgb(80,100,253);
 }
-.fa-thin {
+.fa-angle-down {
 	position:relative;
 	text-align:center;
 	/* top:450px;
@@ -617,10 +623,10 @@ h2.astonaut-crew-dragon {
 	color:#ccc;
 	text-decoration:none;
 }
-a:active,a:link,a:visited {
+/* a:active,a:visited {
 	color:#fff;
 	text-decoration:none;
-}
+} */
 .padded {
 	padding:0 0px;
 	-webkit-box-sizing:border-box;
@@ -986,4 +992,12 @@ section.crew-3 {
 a.\| {
 	padding: 0 5px;
 }
+
+
+
+
+
+
+
+
 
