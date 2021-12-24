@@ -50,6 +50,7 @@
         <div class="content">
             <p data-aos="fade-right" data-aos-offset="100" data-aos-duration="1000">NEW WORLD</p>
             <h1 data-aos="fade-right" data-aos-offset="100" data-aos-duration="2000">Explore Universe<br>With Nasa & SpaceX</h1>
+            <!-- <p>lauch rocket and explore with nasa and spacex without limit explore</p> -->
             <a href="#launch"><button data-aos="fade-right" data-aos-offset="100" data-aos-duration="3000">START PAYLOAD CREW DRAGON<img class="btn-rckt-hover" src="images/spacexheavy.png" alt="arrow"></button></a>
         </div>
         <section class="strip">
@@ -117,11 +118,11 @@
             <div class="explore-1">
                 <div class="flex-explore-1">
                     <div class="img-bgx">
-                        <img src="images/outearth.webp" class="outearth" alt="outearth" data-aos="fade-up" data-aos-offset="200" data-aos-duration="2000">
+                        <img src="images/outearth.webp" class="outearth" alt="outearth" data-aos="fade-up" data-aos-offset="0" data-aos-duration="2000">
                     </div>
                         <div class="isi-bumi">
-                            <h3 class="p1" data-aos="fade-up" data-aos-offset="150" data-aos-duration="2500">Explore Universe<br> With Crew Dragon </h3>
-                            <p class="isi1" data-aos="fade-up" data-aos-offset="150" data-aos-duration="3000">explore space with crew dragon spacex The 
+                            <h3 class="p1" data-aos="fade-up" data-aos-offset="0" data-aos-duration="2500">Explore Universe<br> With Crew Dragon </h3>
+                            <p class="isi1" data-aos="fade-up" data-aos-offset="0" data-aos-duration="3000">explore space with crew dragon spacex The 
                                 Crew Dragon is equipped with an integrated launch 
                                 cancellation system capable of accelerating the vehicle away 
                                 from the rocket in an emergency at 11.8 m/s2 achieved using four 
@@ -133,11 +134,11 @@
             <div class="explore-2">
                 <div class="flex-explore-2">
                     <div class="img-bgx">
-                        <img src="images/thefamilypilotrocketwebp.png" class="marsland" data-aos="fade-up" data-aos-offset="200" data-aos-duration="2000">
+                        <img src="images/thefamilypilotrocketwebp.png" class="marsland" data-aos="fade-up" data-aos-offset="0" data-aos-duration="2000">
                     </div>
                         <div class="isi-mars">
-                            <h3  class="p2" data-aos="fade-up" data-aos-offset="150" data-aos-duration="2500">Explore Mars<br> With Space Suits</h3>
-                            <p class="isi2 " data-aos="fade-up" data-aos-offset="150" data-aos-duration="3000">SpaceX's spacesuit "is designed to be functional, lightweight, and to offer protection from potential depressurization," NASA added. 
+                            <h3  class="p2" data-aos="fade-up" data-aos-offset="0" data-aos-duration="2500">Explore Mars<br> With Space Suits</h3>
+                            <p class="isi2 " data-aos="fade-up" data-aos-offset="0" data-aos-duration="3000">SpaceX's spacesuit "is designed to be functional, lightweight, and to offer protection from potential depressurization," NASA added. 
                                 The protection against depressurization would be similar to the ACES suit, 
                                 which had an emergency breathing system and the ability to fully pressurize if the cabin suddenly lost oxygen.</p>
                         </div>
@@ -145,26 +146,26 @@
             </div>
         
     <div class="atention">
-        <footer class="iss">
+        <!-- <footer class="iss">
             <img class="iss-img" src="images/human_spaceflight_iss.jpg">
             <img class="iss-img-reponsive" src="images/human_spaceflight_iss-mobile.jpg">
             <div class="content-footer">
-                <!-- <h2 data-aos="fade-up" data-aos-offset="0" data-aos-duration="3000" data-aos-anchor-placement="top-center">THANK VISIT MY <br>THEME OUTER<br> SPACE PROJECT</h2> -->
+                <h2 data-aos="fade-up" data-aos-offset="0" data-aos-duration="3000" data-aos-anchor-placement="top-center">THANK VISIT MY <br>THEME OUTER<br> SPACE PROJECT</h2>
                 <div class="bottom-footer">
                     <h3 class="center">see you again with the next project</h3>
                     <div class="wrapper-footer-text"  >
                         <span class="center">
                             <a onclick="javascript:alert('Dibuat Tanggal 24 Oktober 2021 dan Selesai Pada Tanggal Tahun')" href="index.html">Copyright&copy Redesign Space Theme Nasa And Spacex and Created By Doni WS </a>
-                        <!-- <img class="copyimage" src="images/logoutama.webp"> -->
+                        <img class="copyimage" src="images/logoutama.webp">
                         </span>
                     </div>
                 </div>
             </div>
-        </footer>
+        </footer> -->
     </div>
     </div>
     <!-- menu toogle resposive  -->
-<div class="menu">
+<div class="menu" id="menu">
     <div class="toggle"><img class="menu-toggle fa-fade" src="images/logoutama.webp" alt=""></div>
     <li style="--i:0;">
         <a href="astronaut.html"><i class="fa-duotone fa-user-astronaut fa-beat" style="--fa-secondary-opacity: 1.0; --fa-primary-color: rgb(168, 168, 168); --fa-secondary-color: rgba(51, 51, 50, 0.842);"></i></a>
@@ -221,6 +222,19 @@
     
 
 
+</script>
+<!-- untuk menu responsive hidden scroll -->
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("menu").style.top = "450px";
+  } else {
+    document.getElementById("menu").style.top = "1000px";
+  }
+  prevScrollpos = currentScrollPos;
+}
 </script>
     <script>
         // FULLSCREEN BTN 

@@ -359,6 +359,7 @@ header{
 	font-family:"RoadTest";
 	font-size:4.00em;
 	background: none;
+  font-weight: 600;
 }
 /* untuk a content */
 .content button {
@@ -370,7 +371,9 @@ header{
 	font-size:1em;
 	font-family:"Nasa";
 	position:absolute;
-	top:155px;
+
+
+  top:155px;
 	outline:none;
 	border-width:0px;
 	cursor:pointer;
@@ -383,6 +386,7 @@ header{
 	position:absolute;
 	top:-40px;
 	color:#fff;
+
 	font-weight:700;
 }
 .content button img {
@@ -503,7 +507,7 @@ section.strip h3 {
 	top:350px;
 	left:50px;
 	cursor:grab;
-    transition:all 0.7s ease-out;
+    transition:all 0.2s ;
 
 }
 .rotation-robot img,.rotation img {
@@ -511,7 +515,7 @@ section.strip h3 {
 	height:auto;
 }
 img{
-    transition:all 0.7s ease-out;
+    transition:all 0.2s;
 
 }
 .isi-fullsuite{
@@ -1080,6 +1084,7 @@ width: 97%;
   right: -50px;
   bottom: -50px;
   z-index: 999;
+  transition: all cubic-bezier(0.83, 0.1, 0, 1.54) 1s;
 
 }
 .menu li{
@@ -1101,7 +1106,7 @@ img.menu-toggle{
   height: auto;
 }
 .menu li a{
-  background: #fff;
+  background: #070b1e;
   display: flex;
   justify-content: center;
   width: 40px;
@@ -1110,7 +1115,7 @@ img.menu-toggle{
   border-radius: 50%;
   transform: rotate(calc( 360deg / -8* var(--i)));
   
-box-shadow: inset -1px 3px 8px 5px #d7d9db, 2px 5px 16px 0px #777a7e, 5px 5px 15px 5px rgba(0,0,0,0);
+box-shadow: inset -1px 3px 8px 5px #0b1a29, 2px 5px 16px 0px #034baa, 5px 5px 15px 5px rgba(0,0,0,0);
 
 }
 .toggle{
@@ -1125,8 +1130,8 @@ box-shadow: inset -1px 3px 8px 5px #d7d9db, 2px 5px 16px 0px #777a7e, 5px 5px 15
   border-radius: 50%;
   box-shadow: none;
   cursor: pointer;
-  transition: all ease-out 0.9s;
-  box-shadow:  2px 5px 16px 0px #242629, 5px 5px 15px 5px rgba(0,0,0,0);
+  transition: all cubic-bezier(0, -0.46, 0.91, -1.36) 0.9s;
+	box-shadow:0 4px 8px 0 rgba(15,17,51,0.89),0 6px 20px 0 rgba(12,3,42,0.89);
 
 
 }
@@ -1203,7 +1208,7 @@ footer h2 {
 
 }
 .content h1{
-  font-size: 2.4em; 
+  font-size: 2.25em; 
 }
 .content button {
  top: 90px;
@@ -1215,9 +1220,55 @@ footer h2 {
   right: 19%;
   width: 62%;
 }
+
+.h22, .containertwo h2, .containertwo h3, .content,.containertwo .fullsuite p {
+  left: 6%;
 }
-
-
+}
+@media(max-width:420px){
+  .logo {
+    width: 47%;
+}
+.content h1 {
+  font-size: 2.2em;
+}
+.flex-explore-2, .flex-explore-1 {
+  padding: 0px 10px;
+}
+.h22, .containertwo h2, .containertwo h3, .content,.containertwo .fullsuite p {
+  left: 3%;
+}
+.astronaut img {
+  right: 16%;
+  width: 68%;
+}
+.bgfullsuite img.stargif-reponsive {
+  top: 23%;
+}
+.rotation-robot, .rotation {
+  top: 270px;
+}
+.explore-1 p.isi1, .explore-2 p.isi2 {
+  max-width: 90%;
+}
+.containertwo {
+  height: 85vh;
+}
+.bgfullsuite img.stargif-reponsive {
+  top: 30%;
+}
+.explore-1, .explore-2 {
+  height: 100vh;
+}
+}
+@media(max-width:375px){
+  .content h1{
+    font-size: 2em;
+  }
+  .content button{
+    top: 75px;
+  }
+}
 
 
 
