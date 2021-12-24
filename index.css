@@ -2,6 +2,31 @@
 	display: none;
 } */
 /* container1 */
+:root {
+	--dark:#ffffff;
+	--pure:#070b1e;
+	--gray:#1d1d1d;
+	--mild: #b9b8b8;
+}
+.btn {
+	padding:8px 30px;
+	border:1px solid transparent;
+	border-radius:50px;
+	outline:none;
+	cursor:pointer;
+	font-size:1em;
+	transition:all .5s ease-in-out;
+}
+.btn-primary {
+	color:var(--dark);
+	background:var(--pure);
+}
+.btn-primary:hover {
+	color:var(--dark);
+	background:none;
+	border:solid;
+	border-width:1px;
+}
 html{
   overflow-x: hidden !important;
 }

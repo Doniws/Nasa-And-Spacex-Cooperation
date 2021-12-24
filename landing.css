@@ -1,0 +1,66 @@
+/* landasan */
+.landing {
+	/* height:300vh;
+	*/
+	position:relative;
+	/* top:25vh;
+	*/
+	left:0px;
+	background-color:#000000;
+	background-position:center;
+	background-size:cover;
+}
+.text-landing {
+	position:relative;
+	background-color: #000;
+}
+.landing h2 {
+	color:#fff;
+	font-size:2.8125em;
+	position:relative;
+	font-family:"DinBold";
+	/* top:100px;
+	*/
+	text-align:center;
+	line-height:1.2;
+	padding:40px 0px 0px 0px;
+}
+.landing p {
+	text-align:center;
+	color:#fff;
+	font-size:1em;
+	position:relative;
+	font-family:"Din";
+	/* top:120px;
+	*/
+	line-height:1.6;
+	max-width:40%;
+	margin:20px auto 15px;
+}
+.flex {
+	text-align:center;
+	/* top:155px;
+	*/
+	margin:20px auto 15px;
+	position:relative;
+	text-align:center;
+	font-size:1.0625em;
+	font-family:"DinBold";
+}
+.flex-eigine a,.parallax3-flex a {
+	cursor:pointer;
+	font-style:17px;
+	text-decoration:none;
+	color:white;
+}
+.flex a:hover,.flex-eigine a:hover,.parallax3-flex a:hover {
+	color:#ffffff;
+	text-decoration-line:underline;
+}
+
+.active-slide{
+	color: rgb(255, 255, 255) !important;
+}
+a.fot{
+	color: #868686;
+}

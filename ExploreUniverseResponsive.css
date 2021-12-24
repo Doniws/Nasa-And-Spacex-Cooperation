@@ -12,11 +12,7 @@ only screen and(max-height: 768px) {
 }
 /* lanjutan untuk laptop kebawah  */
 @media(max-width:1300px) {
-    /* Rocket  */
-    /* isi untuk slide  */
-    .isislide3, .isislide2 {    
-        margin-right: 870px;
-    }
+
     /* Astronaut  */
     .crew-3 .text {
         top: -750px;
@@ -27,36 +23,8 @@ only screen and(max-height: 768px) {
     }
 }
 /* /\ */
-/* nice  */
-@media(max-width:1265px) {
-    /* Rocket  */
-    .isislide2,.isislide3 {
-        margin-right: 854px;
-    }
-    .prev-next {
-        display: flex;
-        position: relative;
-        top: 5px;
-        right: 65px;
-    }
-}
-/* /\ */
-@media(max-width:1215px) {
-    /* rocket  */
-    .isislide2,.isislide3 {
-        margin-right: 715px;
-        top: 5325px;
-    }
-    .contentslide, .contentslide2, .contentslide3 {
-        position: relative;
-        top: -5120px;
-    }
-    .prev, .next {
-        left: 1145px;
-    }
 
 
-}
 /* /\ */
 /* nice   */
 @media(max-width:1175px) {
