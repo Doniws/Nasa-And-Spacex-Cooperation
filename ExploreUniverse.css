@@ -623,10 +623,10 @@ h2.astonaut-crew-dragon {
 	color:#ccc;
 	text-decoration:none;
 }
-/* a:active,a:visited {
-	color:#fff;
+a:active,a:visited,a:link {
+	color:rgb(255, 255, 255);
 	text-decoration:none;
-} */
+}
 .padded {
 	padding:0 0px;
 	-webkit-box-sizing:border-box;
