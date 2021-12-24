@@ -16,7 +16,7 @@
 html {
 	scroll-behavior:smooth;
 	margin: 0 auto;
-	overflow-x: hidden;
+	/* overflow-x: hidden; */
 }
 body {
 	pointer-events:painted;
