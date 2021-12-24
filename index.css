@@ -2,6 +2,9 @@
 	display: none;
 } */
 /* container1 */
+html{
+  overflow-x: hidden !important;
+}
 .container {
 	height:100vh;
 	width:100%;
@@ -382,12 +385,12 @@ header{
 }
 .content p {
 	font-size:2.1875em;
-	font-family:"Tesla";
+	font-family:"DinBold";
 	position:absolute;
-	top:-40px;
+	top:-30px;
 	color:#fff;
 
-	font-weight:700;
+	font-weight:800;
 }
 .content button img {
 	width:5px;
@@ -839,7 +842,7 @@ only screen and(max-height: 768px) {
     height: 105vh;
   } */
   .content{
-    top: 40%;
+    top: 43%;
   }
   .content button{
     top: 100px;
@@ -997,6 +1000,11 @@ img.copyimage{
 .explore-1 p.isi1,.explore-2 p.isi2{
   max-width: 75%;
 }
+.btn__secondary {
+ 
+  font-size: 0.85em;
+ 
+}
 }
 @media(max-width:600px){
   .explore-1 p.isi1,.explore-2 p.isi2{
@@ -1035,7 +1043,7 @@ img.copyimage{
     top: -70px;
 } */
   .content {
-    top: 33%;
+    top: 40%;
 }
 .h22 {
   font-size: 1.8em;
@@ -1205,14 +1213,14 @@ footer h2 {
   font-size: 2.25em; 
 }
 .content button {
- top: 90px;
+ top: 85px;
 }
 .logo {
   width: 40%;
 }
 .astronaut img {
-  right: 19%;
-  width: 62%;
+  right: 22%;
+    width: 53%;;
 }
 
 .h22, .containertwo h2, .containertwo h3, .content,.containertwo .fullsuite p {
@@ -1233,8 +1241,8 @@ footer h2 {
   left: 3%;
 }
 .astronaut img {
-  right: 16%;
-  width: 68%;
+  right: 17%;
+  width: 64%;
 }
 .bgfullsuite img.stargif-reponsive {
   top: 23%;
@@ -1268,6 +1276,10 @@ footer h2 {
 .astronaut img {
   right: 12%;
   width: 80%;
+}
+.btn__secondary {
+  padding: 25px 75px;
+  font-size: 0.7em;
 }
 }
 
