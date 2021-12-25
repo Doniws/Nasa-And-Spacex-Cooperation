@@ -1301,6 +1301,7 @@ footer h2 {
     justify-content: center;
     justify-self: center;
     flex-direction: column;
+  top: 37%;
   }
   .content h1{
     font-size: 2em;
