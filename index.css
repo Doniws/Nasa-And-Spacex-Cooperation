@@ -406,7 +406,7 @@ header{
 	border-width:0px;
 	cursor:pointer;
 	transition:ease all 1s;
-	box-shadow:0 4px 8px 0 rgba(15,17,51,0.89),0 6px 20px 0 rgba(12,3,42,0.89);
+	box-shadow:0 4px 8px 0 rgba(15,17,51,0.89),0 6px 0px 0 rgba(12,3,42,0.89);
 }
 .content p {
 	font-size:2.1875em;
@@ -424,7 +424,7 @@ header{
 .content button:hover img {
 	display:inline-block;
 	margin-left:70px;
-	transition:ease all 2s;
+	transition:ease all 1s;
 	position:relative;
 	transform: rotate(0deg);
 }
@@ -537,7 +537,8 @@ section.strip h3 {
 	cursor:grab;
   z-index: 998;
 
-    transition:all 0.2s ;
+
+    transition:all 0.5s  ease-out;
 
 }
 .rotation-robot img,.rotation img {
@@ -545,7 +546,7 @@ section.strip h3 {
 	height:auto;
 }
 img{
-    transition:all 0.2s;
+    /* transition:all 0.2s; */
 
 }
 .isi-fullsuite{
@@ -797,15 +798,7 @@ color: rgb(255, 255, 255);
 /* -----------------------------------area responsive------------------------------------------ */
 /* Proc  */
 /* untuk laptop fullscreen  */
-@media only screen and (max-width:1366px),
-only screen and(max-height: 768px) {
-     /* index  */
-     /* none  */
 
-     /* ---- */
-
-
-}
 
 /* lanjutan untuk laptop kebawah  */
 @media(max-width:1300px){
@@ -1292,11 +1285,31 @@ footer h2 {
 }
 }
 @media(max-width:375px){
+  .explore-1, .explore-2 {
+    height: 90vh;
+  }
+  .logo {
+    width: 50%;
+}
+  .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    flex-direction: column;
+  }
   .content h1{
     font-size: 2em;
+    position:relative;
+    text-align: center;
+  }
+  .content p{
+    position: relative;
+    top: 2.5px;
   }
   .content button{
-    top: 75px;
+    top: 2.5px;
+    position: relative;
   }
   .logo {
     width: 49%;
@@ -1322,5 +1335,8 @@ video.bg-responsive {
 .menu{
   display: none;
 }
-
+/* pengatur semua footer  */
+.atention {
+	position:relative;
+}
 

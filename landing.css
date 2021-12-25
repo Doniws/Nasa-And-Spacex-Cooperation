@@ -64,3 +64,51 @@
 a.fot{
 	color: #868686;
 }
+
+
+/* reposnive area  */
+img.image1,img.image2 {
+	background-position:center;
+	position:relative;
+	/* top:230px;
+	*/
+	width:100%;
+	height:auto;
+	display:block;
+
+}
+img#image1,img#image2 {
+	width:100%;
+	height:auto;
+	max-width: 100%;
+}
+/* reponsive landing*/
+img.image1reponsive,img.image2reponsive {
+	display: none;
+}
+
+@media(max-width:768px){
+    img.image1reponsive,img.image2reponsive {
+		display: block !important;
+		background-position:center;
+	position:relative;
+	/* top:230px;
+	*/
+	width:100%;
+	height:auto;
+	}
+	img.image1,img.image2{
+		display: none;
+	}
+	.landing p {
+
+		max-width: 70%;
+	}
+	
+}
+@media(max-width:600px){
+	.landing p {
+
+		max-width: 90%;
+	}
+}

@@ -27,8 +27,8 @@
             <video  class="bg-responsive center" src="images/world-mobile.mp4" autoplay muted loop></video>
 
                <!-- page-1 -->
-               <header class="navbar" >
-                <img  class="logo" src="images/thepilotrocket.png" alt="thelogo"  data-aos="fade-down" data-aos-offset="200" data-aos-duration="1000">
+               <header class="navbar" id="namenu">
+                <img  class="logo" src="images/thepilotrocket.png" alt="thelogo" data-aos="fade-down" data-aos-offset="200" data-aos-duration="1000">
                 <nav  data-aos="fade-down" data-aos-offset="200" data-aos-duration="2000">
                     <ul class="nav-link"  >
                         <li><a href="astronaut.html">Astronaut</a></li>
@@ -64,7 +64,7 @@
                 <h3>Crew Dragon<br> space suits worn by NASA</h3>
                 <div class="fullsuite">
                     <div class="flex-suite ">
-                        <div class="rotation"  data-aos="zoom-out-left" data-aos-offset="100" data-aos-duration="2500">
+                        <div class="rotation" data-aos="zoom-out-left" data-aos-offset="100" data-aos-duration="2500">
                             <img src="images/360/fullsuitenew-0.png">
                             <img src="images/360/fullsuitenew-1.png">
                             <img src="images/360/fullsuitenew-2.png">
@@ -315,11 +315,14 @@
     }
     
     @media (max-width:500px) {
-    .footer-menu ul{
-      display: flex;
-      margin-top: 10px;
-      margin-bottom: 20px;
-    }
+        .footer-menu ul{
+          display: flex;
+          margin-top: 10px;
+          margin-bottom: 20px;
+        }
+        .footer-content p{
+            margin: 10px 17.5px;
+        }
     }
     </style>
     <!-- javascript -->
@@ -381,6 +384,8 @@ window.onscroll = function() {
   }
   prevScrollpos = currentScrollPos;
 }
+// navbar
+
 </script>
     <script>
         // FULLSCREEN BTN 

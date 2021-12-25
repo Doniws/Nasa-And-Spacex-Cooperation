@@ -111,45 +111,13 @@ h1,h2,h3,h4,h5,h6 {
 	border: 1px solid rgb(255,255,255);
 }
 
-
-
-
-
-
-
-
 .padded {
 	padding:0 0px;
 	-webkit-box-sizing:border-box;
 	box-sizing: border-box;
 }
 
-.parallax3-flex a:nth-child(2),.parallax3-flex a:nth-child(4),.flex-eigine a:nth-child(2) {
-	color:#868686;
-}
 
-img.image1,img.image2 {
-	background-position:center;
-	position:relative;
-	/* top:230px;
-	*/
-	width:100%;
-	height:auto;
-	display:block;
-	/* max-width:100%;
-	*/
-}
-img#image1,img#image2 {
-	width:80%;
-	height:auto;
-	max-width: 100%;
-}
-/* reponsive landing*/
-img.image1reponsive,img.image2reponsive {
-	display: none;
-}
-/* disini landasan space x */
-/* caosule */
 
 /* img.copyimage {
 	width:70px;
@@ -204,7 +172,7 @@ img.image1reponsive,img.image2reponsive {
 	justify-items:center;
 	text-justify: center;
 }
-/* menu */
+/* menu sedang dimatikan*/
 /* .menu-toggle {
 	display:flex;
 	flex-direction:column;
@@ -263,12 +231,6 @@ img.image1reponsive,img.image2reponsive {
 
 
 
-/* .prev i:hover,.next i:hover {
-	color:#c0bdbd93;
-	transition: all 0.6s ease-out;
-}
-*/
-
 /* Fading animation */
 .fade {
 	-webkit-animation-name:fade;
@@ -288,11 +250,7 @@ img.image1reponsive,img.image2reponsive {
 }
 
 
-.atention {
-	position:relative;
-	/* top:-625px;
-	*/
-}
+
 /* .footer-slide {
 	position:relative;
 	top: -55px;

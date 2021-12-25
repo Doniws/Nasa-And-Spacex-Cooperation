@@ -1,4 +1,306 @@
-/* Space x */:root {
+.logo{
+    width: 18%;
+
+}
+header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0px 5%;
+    /* top: -20px;
+    position: absolute; */
+}
+.nav-link{
+   /* margin: 0 auto; */
+   list-style: none;
+}
+.nav-link li{
+    
+    padding: 0 10px;  
+      display: inline-block;
+}
+.nav-link li a{
+   transition: all 0.7s ease-out;
+   font-family: "DinBold";
+   text-transform: uppercase;
+   font-size: 1.125em;
+   color: #fff;
+   text-decoration: none;
+ 
+}
+.nav-link li a:hover,.nav-link li a:focus,.nav-link li a:active{
+    animation: glitchText 0.4s linear;
+
+    color:#ffffff;
+	border-bottom:solid 1.9px white;
+	/* padding:.5px 3px; */
+}
+
+@keyframes glitchText {
+    0% {
+        opacity: 1;
+        transform: translate3d(-10px, 0, 0) scale3d(-1, -1, 1);
+        -webkit-clip-path: polygon(0 20%, 100% 20%, 100% 21%, 0 21%);
+        clip-path: polygon(0 20%, 100% 20%, 100% 21%, 0 21%);
+    }
+
+    10% {
+        -webkit-clip-path: polygon(0 33%, 100% 33%, 100% 33%, 0 33%);
+        clip-path: polygon(0 33%, 100% 33%, 100% 33%, 0 33%);
+    }
+
+    20% {
+        -webkit-clip-path: polygon(0 44%, 100% 44%, 100% 44%, 0 44%);
+        clip-path: polygon(0 44%, 100% 44%, 100% 44%, 0 44%);
+    }
+
+    35% {
+        -webkit-clip-path: polygon(0 50%, 100% 50%, 100% 20%, 0 20%);
+        clip-path: polygon(0 50%, 100% 50%, 100% 20%, 0 20%);
+    }
+
+    50% {
+        -webkit-clip-path: polygon(0 70%, 100% 70%, 100% 70%, 0 70%);
+        clip-path: polygon(0 70%, 100% 70%, 100% 70%, 0 70%);
+    }
+
+    60% {
+        -webkit-clip-path: polygon(0 80%, 100% 80%, 100% 80%, 0 80%);
+        clip-path: polygon(0 80%, 100% 80%, 100% 80%, 0 80%);
+    }
+
+    70% {
+        -webkit-clip-path: polygon(0 50%, 100% 50%, 100% 55%, 0 55%);
+        clip-path: polygon(0 50%, 100% 50%, 100% 55%, 0 55%);
+    }
+
+    80% {
+        -webkit-clip-path: polygon(0 70%, 100% 70%, 100% 80%, 0 80%);
+        clip-path: polygon(0 70%, 100% 70%, 100% 80%, 0 80%);
+    }
+
+    90% {
+        transform: translate3d(-10px, 0, 0) scale3d(-1, -1, 1);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+}
+
+
+.btn__secondary{
+    padding: 30px 110px;
+    border: 0;
+    outline: none;
+    /* background-color: var(--black-color); */
+    cursor: pointer;
+    position: relative;
+    font-family: Tomorrow, sans-serif;
+    font-size: .85rem;
+    text-transform: uppercase;
+    /* color: var(--black-color); */
+    clip-path: polygon(92% 0, 100% 25%, 100% 100%, 8% 100%, 0% 75%, 0 0);
+  }
+ .btn__secondary{
+    font-family: "Din";
+    font-size: 1em;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+
+    /* z-index: 9999999; */
+}
+  .btn__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    clip-path: polygon(92% 0, 100% 25%, 100% 100%, 8% 100%, 0% 75%, 0 0);
+  }
+  
+  .btn__secondary {
+    background-color: var(--red-color);
+  }
+
+  .btn__secondary .btn__content {
+    background-color: var(--red-color);
+    color: var(--white-color);
+  }
+  
+  .btn__label {
+    font-size: .70rem;
+    position: absolute;
+    bottom: -1px;
+    right: 8%;
+    padding: 0 5px;
+    background-color: var(--red-color);
+    z-index: 3;
+    border-left: 1px solid var(--blue-color);
+  }
+  
+  .btn__secondary .btn__label {
+    background-color: var(--white-color);
+    color: var(--black-color);
+  }
+  
+  .btn__glitch {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: var(--yellow-color); */
+    filter: drop-shadow(-2px 3px #67e3f3) drop-shadow(-1px -3px #02d8f3) drop-shadow(2px 1px #02d8f3);
+  }
+  
+  .btn__secondary .btn__glitch {
+    background-color: var(--red-color);
+  }
+  
+  .btn__secondary:hover .btn__glitch,
+  .btn__secondary:hover .btn__content::after,
+  .btn__secondary:focus .btn__glitch,
+  .btn__secondary:focus .btn__content::after {
+    display: block;
+    animation: glitch-animation 2s linear 0s infinite;
+  }
+  
+  /* secret trick */
+  @keyframes glitch-animation {
+    0% {
+      opacity: 1;
+      transform: translateZ(0);
+      clip-path: polygon(0 2%, 100% 2%, 100% 5%, 0 5%);
+    }
+  
+    2% {
+      clip-path: polygon(0 78%, 100% 78%, 100% 100%, 0 100%);
+      transform: translate(-5px);
+    }
+  
+    6% {
+      clip-path: polygon(0 78%, 100% 78%, 100% 100%, 0 100%);
+      transform: translate(5px);
+    }
+  
+    8% {
+      clip-path: polygon(0 78%, 100% 78%, 100% 100%, 0 100%);
+      transform: translate(-5px);
+    }
+  
+    9% {
+      clip-path: polygon(0 78%, 100% 78%, 100% 100%, 0 100%);
+      transform: translate(0);
+    }
+  
+    10% {
+      clip-path: polygon(0 54%, 100% 54%, 100% 44%, 0 44%);
+      transform: translate3d(5px, 0, 0);
+    }
+  
+    13% {
+      clip-path: polygon(0 54%, 100% 54%, 100% 44%, 0 44%);
+      transform: translateZ(0);
+    }
+  
+    13.1% {
+      clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+      transform: translate3d(5px, 0, 0);
+    }
+  
+    15% {
+      clip-path: polygon(0 60%, 100% 60%, 100% 40%, 0 40%);
+      transform: translate3d(5px, 0, 0);
+    }
+  
+    20% {
+      clip-path: polygon(0 60%, 100% 60%, 100% 40%, 0 40%);
+      transform: translate3d(-5px, 0, 0);
+    }
+  
+    20.1% {
+      clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+      transform: translate3d(5px, 0, 0);
+    }
+  
+    25% {
+      clip-path: polygon(0 85%, 100% 85%, 100% 40%, 0 40%);
+      transform: translate3d(5px, 0, 0);
+    }
+  
+    30% {
+      clip-path: polygon(0 85%, 100% 85%, 100% 40%, 0 40%);
+      transform: translate3d(-5px, 0, 0);
+    }
+  
+    30.1% {
+      clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+    }
+  
+    35% {
+      clip-path: polygon(0 63%, 100% 63%, 100% 80%, 0 80%);
+      transform: translate(-5px);
+    }
+  
+    40% {
+      clip-path: polygon(0 63%, 100% 63%, 100% 80%, 0 80%);
+      transform: translate(5px);
+    }
+  
+    45% {
+      clip-path: polygon(0 63%, 100% 63%, 100% 80%, 0 80%);
+      transform: translate(-5px);
+    }
+  
+    50% {
+      clip-path: polygon(0 63%, 100% 63%, 100% 80%, 0 80%);
+      transform: translate(0);
+    }
+  
+    55% {
+      clip-path: polygon(0 10%, 100% 10%, 100% 0, 0 0);
+      transform: translate3d(5px, 0, 0);
+    }
+  
+    60% {
+      clip-path: polygon(0 10%, 100% 10%, 100% 0, 0 0);
+      transform: translateZ(0);
+      opacity: 1;
+    }
+  
+    60.1% {
+      clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+      opacity: 1;
+    }
+  
+    to {
+      clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+      opacity: 1;
+    }
+  }
+  :root {
+	--yellow-color: #fcee09; 
+	--red-color: #070b1e;
+	--black-color: #050a0e;
+	--blue-color: #00f0ff;
+	--white-color: #ffffff;
+  }
+  
+  
+
+
+
+/* Space x */
+:root {
 	--dark:#ffffff;
 	--pure:#070b1e;
 	--gray:#1d1d1d;
@@ -273,7 +575,12 @@ section.footer-slide {
 	position: relative;
 	/* bottom: 1400px; */
 } 
+
+
 /* parallax bg */
+.parallax3-flex a:nth-child(2),.parallax3-flex a:nth-child(4),.flex-eigine a:nth-child(2) {
+	color:#868686;
+}
 .parallaxbg,.parallaxbg2,.parallaxbg3,.parallaxbg-eigine {
 	width:100%;
 	background-position:center;

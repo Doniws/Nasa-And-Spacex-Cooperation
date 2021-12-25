@@ -15,14 +15,20 @@
 	margin-left:auto;
 	margin-right:auto;
 }
+/* penggerak content  */
+.container-content{
+	position:relative;
+	bottom: 420px;
+}
 .crew-3 h2 {
 	color:#fff;
 	font-size:2.1875em;
 	position:relative;
 	font-family:"DinBold";
-	top:400px;
+	/* top:400px; */
 	/* left:-200px;
 	*/
+	top: 0;
 	line-height:1.2;
 	text-align:center;
 }
@@ -31,16 +37,18 @@
 	font-size:1.25em;
 	position:relative;
 	font-family:"Din";
-	top:400px;
+	/* top:400px; */
 	/* left:-200px;
 	*/
+	top: 0;
 	min-height:10px;
 	line-height:1.6;
 	text-align:center;
 }
 .crew-3 .text {
-	top:-781px;
+	
 	position:relative;
+	/* bottom: 385px; */
 }
 section.crew-3 {
 	background-color:#000;
@@ -54,26 +62,17 @@ section.crew-3 {
 	font-size:2.8125em;
 	margin:0 auto;
 	z-index:999;
-	top:70px;
+	/* bottom: 400px; */
+	bottom: 45px;
+
 }
 
 /* part astronaut  */
 .textastronaut {
 	background-color:#000;
 }
-.textastronaut p:nth-child(1) {
-	font-family:"Din";
-	color:white;
-	font-size:1em;
-	z-index:99999;
-	text-align:left;
-	position:relative;
-	top:165px;
-	float:none;
-	line-height:1.6;
-	margin-right: 20px;
-}
-.textastronaut p:nth-child(2) {
+
+.textastronaut p:nth-child(1),.textastronaut p:nth-child(2) {
 	font-family:"Din";
 	color:white;
 	font-size:1em;
@@ -156,4 +155,93 @@ h2.astonaut-crew-dragon {
 .astronaut-portrait a span:hover {
 	color:#ccc;
 	text-decoration:none;
+}
+@media(max-width:1230px){
+	.astronaut-portrait a span{
+		font-size: 0.875em;
+	}
+	
+}
+@media(max-width:1100px){
+	.astronaut-portrait a span{
+		font-size: 0.75em;
+	}
+}
+@media(max-width:900px){
+	.astronaut-portrait a span{
+		font-size: 0.7em;
+	}
+}
+@media(max-width:756px){
+	.textastronaut .wrapper {
+		display: flex;
+		padding: 0 50px;
+		flex-direction: column;
+	}
+	.astronauts-container {
+
+		flex-direction: column;
+	}
+	.astronaut-portrait a span{
+		font-size: 1em;
+	}
+	.astronauts-container{
+		height: 300vh;
+	}
+	.astronaut-portrait img{
+		width: 100%;
+	}
+	.textastronaut p:nth-child(1), .textastronaut p:nth-child(2){
+		padding-top: 10px;
+	}
+	.crew-3 h2{
+		font-size: 1.8em;
+	}
+	.container-content {
+		position: relative;
+		bottom: 305px;
+	}
+	.astronauts-container {
+		padding: 0px 245px;
+	}
+}
+@media(max-width:600px){
+	/* untuk teks judul hanya akan di ganti 600 px  */
+	/* judul astronaut */
+h2.astonaut-crew-dragon {
+	font-size: 2em;
+}
+
+.textastronaut .wrapper {
+
+	padding: 0 35px;
+	
+}
+
+.astronauts-container{
+padding: 0 165px;
+}
+}
+@media (max-width: 480px){
+
+.astronauts-container {
+    padding: 0 110px;
+}
+h2.astonaut-crew-dragon {
+    font-size: 1.6em;
+}
+
+}
+@media (max-width:375px){
+	.astronauts-container {
+    padding: 0 45px;
+	height: 250vh;
+}
+.textastronaut .wrapper {
+    padding: 0 15px;
+}
+h2.astonaut-crew-dragon{
+	padding: 0 15px;
+	font-size: 1.3em;
+}
 }
