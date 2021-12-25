@@ -12,11 +12,13 @@ h2.crew-dragon {
 	color:#ffffff;
 	font-size: 2.5em;
 	position:relative;
-	bottom:-80px;
+	/* bottom:-80px; */
+	top: 0;
 	text-align:center;
 	text-transform:uppercase;
 	background-color:black;
 	height:35vh;
+	padding: 40px 0px 0px 0px;
 }
 
 /* pengatur page 5 sampai footer  */

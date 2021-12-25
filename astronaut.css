@@ -1,3 +1,6 @@
+html{
+	overflow-x: hidden;
+}
 .container-allastronaut {
 	position:relative;
 	/* top:-450px;
@@ -81,7 +84,7 @@ section.crew-3 {
 	/* left:940px;
 	*/
 	position:relative;
-	top:165px;
+	top:30px;
 	line-height:1.6;
 	margin-right:20px;
 }
@@ -96,12 +99,16 @@ h2.astonaut-crew-dragon {
 	font-family:"DinBold";
 	font-size: 2.5em;
 	color:#fff;
-	top:100px;
+	top:0px;
 	z-index:99;
 	background-color:#000000;
 	text-transform:uppercase;
-	padding: 0px 25px;
+	/* padding: 0px 25px; */
+	padding: 40px 0px 0px 0px;
 }
+
+
+
 /* iamge astronaut */
 .astronauts-container {
 	display:flex;
@@ -112,7 +119,7 @@ h2.astonaut-crew-dragon {
 	align-self:center;
 	align-content:center;
 	margin-bottom:2rem;
-	height:110vh;
+	height:65vh;
 	/* width:100%;
 	*/
 	min-width:100%;
@@ -173,6 +180,9 @@ h2.astonaut-crew-dragon {
 	}
 }
 @media(max-width:756px){
+	.textastronaut p:nth-child(1), .textastronaut p:nth-child(2){
+        margin-right: 0;
+	}
 	.textastronaut .wrapper {
 		display: flex;
 		padding: 0 50px;
@@ -202,12 +212,15 @@ h2.astonaut-crew-dragon {
 		bottom: 305px;
 	}
 	.astronauts-container {
-		padding: 0px 245px;
+		padding: 0px 230px;
 	}
 	.textastronaut p:nth-child(1), .textastronaut p:nth-child(2) {
 
 		text-align: center;
 
+	}
+	.crew-3 img{
+		width: 100%;
 	}
 }
 @media(max-width:600px){
@@ -225,23 +238,34 @@ h2.astonaut-crew-dragon {
 
 .astronauts-container{
 padding: 0 165px;
+height: 285vh;
 }
 }
 @media (max-width: 480px){
 
 .astronauts-container {
-    padding: 0 110px;
+    padding: 0 20%;
 }
 /* h2.astonaut-crew-dragon {
     font-size: 1.6em;
 } */
 
 }
-@media (max-width:375px){
-	.astronauts-container {
-    padding: 0 45px;
-	height: 250vh;
+@media (max-width:420px){
+    .astronauts-container {
+		padding: 0 15%;
+		display: flex;
+		height: 245vh;
+		justify-content: flex-start;
+	}
+    .textastronaut p:nth-child(2) {
+
+	padding-bottom: 35px;
+
+	}
 }
+@media (max-width:375px){
+
 .textastronaut .wrapper {
     padding: 0 15px;
 }
@@ -249,4 +273,17 @@ padding: 0 165px;
 	padding: 0 15px;
 	font-size: 1.3em;
 } */
+.astronauts-container {
+    padding: 0 15%;
+    display: flex;
+    height: 205vh;
+    justify-content: flex-start;
+}
+
+.crew-3 h2{
+	font-size: 1.5em;
+}
+.crew-3 h3{
+	font-size: 1em;
+}
 }
