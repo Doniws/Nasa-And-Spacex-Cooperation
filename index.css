@@ -212,6 +212,7 @@ header{
   
   .btn__secondary {
     background-color: var(--red-color);
+    box-shadow:0 4px 8px 0 rgba(15,17,51,0.89),0 6px 0px 0 rgba(12,3,42,0.89);
   }
 
   .btn__secondary .btn__content {
@@ -436,7 +437,7 @@ header{
 	*/
 	background:linear-gradient(250deg,rgb(12,12,37) 0%,rgb(17,21,56) 19%,rgb(9,9,41) 38%);
 	transition:ease all 0.6s;
-	width:450px;
+	/* width:450px; */
 }
 section.strip {
 	display:flex;
@@ -1195,7 +1196,10 @@ nav{
 /* footer{
   height: 100vh;
 } */
+header {
 
+  padding: 5% 5%;
+}
 }
 @media(max-width:480px){
   .h22,.containertwo h3{
@@ -1315,8 +1319,8 @@ footer h2 {
     width: 49%;
 }
 .astronaut img {
-  right: 12%;
-  width: 80%;
+  right: 8%;
+  width: 85%;
 }
 .btn__secondary {
   padding: 25px 75px;
