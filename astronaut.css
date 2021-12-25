@@ -204,13 +204,18 @@ h2.astonaut-crew-dragon {
 	.astronauts-container {
 		padding: 0px 245px;
 	}
+	.textastronaut p:nth-child(1), .textastronaut p:nth-child(2) {
+
+		text-align: center;
+
+	}
 }
 @media(max-width:600px){
 	/* untuk teks judul hanya akan di ganti 600 px  */
 	/* judul astronaut */
-h2.astonaut-crew-dragon {
+/* h2.astonaut-crew-dragon {
 	font-size: 2em;
-}
+} */
 
 .textastronaut .wrapper {
 
@@ -227,9 +232,9 @@ padding: 0 165px;
 .astronauts-container {
     padding: 0 110px;
 }
-h2.astonaut-crew-dragon {
+/* h2.astonaut-crew-dragon {
     font-size: 1.6em;
-}
+} */
 
 }
 @media (max-width:375px){
@@ -240,8 +245,8 @@ h2.astonaut-crew-dragon {
 .textastronaut .wrapper {
     padding: 0 15px;
 }
-h2.astonaut-crew-dragon{
+/* h2.astonaut-crew-dragon{
 	padding: 0 15px;
 	font-size: 1.3em;
-}
+} */
 }
