@@ -1294,14 +1294,14 @@ footer h2 {
   }
   .logo {
     width: 50%;
-}
+  }
   .content{
     display: flex;
     align-items: center;
     justify-content: center;
     justify-self: center;
     flex-direction: column;
-  top: 37%;
+  top: 35%;
   }
   .content h1{
     font-size: 2em;

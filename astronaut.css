@@ -255,7 +255,7 @@ height: 285vh;
     .astronauts-container {
 		padding: 0 15%;
 		display: flex;
-		height: 245vh;
+	    height: 300vh;
 		justify-content: flex-start;
 	}
     .textastronaut p:nth-child(2) {
@@ -276,7 +276,7 @@ height: 285vh;
 .astronauts-container {
     padding: 0 15%;
     display: flex;
-    height: 225vh;
+    height: 235vh;
     justify-content: flex-start;
 }
 

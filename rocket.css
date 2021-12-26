@@ -17,12 +17,13 @@ h2.crew-dragon {
 	text-align:center;
 	text-transform:uppercase;
 	background-color:black;
-	height:35vh;
+	height:25vh;
+	z-index: 998;
 	padding: 40px 0px 0px 0px;
 }
 
 /* pengatur page 5 sampai footer  */
-
+html{overflow-x: hidden;}
 .containerspacex {
 	width:1460px;
 	max-width:100%;
@@ -69,6 +70,7 @@ section.rocket {
 	display:grid;
 	grid-template-columns:1fr 100px 1fr;
 	grid-gap:80px;
+	overflow-x: auto;
 	padding:100px 0;
 }
 section.rocket .rocket-body {
@@ -269,15 +271,19 @@ section.rocket .rocket-body span.active:nth-child(1) {
 }
 section.footer-slide {
 	background:#000;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
-.contentslide,.contentslide2,.contentslide3 {
+.contentslide,.contentslide2,.contentslide3, .contentslide-eigine {
 	position: relative;
+	width: 50%;
+    max-width: 520px;
+	position: absolute;
+    top: 0%;
+	left: 60px;
+    /* left: 50px; */
 }
- .contentslide-eigine {
-	position: relative;
-	/* bottom: 1400px; */
-} 
-
 
 /* parallax bg */
 .parallax3-flex a:nth-child(2),.parallax3-flex a:nth-child(4),.flex-eigine a:nth-child(2) {
@@ -312,7 +318,7 @@ section.footer-slide {
 	position:absolute;
 	font-size:1.0625em;
 	font-family:"DinBold";
-	left:60px;
+	/* left:60px; */
 	top:190px;
 }
 
@@ -323,7 +329,7 @@ section.footer-slide {
 	color:#fff;
 	position:absolute;
 	top:100px;
-	left:60px;
+	/* left:60px; */
 	background-color:none;
 }
 
@@ -333,7 +339,7 @@ section.footer-slide {
 	font-family:"Din";
 	font-size:1.25em;
 	font-weight:500;
-	left:60px;
+	/* left:60px; */
 	text-transform:uppercase;
 	/* top:5160px;
 	*/
@@ -344,11 +350,11 @@ section.footer-slide {
 	font-size:1em;
 	top:250px;
 	color:#fff;
-	left:60px;
+	/* left:60px; */
 	font-family:"Din";
 	line-height:1.6;
 	/* margin-right:825px; */
-	width: 30%;	
+	/* width: 30%;	 */
 }
 
 .parallaxbg span,.parallaxbg2 span,.parallaxbg3 span,.parallaxbg-eigine span {
@@ -359,23 +365,24 @@ section.footer-slide {
 	font-family:"DinBold";
 	top:170px;
 	position:absolute;
-	left:60px;
+	/* left:60px; */
 	border-collapse:collapse;
 	border-spacing:0;
 	background-color:none;
-	z-index:99;width: 500px;
+	z-index:99;
+	width: 100%;
 }
 .table2,.table3, .table-eigine {
 	margin-top:30px;
 	font-family:"DinBold";
 	top:380px;
 	position:absolute;
-	left:60px;
+	/* left:60px; */
 	border-collapse:collapse;
 	border-spacing:0;
 	background-color:none;
 	z-index: 99;
-    width: 500px;
+    width: 100%;
 }
 
 .table-column,.table-column2,.table-column3 ,.table-column-eigine {
@@ -425,7 +432,8 @@ a.\| {
 	display:block;
 	text-align:center;
 	font-size:  1.875em;
-	padding: 0 250px;
+	/* padding: 0 250px; */
+	margin: 0 250px;
 	/* box-shadow:0 4px 8px 0 rgb(49 49 49 / 89%),0 6px 20px 0 rgb(51 51 51 / 89%); */
 
 }
