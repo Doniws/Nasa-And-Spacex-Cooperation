@@ -70,7 +70,6 @@ section.rocket {
 	display:grid;
 	grid-template-columns:1fr 100px 1fr;
 	grid-gap:80px;
-	overflow-x: auto;
 	padding:100px 0;
 }
 section.rocket .rocket-body {
@@ -517,7 +516,7 @@ a.on {
     section.rocket .right-block .floating-graphics2 img {
         height: 100px;
         margin-right: 0px;
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
     }
 
    
@@ -525,6 +524,9 @@ a.on {
 
 @media(max-width:800px) {
 	html{overflow-x: hidden;}
+	section.rocket {
+		overflow-x: auto;
+	}
     /* bagian rocket  */
     section.rocket .block h1 {
         font-size: 25px;
