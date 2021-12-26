@@ -23,7 +23,7 @@ h2.crew-dragon {
 }
 
 /* pengatur page 5 sampai footer  */
-html{overflow-x: hidden;}
+
 .containerspacex {
 	width:1460px;
 	max-width:100%;
@@ -524,6 +524,7 @@ a.on {
 }
 
 @media(max-width:800px) {
+	html{overflow-x: hidden;}
     /* bagian rocket  */
     section.rocket .block h1 {
         font-size: 25px;
