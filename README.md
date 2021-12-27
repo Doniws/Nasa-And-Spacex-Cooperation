@@ -6,3 +6,6 @@ Sampai website ini menjadi responsive.
 
 Don't forget star ,if you like my project,
 Let me be more enthusiastic to work on other projects
+
+
+Penambahan fitur page 404 page 
