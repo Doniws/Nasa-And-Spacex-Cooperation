@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="./aos-master/dist/aos.css" />    
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href=" ExploreUniverse.css" />
-    <!-- <link rel="stylesheet" href=" ExploreUniverseResponsive.css" /> -->
 
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
@@ -203,128 +202,9 @@
         <a href="landing.html"><i class="fa-duotone fa-plane-arrival fa-flip" style="--fa-secondary-opacity: 1.0; --fa-primary-color: rgb(152, 157, 161); --fa-secondary-color: rgb(78, 78, 75);"></i></a>
     </li>
 </div>
- 
-<style>
-    
-        
-    footer{
-        position: relative;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        top: 0px;
-        background: rgb(0, 0, 0);
-        height: auto;
-        width: 100vw;
-        padding-top: 40px;
-        font-family: "Din";
-        color: #fff;
-    }
-    .footer-content{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        text-align: center;
-    }
-    .footer-content h3{
-        font-size: 2.1rem;
-        text-transform:uppercase;
-        line-height: 3rem;
-        font-family: "DinBold";
-    }
-    .footer-content p{
-        max-width: 500px;
-        margin: 10px 4px;
-        line-height: 28px;
-        font-size: 14px;
-        color: #cacdd2;
-    }
-    .socials{
-        list-style: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 1rem 0 3rem 0;
-    }
-    .socials li{
-        margin: 0 10px;
-    }
-    .socials a{
-        text-decoration: none;
-        color: #fff;
-        border: 1.5px solid rgb(0, 0, 0);
-        padding: 12px;
-        background-color: #171718;
-    
-        border-radius: 50%;
-    
-    }
-    .socials a i{
-        font-size: 1.1rem;
-        width: 20px;
-    
-    
-        transition: color .4s ease;
-    
-    }
-    .socials a:hover i{
-        color: rgb(109, 109, 109);
-    }
-    
-    .footer-bottom{
-        background: rgb(15, 15, 15);
-        /* width: 100vw; */
-        padding: 20px;
-    padding-bottom: 40px;
-        text-align: center;
-        display: none;
-    }
-    .footer-bottom p{
-    float: left;
-        font-size: 14px;
-        word-spacing: 2px;
-        text-transform: capitalize;
-    }
-    .footer-bottom p a{
-      font-size: 16px;
-      text-decoration: none;
-    }
-    .footer-bottom span{
-        text-transform: uppercase;
-        opacity: .4;
-        font-weight: 200;
-    }
-    .footer-menu{
-      float: right;
-    
-    }
-    .footer-menu ul{
-      display: flex;
-    }
-    .footer-menu ul li{
-    padding-right: 10px;
-    display: block;
-    }
-    .footer-menu ul li a{
-      color: #cfd2d6;
-      text-decoration: none;
-    }
-    .footer-menu ul li a:hover{
-      color: #686d6e;
-    }
-    
-    @media (max-width:500px) {
-        .footer-menu ul{
-          display: flex;
-          margin-top: 10px;
-          margin-bottom: 20px;
-        }
-        .footer-content p{
-            margin: 10px 17.5px;
-        }
-    }
-    </style>
+
+
+
     <!-- javascript -->
     <script src="./360deg.js"></script>
     <script src="./360deg-robot.js"></script>
@@ -339,14 +219,9 @@
         <script src="gsap/dist/gsap.min.js"></script>
         <script src="gsap/dist/ScrollTrigger.min.js"></script>
         <script src="gsap/dist/Draggable.min.js"></script>
-    <!-- pernguhubung js  -->
-    <!-- <script src="./ExploreUniverse.js"></script> -->
-    <script>
-
-        // CONTROL ANIMATION 
+<script>
+    // CONTROL ANIMATION 
         // FOR START ANIMATION ROCKET 
-    
-
         var tween = gsap.from(".rocket-containertwo", {
             y: -360,
             rotate: 125,
@@ -360,20 +235,19 @@
         });
         document.querySelector(".rocket-containertwo").onclick = () => tween.reverse();
         document.querySelector(".content button").onclick = () => tween.play();
-    </script>
+</script>
 <script>
-    Draggable.create(".rotation");
-    Draggable.create(".rotation-robot");
-    Draggable.create(".logo");
-    Draggable.create(".copyimage");
-    // Draggable.create(".menu");
-
-    
-
+ // Drag gsap 
+ Draggable.create(".rotation");
+ Draggable.create(".rotation-robot");
+ Draggable.create(".logo");
+ Draggable.create(".copyimage");
 
 </script>
-<!-- untuk menu responsive hidden scroll -->
+
 <script>
+    
+// untuk menu responsive hidden scroll
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
@@ -384,83 +258,86 @@ window.onscroll = function() {
   }
   prevScrollpos = currentScrollPos;
 }
-// navbar
 
 </script>
-    <script>
-        // FULLSCREEN BTN 
-let fullscreen;
-let fsEnter = document.getElementById('fullscr');
-
-fsEnter.addEventListener('click', function(e) {
-        e.preventDefault();
-
-        if (!fullscreen) {
-            fullscreen = true;
-            document.documentElement.requestFullscreen();
-        } else {
-            fullscreen = false;
-            document.exitFullscreen();
-
-        }
-    }
-
-);
-    </script>
-    <script>
-        // CURSOR CUSTOM 
-        const cursor = document.querySelector('.cursor');
-
-        document.addEventListener('mousemove', e => {
-                cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;")
-            }
-
-        )
-        document.addEventListener('click', () => {
-                cursor.classList.add("expand");
-
-                setTimeout(() => {
-                        cursor.classList.remove("expand");
-                    }
-
-                    , 200)
-            }
-
-        )
-    </script>
-    <script>
-        gsap.from('.logo', {
-            opacity: -1,
-            ease: 'expo',
-            duration: 5,
-            scale: -5,
-            y: -1000
-        }
-        
-        );
-
-        
-        gsap.from('img.copyimage', {
-            repeat: -1,
-            yoyo: true,
-            delay: 0,
-            repeatDelay: 1,
-            ease: 'bounce',
-            y: -10,
-            x: 10
-        });
-
-    </script>
-
-
 <script>
+    
+  // FULLSCREEN BTN 
+  let fullscreen;
+  let fsEnter = document.getElementById('fullscr');
+  
+  fsEnter.addEventListener('click', function(e) {
+          e.preventDefault();
+  
+          if (!fullscreen) {
+              fullscreen = true;
+              document.documentElement.requestFullscreen();
+          } else {
+              fullscreen = false;
+              document.exitFullscreen();
+  
+          }
+      }
+  
+  );
+</script>
+<script>
+    // CURSOR CUSTOM 
+    const cursor = document.querySelector('.cursor');
+
+    document.addEventListener('mousemove', e => {
+            cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;")
+        }
+
+    )
+    document.addEventListener('click', () => {
+            cursor.classList.add("expand");
+
+            setTimeout(() => {
+                    cursor.classList.remove("expand");
+                }
+
+                , 200)
+        }
+
+    );
+</script>
+<script>
+    // gsap biasa 
+    
+
+
+    gsap.from('.logo', {
+        opacity: -1,
+        ease: 'expo',
+        duration: 5,
+        scale: -5,
+        y: -1000
+    }
+    
+    );
+
+    
+    gsap.from('img.copyimage', {
+        repeat: -1,
+        yoyo: true,
+        delay: 0,
+        repeatDelay: 1,
+        ease: 'bounce',
+        y: -10,
+        x: 10
+    });
+
+</script>
+<script>
+// untuk toggle responsive menu 
+
     let toggle = document.querySelector('.toggle');
     let menu = document.querySelector('.menu');
     toggle.onclick = function(){
         menu.classList.toggle('active');
     }
 </script>
-
 </body>
 
 </html>
