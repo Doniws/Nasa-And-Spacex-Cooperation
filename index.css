@@ -1461,6 +1461,8 @@ font-size: 1.5em;
       justify-self: center;
       flex-direction: column;
       top: 35%;
+      left: 0;
+      right: 0;
   }
 
   .content h1 {
@@ -1492,6 +1494,19 @@ font-size: 1.5em;
       padding: 25px 75px;
       font-size: 0.7em;
   }
+}
+@media(max-width:355px){
+  .content h1 {
+    font-size: 1.8em;
+
+}
+.content button{
+  font-size: 0.9em;
+}
+.content p {
+  font-size: 1.5em;
+
+}
 }
 
 .bgfullsuite img.stargif-reponsive,
