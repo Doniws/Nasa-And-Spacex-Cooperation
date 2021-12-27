@@ -1,289 +1,328 @@
-html{
-	overflow-x: hidden;
+html {
+    overflow-x: hidden;
 }
+
 .container-allastronaut {
-	position:relative;
-	/* top:-450px;
+    position: relative;
+    /* top:-450px;
 	*/
 }
+
 .crew-3 img {
-	height:auto;
-	position:relative;
-	/* top:100vh;
+    height: auto;
+    position: relative;
+    /* top:100vh;
 	*/
-	width:80%;
-	background-color:#000000;
-	background-position:center;
-	background-size:cover;
-	margin-left:auto;
-	margin-right:auto;
+    width: 80%;
+    background-color: #000000;
+    background-position: center;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 /* penggerak content  */
-.container-content{
-	position:relative;
-	bottom: 420px;
+.container-content {
+    position: relative;
+    bottom: 420px;
 }
+
 .crew-3 h2 {
-	color:#fff;
-	font-size:2.1875em;
-	position:relative;
-	font-family:"DinBold";
-	/* top:400px; */
-	/* left:-200px;
+    color: #fff;
+    font-size: 2.1875em;
+    position: relative;
+    font-family: "DinBold";
+    /* top:400px; */
+    /* left:-200px;
 	*/
-	top: 0;
-	line-height:1.2;
-	text-align:center;
+    top: 0;
+    line-height: 1.2;
+    text-align: center;
 }
+
 .crew-3 h3 {
-	color:#fff;
-	font-size:1.25em;
-	position:relative;
-	font-family:"Din";
-	/* top:400px; */
-	/* left:-200px;
+    color: #fff;
+    font-size: 1.25em;
+    position: relative;
+    font-family: "Din";
+    /* top:400px; */
+    /* left:-200px;
 	*/
-	top: 0;
-	min-height:10px;
-	line-height:1.6;
-	text-align:center;
+    top: 0;
+    min-height: 10px;
+    line-height: 1.6;
+    text-align: center;
 }
+
 .crew-3 .text {
-	
-	position:relative;
-	/* bottom: 385px; */
+
+    position: relative;
+    /* bottom: 385px; */
 }
+
 section.crew-3 {
-	background-color:#000;
+    background-color: #000;
 }
+
 .fa-angle-down {
-	position:relative;
-	text-align:center;
-	/* top:450px;
+    position: relative;
+    text-align: center;
+    /* top:450px;
 	*/
-	color:white;
-	font-size:2.8125em;
-	margin:0 auto;
-	z-index:999;
-	/* bottom: 400px; */
-	bottom: 45px;
+    color: white;
+    font-size: 2.8125em;
+    margin: 0 auto;
+    z-index: 999;
+    /* bottom: 400px; */
+    bottom: 45px;
 
 }
 
 /* part astronaut  */
 .textastronaut {
-	background-color:#000;
+    background-color: #000;
 }
 
-.textastronaut p:nth-child(1),.textastronaut p:nth-child(2) {
-	font-family:"Din";
-	color:white;
-	font-size:1em;
-	z-index:99999;
-	text-align:left;
-	/* left:940px;
+.textastronaut p:nth-child(1),
+.textastronaut p:nth-child(2) {
+    font-family: "Din";
+    color: white;
+    font-size: 1em;
+    z-index: 99999;
+    text-align: left;
+    /* left:940px;
 	*/
-	position:relative;
-	top:30px;
-	line-height:1.6;
-	margin-right:20px;
+    position: relative;
+    top: 30px;
+    line-height: 1.6;
+    margin-right: 20px;
 }
+
 .textastronaut .wrapper {
-	display:flex;
-	padding: 0 120px;
+    display: flex;
+    padding: 0 120px;
 }
+
 /* judul astronaut */
 h2.astonaut-crew-dragon {
-	text-align:center;
-	position:relative;
-	font-family:"DinBold";
-	font-size: 2.5em;
-	color:#fff;
-	top:0px;
-	z-index:99;
-	background-color:#000000;
-	text-transform:uppercase;
-	/* padding: 0px 25px; */
-	padding: 40px 0px 0px 0px;
+    text-align: center;
+    position: relative;
+    font-family: "DinBold";
+    font-size: 2.5em;
+    color: #fff;
+    top: 0px;
+    z-index: 99;
+    background-color: #000000;
+    text-transform: uppercase;
+    /* padding: 0px 25px; */
+    padding: 40px 0px 0px 0px;
 }
-
-
 
 /* iamge astronaut */
 .astronauts-container {
-	display:flex;
-	-webkit-box-pack:center;
-	-ms-flex-pack:center;
-	justify-content:center;
-	align-items:center;
-	align-self:center;
-	align-content:center;
-	margin-bottom:2rem;
-	height:65vh;
-	/* width:100%;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    margin-bottom: 2rem;
+    height: 65vh;
+    /* width:100%;
 	*/
-	min-width:100%;
-	color:#fff;
-	background-color:#000000;
-	position:relative;
-	/* top:10vh;
+    min-width: 100%;
+    color: #fff;
+    background-color: #000000;
+    position: relative;
+    /* top:10vh;
 	wait*/
-	padding:0px 115px;
+    padding: 0px 115px;
 }
+
 .astronaut-portrait {
-	margin:0 42px;
+    margin: 0 42px;
 }
+
 .astronaut-portrait img {
-	width:95%;
-	height:auto;
-	position:relative;
-	top:20px;
-	/* dibagian sini untuk mengatur besarnya gambar */
+    width: 95%;
+    height: auto;
+    position: relative;
+    top: 20px;
+    /* dibagian sini untuk mengatur besarnya gambar */
 }
+
 .astronaut-portrait img:hover {
-	opacity:0.7;
-    transition:all 0.3s ease;
-    box-shadow: 1px -2px 10px #333131	;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+    box-shadow: 1px -2px 10px #333131;
 }
+
 .astronaut-portrait a span {
-	display:block;
-	text-decoration:none;
-	text-decoration-style:none;
-	text-align:center;
-	justify-content:center;
-	font:16px/24px "DinBold";
-	font-weight:700;
-	font-style:normal;
-	position:relative;
-	top:20px;
-	color:rgb(255,255,255);
-	text-transform:uppercase;
+    display: block;
+    text-decoration: none;
+    text-decoration-style: none;
+    text-align: center;
+    justify-content: center;
+    font: 16px/24px "DinBold";
+    font-weight: 700;
+    font-style: normal;
+    position: relative;
+    top: 20px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
 }
+
 .astronaut-portrait a span:hover {
-	color:#ccc;
-	text-decoration:none;
+    color: #ccc;
+    text-decoration: none;
 }
-@media(max-width:1230px){
-	.astronaut-portrait a span{
-		font-size: 0.875em;
-	}
-	
+
+@media(max-width:1230px) {
+    .astronaut-portrait a span {
+        font-size: 0.875em;
+    }
+
 }
-@media(max-width:1100px){
-	.astronaut-portrait a span{
-		font-size: 0.75em;
-	}
+
+@media(max-width:1100px) {
+    .astronaut-portrait a span {
+        font-size: 0.75em;
+    }
 }
-@media(max-width:900px){
-	.astronaut-portrait a span{
-		font-size: 0.7em;
-	}
+
+@media(max-width:900px) {
+    .astronaut-portrait a span {
+        font-size: 0.7em;
+    }
 }
-@media(max-width:756px){
-	.textastronaut p:nth-child(1), .textastronaut p:nth-child(2){
+
+@media(max-width:756px) {
+
+    .textastronaut p:nth-child(1),
+    .textastronaut p:nth-child(2) {
         margin-right: 0;
-	}
-	.textastronaut .wrapper {
-		display: flex;
-		padding: 0 50px;
-		flex-direction: column;
-	}
-	.astronauts-container {
+    }
 
-		flex-direction: column;
-	}
-	.astronaut-portrait a span{
-		font-size: 1em;
-	}
-	.astronauts-container{
-		height: 300vh;
-	}
-	.astronaut-portrait img{
-		width: 100%;
-	}
-	.textastronaut p:nth-child(1), .textastronaut p:nth-child(2){
-		padding-top: 10px;
-	}
-	.crew-3 h2{
-		font-size: 1.8em;
-	}
-	.container-content {
-		position: relative;
-		bottom: 305px;
-	}
-	.astronauts-container {
-		padding: 0px 230px;
-	}
-	.textastronaut p:nth-child(1), .textastronaut p:nth-child(2) {
+    .textastronaut .wrapper {
+        display: flex;
+        padding: 0 50px;
+        flex-direction: column;
+    }
 
-		text-align: center;
+    .astronauts-container {
 
-	}
-	.crew-3 img{
-		width: 100%;
-	}
+        flex-direction: column;
+    }
+
+    .astronaut-portrait a span {
+        font-size: 1em;
+    }
+
+    .astronauts-container {
+        height: 265vh;
+    }
+
+    .astronaut-portrait img {
+        width: 100%;
+    }
+
+    .textastronaut p:nth-child(1),
+    .textastronaut p:nth-child(2) {
+        padding-top: 10px;
+    }
+
+    .crew-3 h2 {
+        font-size: 1.8em;
+    }
+
+    .container-content {
+        position: relative;
+        bottom: 305px;
+    }
+
+    .astronauts-container {
+        padding: 0px 31%;
+    }
+
+    .textastronaut p:nth-child(1),
+    .textastronaut p:nth-child(2) {
+
+        text-align: center;
+
+    }
+
+    .crew-3 img {
+        width: 100%;
+    }
 }
-@media(max-width:600px){
-	/* untuk teks judul hanya akan di ganti 600 px  */
-	/* judul astronaut */
-/* h2.astonaut-crew-dragon {
+
+@media(max-width:600px) {
+    /* untuk teks judul hanya akan di ganti 600 px  */
+    /* judul astronaut */
+    /* h2.astonaut-crew-dragon {
 	font-size: 2em;
 } */
 
-.textastronaut .wrapper {
+    .textastronaut .wrapper {
 
-	padding: 0 35px;
-	
-}
+        padding: 0 35px;
 
-.astronauts-container{
-padding: 0 165px;
-height: 285vh;
-}
-}
-@media (max-width: 480px){
+    }
 
-.astronauts-container {
+    .astronauts-container {
     padding: 0 20%;
+		height: 285vh;
+    }
 }
-/* h2.astonaut-crew-dragon {
+
+@media (max-width: 590px) {
+
+  
+
+    /* h2.astonaut-crew-dragon {
     font-size: 1.6em;
 } */
 
 }
-@media (max-width:420px){
+
+@media (max-width:420px) {
     .astronauts-container {
-		padding: 0 15%;
-		display: flex;
-	    height: 300vh;
-		justify-content: flex-start;
-	}
+        padding: 0 15%;
+        display: flex;
+        height: 300vh;
+        justify-content: flex-start;
+    }
+
     .textastronaut p:nth-child(2) {
 
-	padding-bottom: 35px;
+        padding-bottom: 35px;
 
-	}
+    }
 }
-@media (max-width:375px){
 
-.textastronaut .wrapper {
-    padding: 0 15px;
-}
-/* h2.astonaut-crew-dragon{
+@media (max-width:375px) {
+
+    .textastronaut .wrapper {
+        padding: 0 15px;
+    }
+
+    /* h2.astonaut-crew-dragon{
 	padding: 0 15px;
 	font-size: 1.3em;
 } */
-.astronauts-container {
-    padding: 0 15%;
-    display: flex;
-    height: 235vh;
-    justify-content: flex-start;
-}
+    .astronauts-container {
+        padding: 0 15%;
+        display: flex;
+        height: 235vh;
+        justify-content: flex-start;
+    }
 
-.crew-3 h2{
-	font-size: 1.5em;
-}
-.crew-3 h3{
-	font-size: 1em;
-}
+    .crew-3 h2 {
+        font-size: 1.5em;
+    }
+
+    .crew-3 h3 {
+        font-size: 1em;
+    }
 }
