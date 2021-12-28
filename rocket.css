@@ -255,17 +255,11 @@ section.rocket .rocket-body span.active:nth-child(3):before {
 section.rocket .rocket-body span.active:nth-child(1) {
 	animation:jump 1s ease-in-out forwards;
 }
-.containerslide {
+.containerslide,
+.container-egine {
 	height:100vh;
 	width:100%;
 	background:#000;
-	position: relative;
-}
-.container-egine {
-	height:100vh;
-	background-color:#000;
-	/* top:1000px;
-	*/
 	position: relative;
 }
 section.footer-slide {
@@ -275,7 +269,6 @@ section.footer-slide {
 	align-items: center;
 }
 .contentslide,.contentslide2,.contentslide3, .contentslide-eigine {
-	position: relative;
 	width: 50%;
     max-width: 520px;
 	position: absolute;
@@ -338,10 +331,7 @@ section.footer-slide {
 	font-family:"Din";
 	font-size:1.25em;
 	font-weight:500;
-	/* left:60px; */
 	text-transform:uppercase;
-	/* top:5160px;
-	*/
 	top:70px;
 }
 .isislide3,.isislide2, .isislide-eigine{
@@ -412,6 +402,12 @@ a.\| {
 	padding: 0 5px;
 }
 
+/* .control-slide{
+	position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+} */
 /* Next & previous buttons */
 .prev,.next {
 	cursor:pointer;
@@ -476,7 +472,76 @@ a.off {
 a.on {
 	color: #ffffff;
 }
+@media(max-width:1250px){
+	.containerslide,
+.container-egine {
+	height:85vh;
+}
+.contentslide, .contentslide2, .contentslide3, .contentslide-eigine {
 
+    max-width: 420px;
+    top: -10%;
+
+}
+}
+@media(max-width:1024px){
+	.contentslide, .contentslide2, .contentslide3, .contentslide-eigine {
+		top: -18%;
+	
+	}
+}
+@media(max-width:960px){
+	.containerslide,
+	.container-egine {
+		height:185vh;
+		
+	}
+	.slide1,.slide2,.slide3,.slide-eigine{
+		/* display: flex; */
+		display: flex !important;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+	}
+
+	.parallaxbg img,
+.parallaxbg2 img.parallaxreponsive,
+.parallaxbg3 img.parallaxreponsive,
+.parallaxbg-eigine img.parallaxreponsive-eigine {
+	display:block !important;
+	width: 100%;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: block;
+	position: absolute;
+}
+.parallaxbg video,.parallaxbg2 img.parallax,.parallaxbg3 img.parallax ,.parallaxbg-eigine img{
+
+	display: none !important;
+	
+
+}
+
+.contentslide {
+
+    /* padding: 40px 20px; */
+    max-width: 90%;
+	width: 100%;
+	top: 35%;
+	left: auto;
+	right: auto;
+
+}
+.contentslide2, .contentslide3, .contentslide-eigine{
+	 /* padding: 40px 20px; */
+	 max-width: 80%;
+	 width: 100%;
+	 top: 25%;
+	 left: auto;
+	 right: auto;
+}
+}
 @media(max-width:1100px) {
 
 

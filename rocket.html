@@ -114,7 +114,9 @@
         <section class="containerslide">
             <!-- PARALLAX 1  -->
             <section class="parallaxbg  fade mySlides">
-                <div class="slide1  fade"><video data-aos="zoom-in" data-aos-duration="2500" data-aos-offset="100" class="parallax" src="images/DragonTrunk_Animation_Render_Desktop.webm" autoplay muted loop></video><img data-aos="zoom-in" data-aos-duration="2500" data-aos-offset="100" class="parallaxreponsive" src="images/DragonTrunk_Render_Mobile.jpg">
+                <div class="slide1  fade">
+                    
+                    <video data-aos="zoom-in" data-aos-duration="2500" data-aos-offset="100" class="parallax" src="images/DragonTrunk_Animation_Render_Desktop.webm" autoplay muted loop></video><img data-aos="zoom-in" data-aos-duration="2500" data-aos-offset="100" class="parallaxreponsive" src="images/DragonTrunk_Render_Mobile.jpg">
                     <div class="contentslide">
                         <h3 data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000" class="parallaxjudul" id="slidepage">PAYLOAD</h3>
                         <h4 data-aos="fade-up" data-aos-offset="200" data-aos-duration="1200" class="parallaxreview">Dragon Overview</h4>
@@ -149,7 +151,8 @@
             </section>
             <!-- PARALLAX 2  -->
             <section class="parallaxbg2 mySlides">
-                <div class="slide2  fade"><img data-aos="zoom-in" data-aos-duration="2500" data-aos-offset="100" class="parallax" src="images/Trunk_Render_Desktop.jpg "></img><img data-aos="zoom-in" data-aos-duration="2500" data-aos-offset="100" class="parallaxreponsive" src="images/Trunk_Render_Mobile.jpg "></img>
+                <div class="slide2  fade">
+                    <img data-aos="zoom-in" data-aos-duration="2500" data-aos-offset="100" class="parallax" src="images/Trunk_Render_Desktop.jpg "></img><img data-aos="zoom-in" data-aos-duration="2500" data-aos-offset="100" class="parallaxreponsive" src="images/Trunk_Render_Mobile.jpg "></img>
                     <div class="contentslide2">
                         <h3 class="parallaxjudul2" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000">TRUNK</h3>
                         <h4 class="parallaxreview2" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1200">Dragon Overview</h4>
@@ -259,7 +262,7 @@
             </section>
         </section>
 
-        <section class="footer-slide">
+        <section class="control-slide">
             <div class="prevnext center">
                 <a class="prev" onclick="plusSlides(-1)">
                     &#10092;
@@ -507,6 +510,7 @@
                 slides[i].style.display = "none";
             }
 
+            
             for (i = 0; i < dots.length; i++) {
                 dots[i].className = dots[i].className.replace(" active-slide-2", "");
             }
