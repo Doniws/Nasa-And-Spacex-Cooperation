@@ -447,8 +447,8 @@ section.control-slide {
 .prevnext{
 	display:flex;
 }
-.prev:hover,.next:hover{
-	font-size: 1.75em;
+.prev i:hover,.next i:hover{
+	font-size: 0.95em;
 	color:rgb(85, 82, 82);
 }
 /* The dots/bullets/indicators */
@@ -532,9 +532,12 @@ a.on {
 }
 }
 @media(max-width:960px){
+	html{
+		overflow-x: hidden;
+	}
 	.containerslide,
 	.container-egine {
-		height:190vh;
+		height:180vh;
 		
 	}
 	
@@ -551,7 +554,7 @@ a.on {
 .parallaxbg3 img.parallaxreponsive,
 .parallaxbg-eigine img.parallaxreponsive-eigine {
 	display:block !important;
-	width: 100%;
+	width: 125%;
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -609,7 +612,7 @@ a.on {
 @media(max-width:600px){
 	
 	.prev,.next{
-	margin: 0 100px !important;
+	margin: 0 120px !important;
 	}
 	.contentslide, .contentslide2, .contentslide3, .contentslide-eigine {
 		top: 40%;
@@ -655,7 +658,7 @@ a.on {
 @media(max-width:400px){
 	.containerslide,
 	.container-egine {
-		height:80vh;
+		height:100vh;
 		
 	}
 	section.control-slide {

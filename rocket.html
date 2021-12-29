@@ -475,6 +475,7 @@
 
             for (i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";
+
             }
 
             for (i = 0; i < dots.length; i++) {
@@ -591,68 +592,20 @@
 
     </footer>
 
-
-    <!-- ini untuk right click -->
-    <style>
-        #context-menu {
-            position: fixed;
-            z-index: 10000;
-            width: 150px;
-            background: rgb(7,11,30);
-            border-radius: 5px;
-            transform: scale(0);
-            transform-origin:top left;
-            z-index: 1000;
-            font-family: "Din";
-        }
-
-        #context-menu.active {
-            transform: scale(1);
-            transition: transform 500ms ease-in-out;
-        }
-
-        #context-menu .item {
-            padding: 8px 10px;
-            font-size: 15px;
-            color: rgb(116, 110, 107);
-        }
-
-        #context-menu .item a {
-            padding: 8px 10px;
-            font-size: 15px;
-            color: rgb(255, 255, 255);
-            text-decoration: none;
-        }
-
-        #context-menu .item:hover {
-            background: rgb(45,39,39);
-background: linear-gradient(97deg, rgba(45,39,39,1) 0%, rgba(45,35,35,1) 44%, rgba(85,91,91,1) 100%);
-            border-radius: 5px;
-            /* background: linear-gradient(45deg, #60646e, #333); */
-        }
-
-        #context-menu .item i {
-            display: inline-block;
-            margin-right: 5px;
-        }
-
-        #context-menu hr {
-            margin: 2px 0px;
-            border-color: rgb(83, 83, 83);
-        }
-    </style>
-
     <!-- ini right menu nya -->
     <div id="context-menu">
       
         <div class="item">
-            <a href="aboutme.html"><i class="fa-duotone fa-planet-moon" style="--fa-secondary-opacity: 1.0; --fa-primary-color: rgb(94, 255, 0); --fa-secondary-color: rgba(6, 52, 255, 0.842);"></i>Main</a>
+            <a href="index.html"><i class="fa-duotone fa-planet-moon" style="--fa-secondary-opacity: 1.0; --fa-primary-color: rgb(94, 255, 0); --fa-secondary-color: rgba(6, 52, 255, 0.842);"></i>Main</a>
         </div>
         <div class="item">
-            <a href="daftararticle.html"><i class="fa-duotone fa-user-astronaut fa-beat" style="--fa-secondary-opacity: 1.0; --fa-primary-color: rgb(211, 102, 38); --fa-secondary-color: rgba(24, 21, 21, 0.698);"></i> Astronaut</a>
+            <a href="rocket.html"><i class="fa-duotone fa-shuttle-space" style="--fa-secondary-opacity: 1.0; --fa-primary-color: rgb(204, 204, 204); --fa-secondary-color: rgba(0, 0, 0, 0.842);"></i>Rocket</a>
         </div>
         <div class="item">
-            <a href="music.html"><i class="fa-duotone fa-plane-arrival fa-flip" style="--fa-secondary-opacity: 1.0; --fa-primary-color: rgb(221, 215, 215); --fa-secondary-color: rgba(204, 93, 65, 0.842);"></i>Landing</a>
+            <a href="astronaut.html"><i class="fa-duotone fa-user-astronaut fa-beat" style="--fa-secondary-opacity: 1.0; --fa-primary-color: rgb(211, 102, 38); --fa-secondary-color: rgba(24, 21, 21, 0.698);"></i> Astronaut</a>
+        </div>
+        <div class="item">
+            <a href="landing.html"><i class="fa-duotone fa-plane-arrival fa-flip" style="--fa-secondary-opacity: 1.0; --fa-primary-color: rgb(221, 215, 215); --fa-secondary-color: rgba(204, 93, 65, 0.842);"></i>Landing</a>
         </div>
 
         <hr>
@@ -663,8 +616,6 @@ background: linear-gradient(97deg, rgba(45,39,39,1) 0%, rgba(45,35,35,1) 44%, rg
             <a href="404.html"><i class="fa fa-times" style="color: red;"></i> Exit</a>
         </div>
     </div>
-
-    </diV>
     <script>
         window.addEventListener("contextmenu", function(event) {
             event.preventDefault();

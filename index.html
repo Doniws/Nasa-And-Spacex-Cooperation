@@ -330,6 +330,44 @@
             menu.classList.toggle('active');
         }
     </script>
+        <!-- ini right menu nya -->
+        <div id="context-menu">
+      
+            <div class="item">
+                <a href="index.html"><i class="fa-duotone fa-planet-moon" style="--fa-secondary-opacity: 1.0; --fa-primary-color: rgb(94, 255, 0); --fa-secondary-color: rgba(6, 52, 255, 0.842);"></i>Main</a>
+            </div>
+            <div class="item">
+                <a href="rocket.html"><i class="fa-duotone fa-shuttle-space" style="--fa-secondary-opacity: 1.0; --fa-primary-color: rgb(204, 204, 204); --fa-secondary-color: rgba(0, 0, 0, 0.842);"></i>Rocket</a>
+            </div>
+            <div class="item">
+                <a href="astronaut.html"><i class="fa-duotone fa-user-astronaut fa-beat" style="--fa-secondary-opacity: 1.0; --fa-primary-color: rgb(211, 102, 38); --fa-secondary-color: rgba(24, 21, 21, 0.698);"></i> Astronaut</a>
+            </div>
+            <div class="item">
+                <a href="landing.html"><i class="fa-duotone fa-plane-arrival fa-flip" style="--fa-secondary-opacity: 1.0; --fa-primary-color: rgb(221, 215, 215); --fa-secondary-color: rgba(204, 93, 65, 0.842);"></i>Landing</a>
+            </div>
+    
+            <hr>
+            <div class="item">
+                <a href="javascript:location.reload(true)"><i class="fa fa-redo" style="color: rgb(0, 60, 255);"></i> Reload</a>
+            </div>
+            <div class="item">
+                <a href="404.html"><i class="fa fa-times" style="color: red;"></i> Exit</a>
+            </div>
+        </div>
+    
+    
+        <script>
+            window.addEventListener("contextmenu", function(event) {
+                event.preventDefault();
+                var contextElement = document.getElementById("context-menu");
+                contextElement.style.top = event.offsetY + "px";
+                contextElement.style.left = event.offsetX + "px";
+                contextElement.classList.add("active");
+            });
+            window.addEventListener("click", function() {
+                document.getElementById("context-menu").classList.remove("active");
+            });
+        </script>
 </body>
 
 </html>
