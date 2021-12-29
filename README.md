@@ -1,7 +1,10 @@
 **Outer Space Theme By Doniws**<br>
 Masih akan terus di perharui sampai waktu yang blm ditentukan<br>
 ~~Sampai website ini menjadi responsive~~
-
+<br>
+Project ini sudah tidak di perhrui lagi
+Karena sudah responsive.
+<br>
 
 >Copyright© and created by Doniws 2021
 
