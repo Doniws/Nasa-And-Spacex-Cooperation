@@ -263,15 +263,20 @@
         </section>
 
         <section class="control-slide">
+           
             <div class="prevnext center">
                 <a class="prev" onclick="plusSlides(-1)">
-                    &#10092;
+                    <i class="fa-regular fa-angle-left" style="color: white;"> </i>
                 </a>
                 <a class="next" onclick="plusSlides(1)">
-                    &#10093;
+                    <i class="fa-regular fa-angle-right" style="color: white;"></i>
                 </a>
             </div>
-            <div class="containerdot"><span class="dot" onclick="currentSlide(1)"></span><span class="dot" onclick="currentSlide(2)"></span><span class="dot" onclick="currentSlide(3)"></span></div>
+            <div class="containerdot center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
 
         </section>
 
@@ -514,7 +519,7 @@
             for (i = 0; i < dots.length; i++) {
                 dots[i].className = dots[i].className.replace(" active-slide-2", "");
             }
-            slides[slideIndex - 1].style.display = "block";
+            slides[slideIndex - 1].style.display = "flex";
             dots[slideIndex - 1].className += " active-slide-2";
         }
     </script>
@@ -553,7 +558,7 @@
             for (i = 0; i < dots.length; i++) {
                 dots[i].className = dots[i].className.replace(" active-slide-", "");
             }
-            slides[slideIndex - 1].style.display = "block";
+            slides[slideIndex - 1].style.display = "flex";
             dots[slideIndex - 1].className += " active-slide-";
         }
     </script>
@@ -593,10 +598,12 @@
             position: fixed;
             z-index: 10000;
             width: 150px;
-            background: #141414f0;
-            border-radius: 8.5px;
+            background: rgb(7,11,30);
+            border-radius: 5px;
             transform: scale(0);
-            transform-origin: top left;
+            transform-origin:top left;
+            z-index: 1000;
+            font-family: "Din";
         }
 
         #context-menu.active {
@@ -607,20 +614,21 @@
         #context-menu .item {
             padding: 8px 10px;
             font-size: 15px;
-            color: rgb(167, 150, 150);
+            color: rgb(116, 110, 107);
         }
 
         #context-menu .item a {
             padding: 8px 10px;
             font-size: 15px;
-            color: rgb(153, 143, 143);
+            color: rgb(255, 255, 255);
             text-decoration: none;
         }
 
         #context-menu .item:hover {
-            background: #555;
-            border-radius: 10px;
-            background: linear-gradient(45deg, #60646e, #333);
+            background: rgb(45,39,39);
+background: linear-gradient(97deg, rgba(45,39,39,1) 0%, rgba(45,35,35,1) 44%, rgba(85,91,91,1) 100%);
+            border-radius: 5px;
+            /* background: linear-gradient(45deg, #60646e, #333); */
         }
 
         #context-menu .item i {
@@ -630,41 +638,29 @@
 
         #context-menu hr {
             margin: 2px 0px;
-            border-color: rgb(148, 138, 138);
+            border-color: rgb(83, 83, 83);
         }
     </style>
 
     <!-- ini right menu nya -->
     <div id="context-menu">
+      
         <div class="item">
-            <i class="fa-duotone fa-cut"></i> Cut
+            <a href="aboutme.html"><i class="fa-duotone fa-planet-moon" style="--fa-secondary-opacity: 1.0; --fa-primary-color: rgb(94, 255, 0); --fa-secondary-color: rgba(6, 52, 255, 0.842);"></i>Main</a>
         </div>
         <div class="item">
-            <i class="fa-duotone fa-clone"></i>Copy
+            <a href="daftararticle.html"><i class="fa-duotone fa-user-astronaut fa-beat" style="--fa-secondary-opacity: 1.0; --fa-primary-color: rgb(211, 102, 38); --fa-secondary-color: rgba(24, 21, 21, 0.698);"></i> Astronaut</a>
         </div>
         <div class="item">
-            <i class="fa-duotone fa-paste"></i> Paste
-        </div>
-        <div class="item">
-            <i class="fa-duotone fa-backspace"></i> Delete
-        </div>
-        <hr>
-        <div class="item">
-            <a href="aboutme.html"><i class="fa-solid fa-user-secret"></i>Aboutme</a>
-        </div>
-        <div class="item">
-            <a href="daftararticle.html"><i class="fa-duotone fa-folder-plus"></i> Article</a>
-        </div>
-        <div class="item">
-            <a href="music.html"><i class="fa-duotone fa-headphones fa-beat"></i> Music</a>
+            <a href="music.html"><i class="fa-duotone fa-plane-arrival fa-flip" style="--fa-secondary-opacity: 1.0; --fa-primary-color: rgb(221, 215, 215); --fa-secondary-color: rgba(204, 93, 65, 0.842);"></i>Landing</a>
         </div>
 
         <hr>
         <div class="item">
-            <a href="index.html"><i class="fa fa-redo"></i> Reload</a>
+            <a href="javascript:location.reload(true)"><i class="fa fa-redo" style="color: rgb(0, 60, 255);"></i> Reload</a>
         </div>
         <div class="item">
-            <a href="404.html"><i class="fa fa-times"></i> Exit</a>
+            <a href="404.html"><i class="fa fa-times" style="color: red;"></i> Exit</a>
         </div>
     </div>
 

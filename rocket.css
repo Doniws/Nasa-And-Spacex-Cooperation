@@ -76,7 +76,7 @@ section.rocket .rocket-body {
 	display:flex;
 	flex-direction:column;
 	justify-content:center;
-	z-index:10;
+	z-index:999;
 }
 section.rocket .rocket-body span {
 	font-size:0;
@@ -268,15 +268,27 @@ section.footer-slide {
 	flex-direction: column;
 	align-items: center;
 }
-.contentslide,.contentslide2,.contentslide3, .contentslide-eigine {
-	width: 50%;
+
+.contentslide,.contentslide2,
+.contentslide3, .contentslide-eigine{
+    width: 50%;
     max-width: 520px;
 	position: absolute;
-    top: 0%;
 	left: 60px;
+}
+/* pengantur top saja */
+.contentslide{
+
+    top: 10%;
+
     /* left: 50px; */
 }
-
+.contentslide2{
+	top: 25%;
+}
+.contentslide3, .contentslide-eigine {
+    top: 15%;
+}
 /* parallax bg */
 .parallax3-flex a:nth-child(2),.parallax3-flex a:nth-child(4),.flex-eigine a:nth-child(2) {
 	color:#868686;
@@ -306,54 +318,55 @@ section.footer-slide {
 	display:none;
 }
 .flex-eigine ,.parallax3-flex{
-	margin:20px auto 15px;
-	position:absolute;
+	margin: 50px 0 30px;
+	position:relative;
 	font-size:1.0625em;
 	font-family:"DinBold";
 	/* left:60px; */
-	top:190px;
+	/* top:190px; */
 }
 
 .parallaxjudul,.parallaxjudul2,.parallaxjudul3 ,.parallaxjudul-eigine{
 	font-family:"DinBold";
-	font-size:2.8125em;
+	font-size: 46px;
 	z-index:99;
 	color:#fff;
-	position:absolute;
-	top:100px;
+	position:relative;
+	/* top:100px; */
+	line-height: 48px;
 	/* left:60px; */
 	background-color:none;
 }
 
 .parallaxreview,.parallaxreview2,.parallaxreview3,.parallaxreview-eigine {
 	color:white;
-	position:absolute;
+	position:relative;
 	font-family:"Din";
 	font-size:1.25em;
 	font-weight:500;
 	text-transform:uppercase;
-	top:70px;
+	/* top:70px; */
+	margin: auto auto 10px;
 }
 .isislide3,.isislide2, .isislide-eigine{
-	position:absolute;
+	position:relative;
 	font-size:1em;
-	top:250px;
+	/* top:250px; */
 	color:#fff;
 	/* left:60px; */
 	font-family:"Din";
 	line-height:1.6;
-	/* margin-right:825px; */
-	/* width: 30%;	 */
+	margin: 20px 0;
 }
 
 .parallaxbg span,.parallaxbg2 span,.parallaxbg3 span,.parallaxbg-eigine span {
 	color:#868686;
 }
 .table {
-	margin-top:30px;
+    margin-top: 30px;
 	font-family:"DinBold";
-	top:170px;
-	position:absolute;
+	/* top:170px; */
+	position:relative;
 	/* left:60px; */
 	border-collapse:collapse;
 	border-spacing:0;
@@ -364,8 +377,8 @@ section.footer-slide {
 .table2,.table3, .table-eigine {
 	margin-top:30px;
 	font-family:"DinBold";
-	top:380px;
-	position:absolute;
+	/* top:380px; */
+	position:relative;
 	/* left:60px; */
 	border-collapse:collapse;
 	border-spacing:0;
@@ -402,12 +415,11 @@ a.\| {
 	padding: 0 5px;
 }
 
-/* .control-slide{
-	position: absolute;
-    bottom: 0;
-    display: block;
-    width: 100%;
-} */
+ 
+section.control-slide {
+    margin: -15px 0;
+    position: relative;
+} 
 /* Next & previous buttons */
 .prev,.next {
 	cursor:pointer;
@@ -437,6 +449,7 @@ a.\| {
 }
 .prev:hover,.next:hover{
 	font-size: 1.75em;
+	color:rgb(85, 82, 82);
 }
 /* The dots/bullets/indicators */
 .dot {
@@ -447,14 +460,14 @@ a.\| {
 	background-color:#c0bdbd93;
 	border-radius:50%;
 	display:inline-block;
-	transition:background-color 0.6s ease;
+	transition:all 0.6s ease-out;
 	z-index:999;
 }
 .containerdot {
-	display:block;
+	display:flex;
 	text-align:center;
 	position:relative;
-	bottom:100px;
+	bottom:95px;
 }
 .active-slide,.dot:hover {
 	color:#ffffff;
@@ -475,33 +488,62 @@ a.on {
 @media(max-width:1250px){
 	.containerslide,
 .container-egine {
-	height:85vh;
+	height:95vh;
 }
 .contentslide, .contentslide2, .contentslide3, .contentslide-eigine {
 
-    max-width: 420px;
-    top: -10%;
+    max-width: 450px;
+    /* top: -10%; */
 
+}
+/* pengantur top saja */
+.contentslide{
+
+    top: 5%;
+
+    /* left: 50px; */
+}
+.contentslide2{
+	top: 20%;
+}
+.contentslide3, .contentslide-eigine {
+    top: 0%;
 }
 }
 @media(max-width:1024px){
+	/* pengantur top saja */
 	.contentslide, .contentslide2, .contentslide3, .contentslide-eigine {
-		top: -18%;
+
+		max-width: 430px;
+		/* top: -10%; */
 	
 	}
+.contentslide{
+
+    top: -10%;
+
+    /* left: 50px; */
+}
+.contentslide2{
+	top: 10%;
+}
+.contentslide3, .contentslide-eigine {
+    top: -15%;
+}
 }
 @media(max-width:960px){
 	.containerslide,
 	.container-egine {
-		height:185vh;
+		height:190vh;
 		
 	}
+	
 	.slide1,.slide2,.slide3,.slide-eigine{
-		/* display: flex; */
-		display: flex !important;
+	    display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: flex-start;
+
 	}
 
 	.parallaxbg img,
@@ -523,24 +565,106 @@ a.on {
 
 }
 
-.contentslide {
+.contentslide,.contentslide2, .contentslide3, .contentslide-eigine {
 
     /* padding: 40px 20px; */
     max-width: 90%;
 	width: 100%;
-	top: 35%;
+	top: 50%;
 	left: auto;
 	right: auto;
 
+	/* display: flex; */
+
+
 }
-.contentslide2, .contentslide3, .contentslide-eigine{
-	 /* padding: 40px 20px; */
-	 max-width: 80%;
-	 width: 100%;
-	 top: 25%;
-	 left: auto;
-	 right: auto;
 }
+@media(max-width:768px){
+	.containerslide,
+	.container-egine {
+		height:175vh;
+		
+	}
+	section.control-slide {
+		padding-top: 25px;
+		padding-bottom: 50px;
+	}
+	.contentslide,.contentslide2, .contentslide3, .contentslide-eigine {
+
+
+		top: 45%;
+
+		/* display: flex; */
+	
+	
+	}
+}
+@media(max-width:650px){
+    .containerslide,
+	.container-egine {
+		height:160vh;
+		
+	}
+}
+@media(max-width:600px){
+	
+	.prev,.next{
+	margin: 0 100px !important;
+	}
+	.contentslide, .contentslide2, .contentslide3, .contentslide-eigine {
+		top: 40%;
+		/* display: flex; */
+	}
+}
+@media(max-width:500px){
+	.containerslide,
+	.container-egine {
+		height:130vh;
+		
+	}
+	.contentslide, .contentslide2, .contentslide3, .contentslide-eigine {
+		top: 40%;
+		/* display: flex; */
+	}
+
+	
+	section.control-slide {
+		padding-top: 100px;
+
+	}
+}
+@media(max-width:450px){
+	.containerslide,
+	.container-egine {
+		height:90vh;
+		
+	}
+	section.control-slide {
+		padding-top: 170px;
+
+	}
+	footer{
+        padding-top: 200px !important;
+    }
+	.flex-eigine, .parallax3-flex {
+
+		font-size: 0.875em;
+
+	}
+}
+@media(max-width:400px){
+	.containerslide,
+	.container-egine {
+		height:80vh;
+		
+	}
+	section.control-slide {
+		padding-top: 180px;
+
+	}
+	footer{
+        padding-top: 250px!important;
+    }
 }
 @media(max-width:1100px) {
 
