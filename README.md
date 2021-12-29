@@ -1,6 +1,6 @@
 **Outer Space Theme By Doniws**<br>
 Masih akan terus di perharui sampai waktu yang blm ditentukan
-~~~Sampai website ini menjadi responsive. ~~~
+~~Sampai website ini menjadi responsive. ~~
 
 ***Website ini sudah responsive ***
 
