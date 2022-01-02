@@ -112,7 +112,7 @@ header {
 }
 
 .nav-link li a {
-  transition: all 0.7s ease-out;
+  transition: all 0.5s ease-out;
   font-family: "DinBold";
   text-transform: uppercase;
   font-size: 1.125em;
@@ -121,14 +121,14 @@ header {
 
 }
 
-.nav-link li a:hover,
-.nav-link li a:focus,
-.nav-link li a:active {
-  animation: glitchText 0.4s linear;
+.nav-link li:hover,
+.nav-link li:focus,
+.nav-link li:active {
+  animation: glitchText 0.5s linear;
+  text-decoration: underline solid;
 
   color: #ffffff;
-  border-bottom: solid 1.9px white;
-  /* padding:.5px 3px; */
+  /* border-bottom: solid 2px white; */
 }
 
 @keyframes glitchText {
@@ -1348,10 +1348,10 @@ footer h3{
   /* footer{
 height: 100vh;
 } */
-  header {
+  /* header {
 
-      padding: 5% 5%;
-  }
+      padding: % 5%;
+  } */
 }
 
 @media(max-width:480px) {
