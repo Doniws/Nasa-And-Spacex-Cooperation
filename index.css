@@ -11,7 +11,7 @@
 
 .btn {
   padding: 8px 30px;
-  border: 1px solid transparent;
+  border: 1px solid #fff;
   border-radius: 50px;
   outline: none;
   cursor: pointer;
@@ -81,16 +81,10 @@ video.bg {
   bottom: 0px;
 }
 
-:root {
-  --yellow-color: #fcee09;
-  --red-color: #070b1e;
-  --black-color: #050a0e;
-  --blue-color: #00f0ff;
-  --white-color: #ffffff;
-}
+
 
 .logo {
-  width: 18%;
+  width: 16%;
 
 }
 
@@ -101,6 +95,9 @@ header {
   padding: 0px 5%;
   /* top: -20px;
   position: absolute; */
+  position: fixed;
+  transition: all 0.7s ease-out;
+  z-index: 9999;
 }
 
 .nav-link {
@@ -188,6 +185,13 @@ header {
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   }
 }
+:root {
+  --yellow-color: #fcee09;
+  --red-color: #070b1e;
+  --black-color: #050a0e;
+  --blue-color: #00f0ff;
+  --white-color: #ffffff;
+}
 
 .btn__secondary {
   padding: 30px 110px;
@@ -196,7 +200,7 @@ header {
   /* background-color: var(--black-color); */
   cursor: pointer;
   position: relative;
-  font-family: Tomorrow, sans-serif;
+  font-family:"Din";
   font-size: .85rem;
   text-transform: uppercase;
   /* color: var(--black-color); */
@@ -226,13 +230,16 @@ header {
 }
 
 .btn__secondary {
-  background-color: var(--red-color);
-  box-shadow: 0 4px 8px 0 rgba(15, 17, 51, 0.89), 0 6px 0px 0 rgba(12, 3, 42, 0.89);
+  /* background-color: var(--red-color);   */
+
+
 }
 
 .btn__secondary .btn__content {
-  background-color: var(--red-color);
-  color: var(--white-color);
+    background-color: var(--red-color);
+  color: var(--white-color);  
+  box-shadow: 0 4px 8px 0 rgba(15, 17, 51, 0.89), 0 6px 0px 0 rgba(12, 3, 42, 0.89);
+
 }
 
 .btn__label {
@@ -393,50 +400,80 @@ header {
   position: absolute;
   z-index: 99;
   left: 60px;
-  top: 45%;
+  top: 40%;
   display: block;
   background: none;
   text-transform: uppercase;
 }
-
+.content p {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Din";
+  position: relative;
+  color: #fff;
+  bottom: 0;
+}
 /* untuk h1 content */
 .content h1 {
   color: #fff;
-  font-family: "RoadTest";
-  font-size: 4.00em;
+  font-family: "DinProBold";
+  font-size: 4.50em;
+  line-height: 0.925;
+  letter-spacing: -2px;
   background: none;
-  font-weight: 600;
+  font-weight: normal;
 }
 
-/* untuk a content */
+/* ---------- */
 .content button {
-  color: #ffffff;
-  border-style: solid;
-  background-color: #070b1e;
-  border-radius: 10px;
-  padding: 15.5px 12px;
-  font-size: 1em;
-  font-family: "Tesla";
-  position: absolute;
+  color: #FFF;
+  background: transparent;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 2px solid #FFF;
+  width: fit-content;
+  width: intrinsic;
+  width: -moz-max-content;
+  width: -webkit-max-content;
+  padding: 1.25em 3em;
+  margin-top: 1em;
+  position: relative;
+  font-size: 14px;
+  bottom: 0;
+  font-family: "DinBold";
 
-  top: 155px;
-  outline: none;
-  border-width: 0px;
+}
+  .content button::before {
+  background: #FFF;
+  content: "";
+  position: absolute;
+  z-index: -1;
+}
+ .content button::after {
+  background: #FFF;
+  content: "";
+  position: absolute;
+  z-index: -1;
+}
+ .content button:hover {
+  color: #000;
   cursor: pointer;
-  transition: ease all 1s;
-  box-shadow: 0 4px 8px 0 rgba(15, 17, 51, 0.89), 0 6px 0px 0 rgba(12, 3, 42, 0.89);
 }
-
-.content p {
-  font-size: 2.1875em;
-  font-family: "Tesla";
-  position: absolute;
-  top: -30px;
-  color: #fff;
-
-  font-weight: 800;
+.content-btn:after {
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  transform-origin: top center;
+  transform: scale3d(1, 0, 1);
+  transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
 }
-
+.content-btn:hover::after {
+  height: 100%;
+  width: 100%;
+  transform: scale3d(1, 1, 1);
+  transform-origin: bottom center;
+}
 .content button img {
   width: 5px;
   display: none;
@@ -445,21 +482,13 @@ header {
 .content button:hover img {
   display: inline-block;
   margin-left: 70px;
-  transition: ease all 1s;
   position: relative;
   transform: rotate(0deg);
 }
 
-.content button:hover {
-  /* font-size:17px;
-*/
-  align-items: center;
-  /* background-color:rgb(0,0,0);
-*/
-  background: linear-gradient(250deg, rgb(12, 12, 37) 0%, rgb(17, 21, 56) 19%, rgb(9, 9, 41) 38%);
-  transition: ease all 0.6s;
-  /* width:450px; */
-}
+
+
+
 
 section.strip {
   display: flex;
@@ -862,7 +891,7 @@ align-items: center;
   }
 
   .content p {
-      font-size: 2em;
+      /* font-size: 2em; */
   }
 
   .bgfullsuite img.stargif {
@@ -908,12 +937,12 @@ align-items: center;
   }
 
   .content h1 {
-      font-size: 3.25em;
+      font-size: 3.75em;
   }
 
   .content button {
-      top: 135px;
-  }
+    margin-top: 0.5em;
+}
 }
 
 @media(max-width:768px) {
@@ -925,12 +954,12 @@ align-items: center;
       top: 43%;
   }
 
-  .content button {
+  /* .content button {
       top: 100px;
-  }
+  } */
 
   .content h1 {
-      font-size: 2.6em;
+      font-size: 3.4em;
   }
 
   .flex-explore-2,
@@ -1140,8 +1169,11 @@ top: 3%;
 
   .content button:hover {
 
-      width: 325px;
+      /* width: 325px; */
   }
+  .content h1 {
+    font-size: 3.25em;
+}
 
   /* footer a{
   font-size: 0.875em;
@@ -1290,13 +1322,13 @@ footer h3{
       font-size: 1.8em;
   }
 
-  .content button {
+  /* .content button {
       padding: 15px 10px
-  }
+  } */
 
   .content p {
-      font-size: 1.65em;
-      top: -30px;
+      font-size: 1.25em;
+      /* top: -30px; */
   }
 
   .container h2 {
@@ -1362,11 +1394,11 @@ font-size: 1.5em;
   }
 
   .content h1 {
-      font-size: 2.25em;
+      font-size: 2.5em;
   }
 
   .content button {
-      top: 85px;
+      /* top: 85px; */
   }
 
   .logo {
@@ -1394,7 +1426,7 @@ font-size: 1.5em;
   }
 
   .content h1 {
-      font-size: 2.1em;
+      font-size: 2.35em;
   }
 
   .flex-explore-2,
@@ -1466,18 +1498,18 @@ font-size: 1.5em;
   }
 
   .content h1 {
-      font-size: 2em;
+      /* font-size: 2em; */
       position: relative;
       text-align: center;
   }
 
   .content p {
       position: relative;
-      top: 2.5px;
+      /* top: 2.5px; */
   }
 
   .content button {
-      top: 2.5px;
+      /* top: 2.5px; */
       position: relative;
   }
 
@@ -1497,16 +1529,16 @@ font-size: 1.5em;
 }
 @media(max-width:355px){
   .content h1 {
-    font-size: 1.8em;
+    font-size: 2.2em;
 
 }
 .content button{
   font-size: 0.9em;
 }
-.content p {
+/* .content p {
   font-size: 1.5em;
 
-}
+} */
 }
 
 .bgfullsuite img.stargif-reponsive,

@@ -257,7 +257,8 @@ section.rocket .rocket-body span.active:nth-child(1) {
 }
 .containerslide,
 .container-egine {
-	height:100vh;
+	/* height:100vh; */
+	/* padding: 150px 0px 0px 0px; */
 	width:100%;
 	background:#000;
 	position: relative;
@@ -307,7 +308,7 @@ section.footer-slide {
 	align-items:center;
 	background-size:cover;
 	background-color:none;
-	position:absolute;
+	position:relative;
 	display: block;
 }
 /* responsive */
@@ -415,21 +416,18 @@ a.\| {
 	padding: 0 5px;
 }
 
- 
+
 section.control-slide {
-    margin: -15px 0;
+    /* margin: -15px 0; */
     position: relative;
+	padding-bottom:150px ;
 } 
 /* Next & previous buttons */
 .prev,.next {
 	cursor:pointer;
 	position:relative;
-	top:-70px;
+	/* top:-70px; */
 	width:auto;
-	/* margin:0 auto;
-	*/
-	/* text-align: center; */
-	/* font-size:50px; */
 	font-weight:6px;
 	color:rgb(255, 255, 255);
 	font-weight:bold;
@@ -449,7 +447,7 @@ section.control-slide {
 }
 .prev i:hover,.next i:hover{
 	font-size: 0.95em;
-	color:rgb(85, 82, 82);
+	color:rgb(85, 82, 82) !important;
 }
 /* The dots/bullets/indicators */
 .dot {
@@ -467,7 +465,7 @@ section.control-slide {
 	display:flex;
 	text-align:center;
 	position:relative;
-	bottom:95px;
+	bottom:25px;
 }
 .active-slide,.dot:hover {
 	color:#ffffff;
