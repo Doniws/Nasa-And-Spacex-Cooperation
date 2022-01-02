@@ -394,7 +394,7 @@ display: block;
     z-index: 10000;
     width: 150px;
     background: rgb(7,11,30);
-    border-radius: 5px;
+    border-radius: 10px;
     transform: scale(0);
     transform-origin:top left;
     z-index: 1000;
@@ -420,9 +420,9 @@ display: block;
 }
 
 #context-menu .item:hover {
-    background: rgb(45,39,39);
-background: linear-gradient(97deg, rgba(45,39,39,1) 0%, rgba(45,35,35,1) 44%, rgba(85,91,91,1) 100%);
-    border-radius: 5px;
+    background: rgb(30,25,98);
+    background: linear-gradient(133deg, rgba(30,25,98,1) 0%, rgba(26,34,117,1) 46%, rgba(50,49,161,1) 100%);
+    border-radius: 10px;
     /* background: linear-gradient(45deg, #60646e, #333); */
 }
 
@@ -433,5 +433,5 @@ background: linear-gradient(97deg, rgba(45,39,39,1) 0%, rgba(45,35,35,1) 44%, rg
 
 #context-menu hr {
     margin: 2px 0px;
-    border-color: rgb(83, 83, 83);
+    border-color: rgb(3, 7, 255);
 }
