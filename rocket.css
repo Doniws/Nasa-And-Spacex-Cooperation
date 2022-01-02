@@ -650,9 +650,6 @@ a.on {
 		padding-top: 170px;
 
 	} */
-	footer{
-        padding-top: 200px !important;
-    }
 	.flex-eigine, .parallax3-flex {
 
 		font-size: 0.875em;
@@ -669,9 +666,6 @@ a.on {
 		padding-top: 180px;
 
 	} */
-	footer{
-        padding-top: 250px!important;
-    }
 }
 @media(max-width:1100px) {
 
