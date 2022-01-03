@@ -3204,7 +3204,7 @@ h1 {
   overflow: hidden;
   overflow-x: none;
   overflow-y: none;
-  font-family: 'Gugi', cursive;
+  font-family: 'Gugi';
   color: #fff;
 
 }
@@ -3214,7 +3214,7 @@ h1 {
   color: white;
   height: 15px;
   padding: 5px;
-  font-family: 'Gugi', cursive;
+  font-family: 'Gugi';
   text-decoration: none;
   border-radius: 5px;
   text-align: center;
