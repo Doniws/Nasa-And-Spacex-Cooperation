@@ -7,7 +7,7 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Gugi', cursive; 
+  font-family: 'Gugi' ; 
   cursor: url("data:image/svg+xml,%3Csvg height='6' width='6' viewBox='0 0 8 8' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='4' cy='4' fill='%23eee' r='4'/%3E%3C/svg%3E") 3 3, auto;
 }
 
@@ -140,7 +140,7 @@ svg{
     overflow: hidden;
     overflow-x: none;
     overflow-y:none ;
-    font-family: 'Gugi', cursive;
+    font-family: 'Gugi';
 }
 
 #circle {
@@ -2406,7 +2406,7 @@ h4 {
     overflow: hidden;
     font-size: 12px;
     background-image: linear-gradient(to right bottom, #a9347e, #4b32a7);
-    font-family: 'Gugi', cursive;
+    font-family: 'Gugi';
     letter-spacing: 0.2px;
     color: #fff;
     overflow-x:none ;
@@ -2420,7 +2420,7 @@ h4 {
     left: 50%;
     transform: translateX(-50%);
     font-size: 11.1px;
-    font-family: 'Gugi', cursive;
+    font-family: 'Gugi';
     
   }
 
@@ -2436,7 +2436,7 @@ body {
   overflow: hidden;
   font-size: 12px;
   background-image: linear-gradient(to right bottom, #a9347e, #4b32a7);
-  font-family: 'Gugi', cursive;
+  font-family: 'Gugi';
   letter-spacing: 0.2px;
   color: #fff;
   overflow-x:none ;
@@ -2449,7 +2449,7 @@ body {
   padding: 10px;
   text-align: center;
   text-decoration: none;
-  font-family: 'Gugi', cursive;
+  font-family: 'Gugi';
   font-size: 14px;
   color: #ff487f;
 }
@@ -4876,7 +4876,7 @@ body {
   border-radius: 5px;
   cursor: pointer;
   z-index: 999;
-  font-family: 'Gugi', cursive;
+  font-family: 'Gugi';
   color: #ffffff;
 }
 .button:active {
@@ -4889,7 +4889,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   font-size: 15px;
-  font-family: 'Gugi', cursive;
+  font-family: 'Gugi';
 }
 @-webkit-keyframes blink {
   0%, 100% {
@@ -4959,7 +4959,7 @@ body {
     overflow: hidden;
     font-size: 12px;
     background-image: linear-gradient(to right bottom, #a9347e, #4b32a7);
-    font-family: 'Gugi', cursive;
+    font-family: 'Gugi' ;
     letter-spacing: 0.2px;
     color: #fff;
     overflow-x:none ;
@@ -4973,7 +4973,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
     font-size: 11.1px;
-    font-family: 'Gugi', cursive;
+    font-family: 'Gugi';
     
   }
 }

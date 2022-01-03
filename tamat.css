@@ -2,15 +2,22 @@
     font-family: "Gugi";
     src: url("fonts/Gugi/Gugi-Regular.ttf") format("truetype");
 }
-
-
-body {
-    margin: 0;
+html{
+    overflow: hidden;
+}
+*{
+    overflow-x: hidden;
+    overflow: hidden;
+    overflow-y: hidden;
     padding: 0;
+    margin: 0;
+    /* touch-action: pan-y; */
+    touch-action:none;
+}
+section {
     width: 100vw;
     height: 100vh;
     background: #080808;
-    overflow: hidden;
     background-image: radial-gradient(1px 1px at 5% 98%, #ffffff, #fff0),
         radial-gradient(1px 1px at 18% 79%, #ffffff, #fff0),
         radial-gradient(2px 1px at 26% 52%, #ffffff, #fff0),
@@ -47,7 +54,7 @@ body {
     overflow: hidden;
 }
 
-body::before {
+section::before {
     width: 15vmax;
     height: 15vmax;
     background: radial-gradient(circle at 50% 100%, #000 0 50%, #fff0),
@@ -98,7 +105,7 @@ body::before {
 
     transform: translateX(-50%);
     z-index: 999;
-    font-family: 'Gugi', cursive;
+    font-family: 'Gugi';
     color: #ffffff;
 }
 
@@ -112,7 +119,7 @@ body::before {
     border-radius: 5px;
     cursor: pointer;
     z-index: 999;
-    font-family: 'Gugi', cursive;
+    font-family: 'Gugi';
     color: #ffffff;
 }
 
@@ -131,15 +138,14 @@ body::before {
 .button2 {
     position: absolute;
     /* bottom: 650px; */
-    top:5%;
+    top:3%;
     right: 2%;
-    transform: translateX(-50%);
     padding: 8px 12px;
     border: 1px solid #fff;
     border-radius: 8px;
     cursor: pointer;
     z-index: 999;
-    font-family: 'Gugi', cursive;
+    font-family: 'Gugi';
     color: #ffffff;
 }
 
@@ -149,7 +155,7 @@ body::before {
 }
 
 .button2:hover {
-    transform: translateX(-50%) scale(0.95);
+    transform: scale(0.95);
     background-color: #0059ff;
     color: #9db0da;
     border-color: #1100ff;
@@ -809,20 +815,6 @@ body::before {
 }
 
 @media screen and (max-width: 400px) {
-    .mars:before {
-        border-radius: 0%;
-    }
-
-    .mars {
-        position: absolute;
-        width: 160vmax;
-        height: 100vmax;
-        z-index: 1;
-        border-radius: 0%;
-        width: 153vmax;
-        height: 100vmax;
-    }
-
 
     .center {
         transform: translate(-50%, -50%) scale(0.6);

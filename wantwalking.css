@@ -60,7 +60,7 @@ body {
 
 .title {
   color: white;
-  font-family: 'Gugi', cursive; 
+  font-family: 'Gugi'; 
   font-weight: 600;
   text-align: center;
   font-size: 5vmin;
@@ -74,7 +74,7 @@ body {
 
 .subtitle {
   color: white;
-  font-family: 'Gugi', cursive; 
+  font-family: 'Gugi'; 
   font-weight: 400;
   text-align: center;
   font-size: 3.5vmin;
@@ -87,7 +87,7 @@ body {
   color: white;
   height: 5vmin;
   padding: 12px;
-  font-family: 'Gugi', cursive; 
+  font-family: 'Gugi'; 
   text-decoration: none;
   border-radius: 5px;
 }
