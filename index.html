@@ -243,19 +243,20 @@
         Draggable.create(".copyimage");
     </script>
 
-    <script>
-        // untuk menu responsive hidden scroll
-        var prevScrollpos = window.pageYOffset;
-        window.onscroll = function() {
-            var currentScrollPos = window.pageYOffset;
-            if (prevScrollpos > currentScrollPos) {
-                document.getElementById("menu").style.top = "450px";
-            } else {
-                document.getElementById("menu").style.top = "1000px";
-            }
-            prevScrollpos = currentScrollPos;
+<script>
+    // untuk menu responsive hidden scroll
+    let menuopacity = document.getElementById("menu");
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            menuopacity.style.opacity = "1";
+        } else {
+            menuopacity.style.opacity = "0";
         }
-    </script>
+        prevScrollpos = currentScrollPos;
+    }
+</script>
     <script>
         var lastScrollTop;
 navbar = document.getElementById('navbar');

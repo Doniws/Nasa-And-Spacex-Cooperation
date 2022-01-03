@@ -1249,8 +1249,11 @@ footer h3{
       display: flex !important;
       right: -50px;
       bottom: -50px;
+      /* right: -5%;
+      bottom: -5%; */
       z-index: 999;
-      transition: all cubic-bezier(0.83, 0.1, 0, 1.54) 1s;
+      transition: 0.75s ease-out all ;
+      /* transition: all cubic-bezier(0.83, 0.1, 0, 1.54) 1s; */
 
   }
 
@@ -1278,8 +1281,8 @@ footer h3{
       background: #070b1e;
       display: flex;
       justify-content: center;
-      width: 40px;
-      height: 40px;
+      width: 45px;
+      height: 45px;
       align-items: center;
       border-radius: 50%;
       transform: rotate(calc(360deg / -8* var(--i)));
@@ -1297,12 +1300,13 @@ footer h3{
       display: flex;
       justify-content: center;
       align-items: center;
-      z-index: 10000;
+      z-index: 1000;
       border-radius: 50%;
       box-shadow: none;
       cursor: pointer;
-      transition: all cubic-bezier(0, -0.46, 0.91, -1.36) 0.9s;
-      box-shadow: 0 4px 8px 0 rgba(15, 17, 51, 0.89), 0 6px 20px 0 rgba(12, 3, 42, 0.89);
+      /* transition: 0.75s ease-out all; */
+      transition: all cubic-bezier(0, -0.46, 0.91, -1.36) 0.5s;
+      box-shadow: 0 6px 20px 0 rgba(255, 255, 255, 0.5), 0 6px 20px 0 rgba(255, 255, 255, 0.5);
 
   }
 
