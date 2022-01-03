@@ -1144,6 +1144,9 @@ top: 3%;
 }
 
 @media(max-width:600px) {
+  .containertwo .fullsuite img.rocket-containertwo {
+    display: none;
+  }
 
   .explore-1 p.isi1,
   .explore-2 p.isi2 {
