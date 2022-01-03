@@ -1,6 +1,6 @@
 # **Outer Space Theme By Doniws** 
 Masih akan terus di perharui sampai waktu yang blm ditentukan<br>
-~~Sampai website ini menjadi responsive~~
+~~Sampai website ini menjadi responsive~~ <br>
 <br>
 Project ini sudah tidak di perbaharui lagi
 Karena sudah responsive.
@@ -25,3 +25,8 @@ Mereka sangat hebat saling berkerja sama
 Untuk mengubah sejarah manusia yang jauh lebih baik
 dan Elon musk adalah tokoh inspirasi banyak orang
 Termasuk saya.
+
+<br>
+OTHER PROJECT FIND ON GITHUB MAIN PAGE
+
+>https://github.com/Doniws
