@@ -10,7 +10,7 @@ h2.crew-dragon {
 	font-weight:700;
 	font-family:"DinBold";
 	color:#ffffff;
-	font-size: 2.5em;
+	font-size:2.8125em;
 	position:relative;
 	/* bottom:-80px; */
 	top: 0;
@@ -448,6 +448,7 @@ section.control-slide {
 .prev i:hover,.next i:hover{
 	font-size: 0.95em;
 	color:rgb(85, 82, 82) !important;
+	transition:  all ease-out 0.3s;
 }
 /* The dots/bullets/indicators */
 .dot {
@@ -533,6 +534,10 @@ a.on {
 	.prev, .next {
 
 		margin: 0 10px;
+	
+	}
+	.prev:hover, .next:hover {
+		border-bottom: solid 2px white;
 		
 	
 	}
