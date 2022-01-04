@@ -17,6 +17,12 @@
 </head>
 
 <body>
+    <div id="preloader">
+        <div class="center">
+            <div class="ring"></div>
+            <span class="spanloader">loading...</span>
+         </div>
+    </div>
     <!-- cursor -->
 
     <div class="cursor"></div>
@@ -143,24 +149,7 @@
             </div>
         </div>
     </div>
-
     <div class="atention">
-        <!-- <footer class="iss">
-            <img class="iss-img" src="images/human_spaceflight_iss.jpg">
-            <img class="iss-img-reponsive" src="images/human_spaceflight_iss-mobile.jpg">
-            <div class="content-footer">
-                <h2 data-aos="fade-up" data-aos-offset="0" data-aos-duration="3000" data-aos-anchor-placement="top-center">THANK VISIT MY <br>THEME OUTER<br> SPACE PROJECT</h2>
-                <div class="bottom-footer">
-                    <h3 class="center">see you again with the next project</h3>
-                    <div class="wrapper-footer-text"  >
-                        <span class="center">
-                            <a onclick="javascript:alert('Dibuat Tanggal 24 Oktober 2021 dan Selesai Pada Tanggal Tahun')" href="index.html">Copyright&copy Redesign Space Theme Nasa And Spacex and Created By Doni WS </a>
-                        <img class="copyimage" src="images/logoutama.webp">
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </footer> -->
         <footer>
             <div class="footer-content">
                 <h3>Doniws Project</h3>
@@ -210,7 +199,9 @@
     <!-- aos -->
     <script src="./aos-master/dist/aos.js"></script>
     <script>
-        AOS.init({once:true});
+        AOS.init({
+            once:true,
+        });
     </script>
     <!-- gsap ------------------------- -->
     <!-- <script src="gsap/dist/ScrollTrigger.min.js"></script> -->
@@ -326,16 +317,6 @@ lastScrollTop = scrollTop;
             }
 
         );
-
-        gsap.from('img.copyimage', {
-            repeat: -1,
-            yoyo: true,
-            delay: 0,
-            repeatDelay: 1,
-            ease: 'bounce',
-            y: -10,
-            x: 10
-        });
     </script>
     <script>
         // untuk toggle responsive menu 
@@ -384,6 +365,13 @@ lastScrollTop = scrollTop;
                 document.getElementById("context-menu").classList.remove("active");
             });
         </script>
+        <!-- Preload  -->
+        <script>
+            var loader = document.getElementById("preloader")
+        
+            window.addEventListener("load", function() {
+                loader.style.display = "none";
+            })
+        </script>
 </body>
-
 </html>

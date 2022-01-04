@@ -229,11 +229,11 @@ header {
   clip-path: polygon(92% 0, 100% 25%, 100% 100%, 8% 100%, 0% 75%, 0 0);
 }
 
-.btn__secondary {
-  /* background-color: var(--red-color);   */
+/* .btn__secondary {
+  background-color: var(--red-color);  
 
 
-}
+} */
 
 .btn__secondary .btn__content {
     background-color: var(--red-color);
@@ -890,9 +890,6 @@ align-items: center;
       font-size: 3.8em;
   }
 
-  .content p {
-      /* font-size: 2em; */
-  }
 
   .bgfullsuite img.stargif {
       top: 18%;
@@ -1170,10 +1167,6 @@ top: 3%;
       padding: 0px 25px;
   }
 
-  .content button:hover {
-
-      /* width: 325px; */
-  }
   .content h1 {
     font-size: 3.25em;
 }
@@ -1404,10 +1397,6 @@ font-size: 1.5em;
       font-size: 2.5em;
   }
 
-  .content button {
-      /* top: 85px; */
-  }
-
   .logo {
       width: 40%;
   }
@@ -1561,4 +1550,78 @@ video.bg-responsive {
 /* pengatur semua footer  */
 .atention {
   position: relative;
+}
+
+
+/* untuk preload  */
+
+#preloader {
+
+  background: #000000 no-repeat center center;
+  background-size: 100%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 9090909090;
+  /* background-image: url(images/loadersuper.gif); */
+}
+.center{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.ring{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  animation: ring 2s linear infinite;
+}
+@keyframes ring {
+  0%{
+    transform: rotate(0deg);
+    box-shadow: 1px 5px 2px #120e4b;
+  }
+  25%{
+    transform: rotate(90deg);
+    box-shadow: 1px 5px 2px #ffffff;
+  }
+  50%{
+    transform: rotate(180deg);
+    box-shadow: 1px 5px 2px #0456c8;
+  }
+  75%{
+    transform: rotate(270deg);
+    box-shadow: 1px 5px 2px #b30000;
+  }
+  100%{
+    transform: rotate(360deg);
+    box-shadow: 1px 5px 2px #2e2e2e;
+  }
+}
+.ring:before{
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(255,255,255,.3);
+}
+span.spanloader{
+  color: #737373;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 200px;
+  animation: text 3s ease-in-out infinite;
+  font-family: "DinBold";
+}
+@keyframes text {
+  50%{
+    color: black;
+  }
 }
