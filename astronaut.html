@@ -18,6 +18,12 @@
 </head>
 
 <body>
+    <div id="preloader" class="preload">
+        <div class="center-ring">
+            <div class="ring"></div>
+            <span class="spanloader">loading...</span>
+        </div>
+    </div>
     <div class="cursor"></div>
     <section class="container-allastronaut">
         <div class="section-animate">
@@ -70,6 +76,8 @@
             </div>
         </div>
     </section>
+        <!-- pernguhubung js  -->
+        <script src="./ExploreUniverse.js"></script>
     <!-- aos -->
     <script src="./aos-master/dist/aos.js"></script>
     <script>
@@ -78,27 +86,6 @@
     <!-- gsap ------------------------- -->
     <script src="gsap/dist/ScrollTrigger.min.js"></script>
     <script src="gsap/dist/gsap.min.js"></script>
-    <script>
-        // CURSOR CUSTOM 
-        const cursor = document.querySelector('.cursor');
-
-        document.addEventListener('mousemove', e => {
-                cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;")
-            }
-
-        )
-        document.addEventListener('click', () => {
-                cursor.classList.add("expand");
-
-                setTimeout(() => {
-                        cursor.classList.remove("expand");
-                    }
-
-                    , 200)
-            }
-
-        )
-    </script>
     <script>
         gsap.from('.down', {
             repeat: -1,
@@ -157,21 +144,6 @@
             <a href="404.html"><i class="fa fa-times" style="color: red;"></i> Exit</a>
         </div>
     </div>
-
-    <script>
-        window.addEventListener("contextmenu", function(event) {
-            event.preventDefault();
-            var contextElement = document.getElementById("context-menu");
-            contextElement.style.top = event.offsetY + "px";
-            contextElement.style.left = event.offsetX + "px";
-            contextElement.classList.add("active");
-        });
-        window.addEventListener("click", function() {
-            document.getElementById("context-menu").classList.remove("active");
-        });
-    </script>
-
-
 </body>
 
 </html>

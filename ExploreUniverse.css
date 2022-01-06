@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     /* border: 1px red solid; */
-  
 
 }
 
@@ -12,12 +11,18 @@ a:visited,
 a:link {
     color: rgb(255, 255, 255);
     text-decoration: none;
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
 }
 
@@ -269,7 +274,7 @@ h6 {
 }
 
 /* footer  all*/
-footer{
+footer {
     position: relative;
     bottom: 0;
     left: 0;
@@ -282,37 +287,43 @@ footer{
     font-family: "Din";
     color: #fff;
 }
-.footer-content{
+
+.footer-content {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
 }
-.footer-content h3{
+
+.footer-content h3 {
     font-size: 2.1rem;
-    text-transform:uppercase;
+    text-transform: uppercase;
     line-height: 3rem;
     font-family: "DinBold";
 }
-.footer-content p{
+
+.footer-content p {
     max-width: 500px;
     margin: 10px 4px;
     line-height: 28px;
     font-size: 14px;
     color: #cacdd2;
 }
-.socials{
+
+.socials {
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 1rem 0 3rem 0;
 }
-.socials li{
+
+.socials li {
     margin: 0 10px;
 }
-.socials a{
+
+.socials a {
     text-decoration: none;
     color: #fff;
     border: 1.5px solid rgb(0, 0, 0);
@@ -322,82 +333,91 @@ footer{
     border-radius: 50%;
 
 }
-.socials a i{
+
+.socials a i {
     font-size: 1.1rem;
     width: 20px;
-
 
     transition: color .4s ease;
 
 }
-.socials a:hover i{
+
+.socials a:hover i {
     color: rgb(109, 109, 109);
 }
 
-.footer-bottom{
+.footer-bottom {
     background: rgb(15, 15, 15);
     /* width: 100vw; */
     padding: 20px;
-padding-bottom: 40px;
+    padding-bottom: 40px;
     text-align: center;
     display: none;
 }
-.footer-bottom p{
-float: left;
+
+.footer-bottom p {
+    float: left;
     font-size: 14px;
     word-spacing: 2px;
     text-transform: capitalize;
 }
-.footer-bottom p a{
-  font-size: 16px;
-  text-decoration: none;
+
+.footer-bottom p a {
+    font-size: 16px;
+    text-decoration: none;
 }
-.footer-bottom span{
+
+.footer-bottom span {
     text-transform: uppercase;
     opacity: .4;
     font-weight: 200;
 }
-.footer-menu{
-  float: right;
+
+.footer-menu {
+    float: right;
 
 }
-.footer-menu ul{
-  display: flex;
+
+.footer-menu ul {
+    display: flex;
 }
-.footer-menu ul li{
-padding-right: 10px;
-display: block;
+
+.footer-menu ul li {
+    padding-right: 10px;
+    display: block;
 }
-.footer-menu ul li a{
-  color: #cfd2d6;
-  text-decoration: none;
+
+.footer-menu ul li a {
+    color: #cfd2d6;
+    text-decoration: none;
 }
-.footer-menu ul li a:hover{
-  color: #686d6e;
+
+.footer-menu ul li a:hover {
+    color: #686d6e;
 }
 
 @media (max-width:500px) {
-    .footer-menu ul{
-      display: flex;
-      margin-top: 10px;
-      margin-bottom: 20px;
+    .footer-menu ul {
+        display: flex;
+        margin-top: 10px;
+        margin-bottom: 20px;
     }
-    .footer-content p{
+
+    .footer-content p {
         margin: 10px 17.5px;
     }
 }
-
 
 /* right click  */
 #context-menu {
     position: fixed;
     z-index: 10000;
     width: 150px;
-    background: rgb(7,11,30);
+    background: rgb(7, 11, 30);
     border-radius: 10px;
     transform: scale(0);
-    transform-origin:top left;
-    z-index: 1000;
+    transform-origin: top left;
+    z-index: 990909909000000000000000000999999999999;
     font-family: "Din";
 }
 
@@ -420,8 +440,8 @@ display: block;
 }
 
 #context-menu .item:hover {
-    background: rgb(30,25,98);
-    background: linear-gradient(133deg, rgba(30,25,98,1) 0%, rgba(26,34,117,1) 46%, rgba(50,49,161,1) 100%);
+    background: rgb(30, 25, 98);
+    background: linear-gradient(133deg, rgba(30, 25, 98, 1) 0%, rgba(26, 34, 117, 1) 46%, rgba(50, 49, 161, 1) 100%);
     border-radius: 10px;
     /* background: linear-gradient(45deg, #60646e, #333); */
 }
@@ -434,4 +454,108 @@ display: block;
 #context-menu hr {
     margin: 2px 0px;
     border-color: rgb(3, 7, 255);
+}
+
+/* untuk preload  */
+
+#preloader {
+
+    background: #000000 no-repeat center center;
+    background-size: 100%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 9090909090;
+    /* background-image: url(images/loadersuper.gif); */
+}
+
+.center-ring {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.ring {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    animation: ring 2s linear infinite;
+}
+
+@keyframes ring {
+    0% {
+        transform: rotate(0deg);
+        box-shadow: 1px 5px 2px #120e4b;
+    }
+
+    25% {
+        transform: rotate(90deg);
+        box-shadow: 1px 5px 2px #ffffff;
+    }
+
+    50% {
+        transform: rotate(180deg);
+        box-shadow: 1px 5px 2px #0456c8;
+    }
+
+    75% {
+        transform: rotate(270deg);
+        box-shadow: 1px 5px 2px #b30000;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        box-shadow: 1px 5px 2px #2e2e2e;
+    }
+}
+
+.ring:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(255, 255, 255, .3);
+}
+
+span.spanloader {
+    color: #737373;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 200px;
+    animation: text 3s ease-in-out infinite;
+    font-family: "DinBold";
+}
+
+@keyframes text {
+    50% {
+        color: black;
+    }
+}
+
+.active-slide,
+.active-slide-2,
+.dot:hover {
+    color: #ffffff !important;
+    background-color: #ffffff;
+    height: 10px;
+    width: 10px;
+}
+
+/* .active-slide- {
+    color: white;
+} */
+a.off {
+    color: #868686;
+}
+
+a.on {
+    color: #ffffff;
+    background: none;
 }

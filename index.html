@@ -12,16 +12,16 @@
     <link rel="stylesheet" href=" ExploreUniverse.css" />
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://doniws.github.io/FontAwesome6Pro/pro/css/all.css" >    
+    <link rel="stylesheet" href="https://doniws.github.io/FontAwesome6Pro/pro/css/all.css">
     <link rel="stylesheet" href="https://doniws.github.io/Font-Text/Din/Din.css">
 </head>
 
 <body>
     <div id="preloader">
-        <div class="center">
+        <div class="center-ring">
             <div class="ring"></div>
             <span class="spanloader">loading...</span>
-         </div>
+        </div>
     </div>
     <!-- cursor -->
 
@@ -194,13 +194,15 @@
 
 
     <!-- javascript -->
+    <!-- pernguhubung js  -->
+    <script src="./ExploreUniverse.js"></script>
     <script src="./360deg.js"></script>
     <script src="./360deg-robot.js"></script>
     <!-- aos -->
     <script src="./aos-master/dist/aos.js"></script>
     <script>
         AOS.init({
-            once:true,
+            once: true,
         });
     </script>
     <!-- gsap ------------------------- -->
@@ -234,35 +236,34 @@
         Draggable.create(".copyimage");
     </script>
 
-<script>
-    // untuk menu responsive hidden scroll
-    let menuopacity = document.getElementById("menu");
-    var prevScrollpos = window.pageYOffset;
-    window.onscroll = function() {
-        var currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
-            menuopacity.style.opacity = "1";
-        } else {
-            menuopacity.style.opacity = "0";
+    <script>
+        // untuk menu responsive hidden scroll
+        let menuopacity = document.getElementById("menu");
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                menuopacity.style.opacity = "1";
+            } else {
+                menuopacity.style.opacity = "0";
+            }
+            prevScrollpos = currentScrollPos;
         }
-        prevScrollpos = currentScrollPos;
-    }
-</script>
+    </script>
     <script>
         var lastScrollTop;
-navbar = document.getElementById('navbar');
-window.addEventListener('scroll',function(){
-var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-if(scrollTop > lastScrollTop){
-// navbar.style.top='-150px';
-navbar.style.opacity='0';
-}
-else{
-navbar.style.top='0';
-navbar.style.opacity='1';
-}
-lastScrollTop = scrollTop;
-});
+        navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', function() {
+            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop) {
+                // navbar.style.top='-150px';
+                navbar.style.opacity = '0';
+            } else {
+                navbar.style.top = '0';
+                navbar.style.opacity = '1';
+            }
+            lastScrollTop = scrollTop;
+        });
     </script>
     <script>
         // FULLSCREEN BTN 
@@ -284,27 +285,7 @@ lastScrollTop = scrollTop;
 
         );
     </script>
-    <script>
-        // CURSOR CUSTOM 
-        const cursor = document.querySelector('.cursor');
 
-        document.addEventListener('mousemove', e => {
-                cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;")
-            }
-
-        )
-        document.addEventListener('click', () => {
-                cursor.classList.add("expand");
-
-                setTimeout(() => {
-                        cursor.classList.remove("expand");
-                    }
-
-                    , 200)
-            }
-
-        );
-    </script>
     <script>
         // gsap biasa 
 
@@ -327,51 +308,30 @@ lastScrollTop = scrollTop;
             menu.classList.toggle('active');
         }
     </script>
-        <!-- ini right menu nya -->
-        <div id="context-menu">
-      
-            <div class="item">
-                <a href="index.html"><i class="fa-duotone fa-planet-moon" style="--fa-secondary-opacity: 1.0; --fa-primary-color: rgb(94, 255, 0); --fa-secondary-color: rgba(6, 52, 255, 0.842);"></i>Main</a>
-            </div>
-            <div class="item">
-                <a href="rocket.html"><i class="fa-duotone fa-shuttle-space" style="--fa-secondary-opacity: 1.0; --fa-primary-color: rgb(204, 204, 204); --fa-secondary-color: rgba(0, 0, 0, 0.842);"></i>Rocket</a>
-            </div>
-            <div class="item">
-                <a href="astronaut.html"><i class="fa-duotone fa-user-astronaut fa-beat" style="--fa-secondary-opacity: 1.0; --fa-primary-color: rgb(211, 102, 38); --fa-secondary-color: rgba(24, 21, 21, 0.698);"></i> Astronaut</a>
-            </div>
-            <div class="item">
-                <a href="landing.html"><i class="fa-duotone fa-plane-arrival fa-flip" style="--fa-secondary-opacity: 1.0; --fa-primary-color: rgb(221, 215, 215); --fa-secondary-color: rgba(204, 93, 65, 0.842);"></i>Landing</a>
-            </div>
-    
-            <hr>
-            <div class="item">
-                <a href="javascript:location.reload(true)"><i class="fa fa-redo" style="color: rgb(0, 60, 255);"></i> Reload</a>
-            </div>
-            <div class="item">
-                <a href="404.html"><i class="fa fa-times" style="color: red;"></i> Exit</a>
-            </div>
+    <!-- ini right menu nya -->
+    <div id="context-menu">
+
+        <div class="item">
+            <a href="index.html"><i class="fa-duotone fa-planet-moon" style="--fa-secondary-opacity: 1.0; --fa-primary-color: rgb(94, 255, 0); --fa-secondary-color: rgba(6, 52, 255, 0.842);"></i>Main</a>
         </div>
-    
-    
-        <script>
-            window.addEventListener("contextmenu", function(event) {
-                event.preventDefault();
-                var contextElement = document.getElementById("context-menu");
-                contextElement.style.top = event.offsetY + "px";
-                contextElement.style.left = event.offsetX + "px";
-                contextElement.classList.add("active");
-            });
-            window.addEventListener("click", function() {
-                document.getElementById("context-menu").classList.remove("active");
-            });
-        </script>
-        <!-- Preload  -->
-        <script>
-            var loader = document.getElementById("preloader")
-        
-            window.addEventListener("load", function() {
-                loader.style.display = "none";
-            })
-        </script>
+        <div class="item">
+            <a href="rocket.html"><i class="fa-duotone fa-shuttle-space" style="--fa-secondary-opacity: 1.0; --fa-primary-color: rgb(204, 204, 204); --fa-secondary-color: rgba(0, 0, 0, 0.842);"></i>Rocket</a>
+        </div>
+        <div class="item">
+            <a href="astronaut.html"><i class="fa-duotone fa-user-astronaut fa-beat" style="--fa-secondary-opacity: 1.0; --fa-primary-color: rgb(211, 102, 38); --fa-secondary-color: rgba(24, 21, 21, 0.698);"></i> Astronaut</a>
+        </div>
+        <div class="item">
+            <a href="landing.html"><i class="fa-duotone fa-plane-arrival fa-flip" style="--fa-secondary-opacity: 1.0; --fa-primary-color: rgb(221, 215, 215); --fa-secondary-color: rgba(204, 93, 65, 0.842);"></i>Landing</a>
+        </div>
+
+        <hr>
+        <div class="item">
+            <a href="javascript:location.reload(true)"><i class="fa fa-redo" style="color: rgb(0, 60, 255);"></i> Reload</a>
+        </div>
+        <div class="item">
+            <a href="404.html"><i class="fa fa-times" style="color: red;"></i> Exit</a>
+        </div>
+    </div>
 </body>
+
 </html>

@@ -12,10 +12,16 @@
     <link rel="stylesheet" href=" ExploreUniverse.css" />
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://doniws.github.io/FontAwesome6Pro/pro/css/all.css" >    
+    <link rel="stylesheet" href="https://doniws.github.io/FontAwesome6Pro/pro/css/all.css">
 </head>
 
 <body>
+    <div id="preloader" class="preload">
+        <div class="center-ring">
+            <div class="ring"></div>
+            <span class="spanloader">loading...</span>
+        </div>
+    </div>
     <div class="cursor"></div>
     </section>
     <h2 id="crew-rocket" class="crew-dragon">Rocket</h2>
@@ -114,7 +120,7 @@
             <!-- PARALLAX 1  -->
             <section class="parallaxbg  fade mySlides">
                 <div class="slide1  fade">
-                    
+
                     <video data-aos="zoom-in" data-aos-duration="2500" data-aos-offset="100" class="parallax" src="images/DragonTrunk_Animation_Render_Desktop.webm" autoplay muted loop></video><img data-aos="zoom-in" data-aos-duration="2500" data-aos-offset="100" class="parallaxreponsive" src="images/DragonTrunk_Render_Mobile.jpg">
                     <div class="contentslide">
                         <h3 data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000" class="parallaxjudul" id="slidepage">PAYLOAD</h3>
@@ -257,13 +263,13 @@
                             </tr>
                         </table>
                     </div>
-                </div>   
-               
+                </div>
+
             </section>
 
 
             <section class="control-slide">
-           
+
                 <div class="prevnext center">
                     <a class="prev" onclick="plusSlides(-1)">
                         <i class="fa-regular fa-angle-left" style="color: white;"> </i>
@@ -277,10 +283,9 @@
                     <span class="dot" onclick="currentSlide(2)"></span>
                     <span class="dot" onclick="currentSlide(3)"></span>
                 </div>
-    
+
             </section>
         </section>
-
 
 
         <!-- disini untuk eigine  -->
@@ -346,11 +351,14 @@
     </div>
 
     <!-- pernguhubung js  -->
+    <script src="./ExploreUniverse.js"></script>
 
     <!-- aos -->
     <script src="./aos-master/dist/aos.js"></script>
     <script>
-        AOS.init({once:true});
+        AOS.init({
+            once: true
+        });
     </script>
     <!-- gsap ------------------------- -->
     <script src="gsap/dist/ScrollTrigger.min.js"></script>
@@ -428,145 +436,6 @@
 
             ())
     </script>
-    <script>
-        // CURSOR CUSTOM 
-        const cursor = document.querySelector('.cursor');
-
-        document.addEventListener('mousemove', e => {
-                cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;")
-            }
-
-        )
-        document.addEventListener('click', () => {
-                cursor.classList.add("expand");
-
-                setTimeout(() => {
-                        cursor.classList.remove("expand");
-                    }
-
-                    , 200)
-            }
-
-        )
-    </script>
-    <script>
-        // SLIDE FEATURE 
-        //  disini untuk feature rocket payload
-        var slideIndex = 1;
-        showSlides(slideIndex);
-
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-
-            if (n > slides.length) {
-                slideIndex = 1
-            }
-
-            if (n < 1) {
-                slideIndex = slides.length
-            }
-
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-
-            }
-
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active-slide", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active-slide";
-        }
-    </script>
-
-
-    <script>
-        var slideIndex = 1;
-        showslides(slideIndex);
-
-        function nextSlides(n) {
-            showslides(slideIndex += n);
-        }
-
-        function currentslide(n) {
-            showslides(slideIndex = n);
-        }
-
-        function showslides(n) {
-            var i;
-            var slides = document.getElementsByClassName("myslides");
-            var dots = document.getElementsByClassName("fot");
-
-            if (n > slides.length) {
-                slideIndex = 1
-            }
-
-            if (n < 1) {
-                slideIndex = slides.length
-            }
-
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-
-            
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active-slide-2", "");
-            }
-            slides[slideIndex - 1].style.display = "flex";
-            dots[slideIndex - 1].className += " active-slide-2";
-        }
-    </script>
-
-
-    <!-- dsini masih proses  -->
-    <script>
-        var slideIndex = 1;
-        Showslides(slideIndex);
-
-        function nextSlides(n) {
-            Showslides(slideIndex += n);
-        }
-
-        function rentslide(n) {
-            Showslides(slideIndex = n);
-        }
-
-        function Showslides(n) {
-            var i;
-            var slides = document.getElementsByClassName("MySlides");
-            var dots = document.getElementsByClassName("tot");
-
-            if (n > slides.length) {
-                slideIndex = 1
-            }
-
-            if (n < 1) {
-                slideIndex = slides.length
-            }
-
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active-slide-", "");
-            }
-            slides[slideIndex - 1].style.display = "flex";
-            dots[slideIndex - 1].className += " active-slide-";
-        }
-    </script>
-
 
     <footer>
         <div class="footer-content">
@@ -597,7 +466,7 @@
 
     <!-- ini right menu nya -->
     <div id="context-menu">
-      
+
         <div class="item">
             <a href="index.html"><i class="fa-duotone fa-planet-moon" style="--fa-secondary-opacity: 1.0; --fa-primary-color: rgb(94, 255, 0); --fa-secondary-color: rgba(6, 52, 255, 0.842);"></i>Main</a>
         </div>
@@ -619,18 +488,6 @@
             <a href="404.html"><i class="fa fa-times" style="color: red;"></i> Exit</a>
         </div>
     </div>
-    <script>
-        window.addEventListener("contextmenu", function(event) {
-            event.preventDefault();
-            var contextElement = document.getElementById("context-menu");
-            contextElement.style.top = event.offsetY + "px";
-            contextElement.style.left = event.offsetX + "px";
-            contextElement.classList.add("active");
-        });
-        window.addEventListener("click", function() {
-            document.getElementById("context-menu").classList.remove("active");
-        });
-    </script>
 </body>
 
 </html>

@@ -108,7 +108,7 @@ h2.astonaut-crew-dragon {
     text-align: center;
     position: relative;
     font-family: "DinBold";
-	font-size:2.8125em;
+    font-size: 2.8125em;
     color: #fff;
     top: 0px;
     z-index: 99;
@@ -271,14 +271,12 @@ h2.astonaut-crew-dragon {
     }
 
     .astronauts-container {
-    padding: 0 20%;
-		height: 285vh;
+        padding: 0 20%;
+        height: 285vh;
     }
 }
 
 @media (max-width: 590px) {
-
-  
 
     /* h2.astonaut-crew-dragon {
     font-size: 1.6em;
@@ -307,10 +305,6 @@ h2.astonaut-crew-dragon {
         padding: 0 15px;
     }
 
-    /* h2.astonaut-crew-dragon{
-	padding: 0 15px;
-	font-size: 1.3em;
-} */
     .astronauts-container {
         padding: 0 15%;
         display: flex;
