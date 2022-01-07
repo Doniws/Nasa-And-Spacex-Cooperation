@@ -12,12 +12,16 @@ Don't forget star ,if you like my project,
 Let me be more enthusiastic to work on other projects
 
 UPDATE
-***Website ini sudah responsive***
-Penambahan fitur page 404 page 
+***Website ini sudah responsive***<br>
+Penambahan fitur page 404 page <br>
+Halaman Website bertambah menjadi 8 karena ada 
+Penambahan Halaman 404
 <br>
 LINK WEBSITE 
+<br>
+MAIN
+>https://nasa-spacex.netlify.app
 
->nasa-spacex.netlify.app
 <br>
 
 OTHER PROJECT FIND ON GITHUB MAIN PAGE
