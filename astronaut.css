@@ -88,10 +88,8 @@ section.crew-3 {
     font-family: "Din";
     color: white;
     font-size: 1em;
-    z-index: 99999;
+    z-index: 999;
     text-align: left;
-    /* left:940px;
-	*/
     position: relative;
     top: 30px;
     line-height: 1.6;

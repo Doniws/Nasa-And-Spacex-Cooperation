@@ -8,7 +8,6 @@
     var _circlr2 = _interopRequireDefault(_circlr);
     
     var el = document.querySelector('.rotation');
-    // var el = document.querySelector('.rotation-robot');
     var btnScroll = document.querySelector('.btn-scroll');
     var btnCycle = document.querySelector('.btn-cycle');
     var btnReverse = document.querySelector('.btn-reverse');

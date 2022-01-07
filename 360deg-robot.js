@@ -6,7 +6,6 @@
     var _circlr = require('circlr');
     
     var _circlr2 = _interopRequireDefault(_circlr);
-    
     var el = document.querySelector('.rotation-robot');
     var btnScroll = document.querySelector('.btn-scroll');
     var btnCycle = document.querySelector('.btn-cycle');

@@ -125,7 +125,7 @@ h6 {
     transition-timing-function: ease-out;
     animation: cursorAnim .5s infinite alternate;
     pointer-events: none;
-    z-index: 199;
+    z-index: 999;
     opacity: 0.5;
 }
 
@@ -411,13 +411,12 @@ footer {
 /* right click  */
 #context-menu {
     position: fixed;
-    z-index: 10000;
     width: 150px;
     background: rgb(7, 11, 30);
     border-radius: 10px;
     transform: scale(0);
     transform-origin: top left;
-    z-index: 990909909000000000000000000999999999999;
+    z-index: 999;
     font-family: "Din";
 }
 
@@ -465,7 +464,7 @@ footer {
     height: 100vh;
     width: 100%;
     position: fixed;
-    z-index: 9090909090;
+    z-index: 1000;
     /* background-image: url(images/loadersuper.gif); */
 }
 

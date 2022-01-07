@@ -2,18 +2,21 @@
     font-family: "Gugi";
     src: url("fonts/Gugi/Gugi-Regular.ttf") format("truetype");
 }
-html{
+
+html {
     overflow: hidden;
 }
-*{
+
+* {
     overflow-x: hidden;
     overflow: hidden;
     overflow-y: hidden;
     padding: 0;
     margin: 0;
     /* touch-action: pan-y; */
-    touch-action:none;
+    touch-action: none;
 }
+
 section {
     width: 100vw;
     height: 100vh;
@@ -138,7 +141,7 @@ section::before {
 .button2 {
     position: absolute;
     /* bottom: 650px; */
-    top:3%;
+    top: 3%;
     right: 2%;
     padding: 8px 12px;
     border: 1px solid #fff;
@@ -820,7 +823,6 @@ section::before {
         transform: translate(-50%, -50%) scale(0.6);
     }
 }
-
 
 .star {
     position: absolute;
