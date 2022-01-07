@@ -15,7 +15,7 @@ UPDATE
 ***Website ini sudah responsive***<br>
 Penambahan fitur page 404 page <br>
 Halaman Website bertambah menjadi 8 karena ada 
-Penambahan Halaman 404
+Penambahan Halaman 404 <br>
 <br>
 LINK WEBSITE <br>
 <br>
