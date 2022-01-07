@@ -2,8 +2,8 @@
 Masih akan terus di perharui sampai waktu yang blm ditentukan<br>
 ~~Sampai website ini menjadi responsive~~ <br>
 <br>
-Project ini sudah tidak di perbaharui lagi
-Karena sudah responsive.
+**Project ini sudah tidak di perbaharui lagi
+Karena sudah responsive.**
 <br>
 
 >Copyright© and created by Doniws 2021
@@ -19,3 +19,6 @@ Penambahan fitur page 404 page
 OTHER PROJECT FIND ON GITHUB MAIN PAGE
 
 >https://github.com/Doniws
+
+![](https://komarev.com/ghpvc/?username=Doniws&color=blue)
+
