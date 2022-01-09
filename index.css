@@ -119,7 +119,7 @@ position: absolute; */
 .nav-link li:hover,
 .nav-link li:focus,
 .nav-link li:active {
-  animation: glitchText 0.5s linear;
+  animation: glitchText 0.25s linear;
   text-decoration: underline solid;
 
   color: #ffffff;
