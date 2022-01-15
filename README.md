@@ -1,5 +1,5 @@
 # **Outer Space Theme By Doniws** 
-Masih akan terus di perharui sampai waktu yang blm ditentukan<br>
+Masih akan terus di perbaharui<br>
 ~~Sampai website ini menjadi responsive~~ <br>
 <br>
 **Project ini sudah tidak di perbaharui lagi
@@ -11,9 +11,6 @@ Let me be more enthusiastic to work on other projects
 
 UPDATE
 ***Website ini sudah responsive***<br>
-Penambahan fitur page 404 page <br>
-_Halaman Website bertambah menjadi 8 karena ada_
-**Penambahan Halaman 404** <br>
 <br>
 **Fitur-fitur** <br>
 1.Grab Karakter (Hold Left Click Button)<br>
