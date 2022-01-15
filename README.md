@@ -18,10 +18,6 @@ UPDATE
 3.Context Menu (Click Right Click)<br>
 4.dll<br>
 <br>
-**Bug**<br>
-1.Menu Page/nav kadang error tidak bisa di klik karena di beri animasi glitch efek<br>
-2.Ada beberapa bug di fullscreen versi dekstop<br>
-<br>
 LINK WEBSITE <br>
 <br>
 MAIN
