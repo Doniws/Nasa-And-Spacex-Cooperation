@@ -89,32 +89,6 @@ h6 {
     text-shadow: 0 0 2px #555;
 }
 
-@font-face {
-    font-family: "Din";
-    src: url("fonts/Din/fonts-D-DIN.woff") format("truetype");
-}
-
-@font-face {
-    font-family: "Nasa";
-    src: url("fonts/Nasa/nasalization-rg.otf") format("truetype");
-}
-
-@font-face {
-    font-family: "RoadTest";
-    src: url("./fonts/Mendatory/MandatoryPlaything-nRRd0.ttf");
-}
-
-@font-face {
-    font-family: "Tesla";
-    src: url("fonts/tesla/TESLA.ttf") format("truetype");
-}
-
-@font-face {
-    font-family: "DinBold";
-    src: url("fonts//Din/fonts-D-DIN-Bold.woff") format("truetype");
-    font-weight: lighter;
-}
-
 .cursor {
     width: 20px;
     height: 20px;
