@@ -80,7 +80,10 @@ img.image1reponsive,
 img.image2reponsive {
     display: none;
 }
-
+img.Dragon-space{
+    width: 100%;
+    height: auto;
+}
 @media(max-width:768px) {
 
     img.image1reponsive,

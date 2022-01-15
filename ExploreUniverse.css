@@ -466,6 +466,8 @@ footer {
     position: fixed;
     z-index: 1000;
     /* background-image: url(images/loadersuper.gif); */
+    overflow: hidden;
+    touch-action: none;
 }
 
 .center-ring {

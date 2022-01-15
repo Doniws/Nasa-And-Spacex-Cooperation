@@ -522,40 +522,31 @@ padding-right:5%; */
   position: relative;
   font-family: Noto Sans JP;
   position: relative;
-  transform: rotate(360deg);
   background: #000000;
 }
 
-.containertwo h2 {
-
-  top: 300px;
-
+.containertwo h3 {
   font-weight: 700;
   font-family: "DinBold";
   color: #fff;
-
   font-size: 1.5625em;
-  /* left: 910px; */
-  left: 69%;
-  position: absolute;
+  z-index: 2;
+  position: relative;
   text-transform: uppercase;
 
 }
 
 .containertwo .fullsuite p {
-  position: absolute;
-  left: 69%;
-  /* margin-right:40px; */
-  top: 370px;
-
+  position: relative;
   font-family: Din;
   color: rgb(255, 255, 255);
   font-size: 1em;
   line-height: 1.5;
   width: 28%;
+  z-index: 2;
 }
 
-.containertwo h3 {
+.containertwo h2 {
   font-weight: 700;
   font-family: "DinBold";
   color: #fff;
@@ -564,6 +555,7 @@ padding-right:5%; */
   top: 13%;
   left: 5%;
   text-transform: uppercase;
+  z-index: 2;
 }
 
 /* full suite */
@@ -573,10 +565,11 @@ padding-right:5%; */
   width: 100%;
   height: auto;
   left: 0px;
+  padding-top: 10%;
   position: absolute;
-  z-index: -1;
+  z-index: 1;
   display: block;
-  top: 14%;
+  /* top: 14%; */
 }
 
 /* flex suite */
@@ -604,16 +597,17 @@ padding-right:5%; */
 .rotation-robot img,
 .rotation img {
   height: auto;
+  position: relative;
 }
 
 img {
   transition: all 0.2s ease-out;
 
 }
-
 .isi-fullsuite {
   position: relative;
-  bottom: 350px;
+  /* bottom: 350px; */
+  left: 69%;
 }
 
 /* rocket */
@@ -769,86 +763,6 @@ width: 54%;
 
 }
 
-/* .isi-mars,.isi-bumi{
-transform: translate(0%, 150px);
-} */
-/* footer {
-height: 100vh;
-position: relative;
-left: 0px;
-background-color: #000000;
-background-position: center;
-background-size: cover;
-color: rgb(255, 255, 255);
-}
-
-footer img.iss-img {
-width: 100%;
-height: auto;
-position: absolute;
-top: 0px;
-left: 0px;
-background: #000000;
-display: block;
-}
-
-footer h2 {
-color: #fff;
-font-size: 2.5em;
-position: absolute;
-font-family: "DinBold";
-top: 100px;
-left: 60px;
-line-height: 1.2;
-
-}
-
-footer h3 {
-color: #fff;
-font-size: 40px;
-position: relative;
-font-family: "DinBold";
-text-align: center;
-line-height: 1.2;
-text-transform: uppercase;
-
-} */
-
-/* .wrapper-footer-text {
-position: relative;
-bottom: 250px;
-display: flex;
-} */
-
-/* .wrapper-footer-text span {
-display: flex;
-}
-
-footer a {
-color: rgb(255, 255, 255);
-font-size: 20px;
-font-family: "DinBold";
-position: relative;
-top: 0;
-text-align: center;
-text-decoration: none;
-text-transform: uppercase;
-display: flex;
-display: block;
-text-align: center;
-}
-.bottom-footer {
-text-align: center;
-display: flex;
-position: relative;
-flex-direction: column;
-flex-wrap: wrap;
-align-content: center;
-z-index: 99;
-top: 550px;
-justify-content: center;
-align-items: center;
-} */
 /* -----------------------------------area responsive------------------------------------------ */
 /* Proc  */
 /* untuk laptop fullscreen  */
@@ -869,7 +783,7 @@ align-items: center;
   }
 
   .bgfullsuite img.stargif {
-      top: 18%;
+      padding-top: 12.5%;
   }
 
   /* .bottom-footer {
@@ -880,12 +794,9 @@ align-items: center;
 }
 
 @media(max-width:1024px) {
-  /* .bottom-footer {
-
-top: 440px;
-
-} */
-
+  .bgfullsuite img.stargif {
+    padding-top: 13.5%;
+}
   .isi-mars,
   .isi-bumi {
       width: 70%;
@@ -971,15 +882,15 @@ height: 105vh;
   }
 
   .bgfullsuite img.stargif-reponsive {
-      display: block !important;
-      background-size: cover;
-      background-position: center;
-      width: 100%;
-      height: auto;
-      left: 0px;
-      position: absolute;
-      z-index: -1;
-      top: 14%;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: auto;
+    left: 0px;
+    padding-top: 15%;
+    position: absolute;
+    z-index: 1;
+    display: block !important;
   }
 
   video.bg {
@@ -1007,56 +918,23 @@ height: 105vh;
       background: #000000;
       display: block !important;
   }
-
-  /* .bottom-footer {
-
-top: 500px;
-
-} */
-  /* footer img.iss-img {
-
-display: none;
-} */
-  /* footer h2 {
-top: 10%;
-text-align: right;
-
-right: 40px;
-font-size: 2em;
-}
-footer a{
-font-size: 1.1em;
-}
-footer h3 {
-
-font-size: 2.1em;
-
-} */
-  /* .bottom-footer{
-top: 3%;
-} */
-  .containertwo h2 {
+  .containertwo h3 {
 
       top: 300px;
+    padding: 7px 0;
 
   }
 
   .containertwo .fullsuite p {
-      top: 370px;
-      left: 12%;
+      top: 300px;
       width: 50%;
-  }
-
-  .isi-fullsuite {
-
-      bottom: 2%;
   }
 
   .containertwo {
       height: 115vh;
   }
 
-  .containertwo h3 {
+  .containertwo h2 {
 
       font-size: 2.0em;
 
@@ -1076,9 +954,8 @@ top: 3%;
 
   .h22,
   .containertwo h2,
-  .containertwo h3,
   .content,
-  .containertwo .fullsuite p {
+  .isi-fullsuite {
       left: 12%;
   }
 
@@ -1126,15 +1003,9 @@ top: 3%;
   .explore-2 p.isi2 {
       max-width: 80%;
   }
-
-  /* .bottom-footer {
-
-top: 455px;
-
-} */
   .explore-1 h3.p1,
   .explore-2 h3.p2,
-  .containertwo h2 {
+  .containertwo h3 {
       font-size: 1.4em;
   }
 
@@ -1147,22 +1018,6 @@ top: 455px;
   .content h1 {
       font-size: 3.25em;
   }
-
-  /* footer a{
-font-size: 0.875em;
-}
-footer h2{
-top: 5%;
-right: 25px;
-
-font-size: 1.8em;
-}
-footer h3{
-font-size: 1.7em;
-} */
-  /* .bottom-footer {
-top: -70px;
-} */
   .content {
       top: 40%;
   }
@@ -1204,9 +1059,8 @@ top: -70px;
 
   .h22,
   .containertwo h2,
-  .containertwo h3,
   .content,
-  .containertwo .fullsuite p {
+  .isi-fullsuite {
       left: 5%;
   }
 
@@ -1292,16 +1146,12 @@ top: -70px;
       width: 33%;
   }
 
-  .containertwo h3 {
+  .containertwo h2 {
       font-size: 1.8em;
 
       text-align: left;
       font-size: 1.8em;
   }
-
-  /* .content button {
-    padding: 15px 10px
-} */
 
   .content p {
       font-size: 1.25em;
@@ -1318,52 +1168,27 @@ top: -70px;
   }
 
   .bgfullsuite img.stargif-reponsive {
-
-      top: 17%;
-  }
-
-  /* footer{
-height: 100vh;
-} */
-  /* header {
-
-    padding: % 5%;
-} */
+    padding-top: 25%;
+}
 }
 
 @media(max-width:480px) {
 
   .h22,
-  .containertwo h3 {
+  .containertwo h2 {
       font-size: 1.7em;
   }
 
   .containertwo .fullsuite p {
-      top: 360px;
+      /* top: 360px; */
       width: 80%;
   }
 
   .bgfullsuite img.stargif-reponsive {
 
-      top: 20%;
+      padding-top: 30%;
   }
 
-  /* footer a {
-font-size: 0.65em;
-}
-footer h3 {
-font-size: 1.39em;
-}
-footer{
-height: 70vh;
-}
-.bottom-footer {
-top: 335px;
-}
-footer h2 {
-
-font-size: 1.5em;
-} */
   .content {
 
       left: 5%;
@@ -1386,9 +1211,8 @@ font-size: 1.5em;
 
   .h22,
   .containertwo h2,
-  .containertwo h3,
   .content,
-  .containertwo .fullsuite p {
+  .isi-fullsuite {
       left: 6%;
   }
 }
@@ -1401,6 +1225,31 @@ font-size: 1.5em;
   .content h1 {
       font-size: 2.35em;
   }
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    flex-direction: column;
+    left: 0;
+    right: 0;
+}
+
+.content h1 {
+    position: relative;
+    text-align: center;
+    font-size: 2.55em;
+}
+
+.content p {
+    position: relative;
+    /* top: 2.5px; */
+}
+
+.content button {
+    /* top: 2.5px; */
+    position: relative;
+}
 
   .flex-explore-2,
   .flex-explore-1 {
@@ -1409,19 +1258,14 @@ font-size: 1.5em;
 
   .h22,
   .containertwo h2,
-  .containertwo h3,
   .content,
-  .containertwo .fullsuite p {
+  .isi-fullsuite {
       left: 3%;
   }
 
   .astronaut img {
       right: 17%;
       width: 64%;
-  }
-
-  .bgfullsuite img.stargif-reponsive {
-      top: 23%;
   }
 
   .rotation-robot,
@@ -1439,7 +1283,7 @@ font-size: 1.5em;
   }
 
   .bgfullsuite img.stargif-reponsive {
-      top: 33%;
+     padding-top: 55%;
   }
 
   .explore-1,
@@ -1459,36 +1303,6 @@ font-size: 1.5em;
       width: 50%;
   }
 
-  .content {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      justify-self: center;
-      flex-direction: column;
-      top: 35%;
-      left: 0;
-      right: 0;
-  }
-
-  .content h1 {
-      /* font-size: 2em; */
-      position: relative;
-      text-align: center;
-  }
-
-  .content p {
-      position: relative;
-      /* top: 2.5px; */
-  }
-
-  .content button {
-      /* top: 2.5px; */
-      position: relative;
-  }
-
-  .logo {
-      width: 49%;
-  }
 
   .astronaut img {
       right: 8%;
@@ -1499,6 +1313,11 @@ font-size: 1.5em;
       padding: 25px 75px;
       font-size: 0.7em;
   }
+  .content h1 {
+    position: relative;
+    text-align: center;
+    font-size: 2.35em;
+}
 }
 
 @media(max-width:355px) {
