@@ -614,9 +614,9 @@ img {
 .containertwo .fullsuite img.rocket-containertwo {
   position: absolute;
   top: 390px;
-  right: 610px;
+  right: 50%;
   width: 190px;
-  z-index: 2;
+  z-index: 1;
   cursor: crosshair;
 }
 
@@ -786,11 +786,6 @@ width: 54%;
       padding-top: 12.5%;
   }
 
-  /* .bottom-footer {
-
-  top: 480px;
-
-} */
 }
 
 @media(max-width:1024px) {
@@ -812,10 +807,6 @@ width: 54%;
       height: 100vh;
 
   }
-
-  /* .bgfullsuite img.stargif {
-    top: 28%;
-} */
   .btn__secondary {
       padding: 25px 85px;
 
@@ -831,10 +822,6 @@ width: 54%;
 }
 
 @media(max-width:768px) {
-
-  /* footer{
-height: 105vh;
-} */
   .content {
       top: 43%;
   }
