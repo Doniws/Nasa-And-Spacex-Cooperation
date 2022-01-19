@@ -357,7 +357,7 @@ footer {
 }
 
 .footer-menu ul li {
-    padding-right: 10px;
+    padding: 0 5px;
     display: block;
 }
 
@@ -383,19 +383,22 @@ footer {
     .footer-bottom {
         background-color: rgb(10 9 9);
         display: flex;
-        padding: 25px;
         text-align: center;
         flex-direction: column;
         align-items: center;
+        padding: 20px;
+        padding-bottom: none;
         justify-content: center;
     }
 
     .footer-menu {
         float: none;
+        margin-top: 2px;
     }
 
     .footer-bottom p {
         float: none;
+        margin-bottom: 2px; 
     }
 }
 
