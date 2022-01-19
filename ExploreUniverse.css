@@ -383,14 +383,19 @@ footer {
     .footer-bottom {
         background-color: rgb(10 9 9);
         display: flex;
-        /* width: 100vw; */
         padding: 25px;
-        /* padding-bottom: 40px; */
         text-align: center;
-        /* display: none; */
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+
+    .footer-menu {
+        float: none;
+    }
+
+    .footer-bottom p {
+        float: none;
     }
 }
 
