@@ -321,12 +321,12 @@ footer {
 }
 
 .footer-bottom {
-    background: rgb(15, 15, 15);
+    background-color: rgb(10 9 9);
     /* width: 100vw; */
     padding: 20px;
     padding-bottom: 40px;
     text-align: center;
-    display: none;
+    /* display: none; */
 }
 
 .footer-bottom p {
@@ -373,12 +373,24 @@ footer {
 @media (max-width:500px) {
     .footer-menu ul {
         display: flex;
-        margin-top: 10px;
-        margin-bottom: 20px;
+        /* margin-top: 10px;
+        margin-bottom: 20px; */
     }
 
     .footer-content p {
         margin: 10px 17.5px;
+    }
+    .footer-bottom {
+        background-color: rgb(10 9 9);
+        display: flex;
+        /* width: 100vw; */
+        padding: 25px;
+        /* padding-bottom: 40px; */
+        text-align: center;
+        /* display: none; */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }
 
